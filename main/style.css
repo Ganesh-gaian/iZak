@@ -30,7 +30,9 @@
 }
 
 .iZAKLogo{
-  width: 100px;
+  width: 320px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .iZAKLogo img {
@@ -39,7 +41,7 @@
 }
 
 .dateTimeTemp {
-  width: 300px;
+  width: 320px;
   color: var(--Color, #fff);
   font-family: Lato;
   font-size: 14px;
@@ -51,7 +53,7 @@
 }
 
 .userProfile {
-  width: 270px;
+  width: 320px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -69,11 +71,30 @@
 }
 
 .NetworkSignal {
-  width: 72px;
-  height: 37px;
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal img {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 1px;  */
 }
 
-.bellNotification img {
+.bellNotification svg {
   width: 40px;
   height: 37px;
 }
@@ -92,7 +113,6 @@
   /* height of total height - navbar + top height */
   height: calc(100vh - 11.79vh);
   margin-top: 11vh;
-  /* border: 2px solid blue; */
   overflow-y: hidden;
 }
 
@@ -114,10 +134,19 @@
   padding: 0 8px;
 }
 
-.iconStyle img {
+.iconStyle{
   width: 32px;
   height: 32px;
   font-size: 22px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.iconStyle img {
+  width: 90%;
+}
+
+.DashboardStyle{
+  width: 60px;
 }
 
 .mainContainer {
