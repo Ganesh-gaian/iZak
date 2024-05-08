@@ -19,7 +19,7 @@
   height: 5.13vh;
   position: fixed;
   /* top: 24px; */
-  top: 6.66vh;
+  top: 3.66vh !important;
 }
 
 .navContent {
@@ -29,13 +29,13 @@
   align-items: center;
 }
 
-.iZAKLogo{
+.iZAKLogo {
   width: 320px;
   display: flex;
   justify-content: flex-start;
 }
 
-.iZAKLogo img {
+.iZAKLogo svg {
   width: 32px;
   height: 32px;
 }
@@ -44,7 +44,7 @@
   width: 320px;
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 14px;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -74,7 +74,7 @@
   display: flex;
   align-items: center;
 }
-.NetworkSignal img {
+.NetworkSignal svg {
   width: 28px;
   height: 28px;
 }
@@ -91,7 +91,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin-top: 1px;  */
+}
+
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .bellNotification svg {
@@ -111,8 +132,8 @@
   width: 100%;
   /* height: calc(100vh - 5.13vh);  */
   /* height of total height - navbar + top height */
-  height: calc(100vh - 11.79vh);
-  margin-top: 11vh;
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
   overflow-y: hidden;
 }
 
@@ -130,22 +151,25 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 0 8px;
+  /* gap: 40px; */
+  gap: 6vh;
+  /* padding: 0 8px; */
+  /* padding-left: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  padding-right: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem); */
 }
 
-.iconStyle{
+.iconStyle {
   width: 32px;
   height: 32px;
   font-size: 22px;
   padding-left: 1%;
   padding-right: 1%;
 }
-.iconStyle img {
+.iconStyle svg {
   width: 90%;
 }
 
-.DashboardStyle{
+.DashboardStyle {
   width: 60px;
 }
 
@@ -155,5 +179,5 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 5vh;
+  margin-top: 1vh;
 }
