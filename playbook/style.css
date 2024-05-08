@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+  }
+  
+  .topNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5.3vh;
+    background-color: aliceblue;
+    position: fixed;
+    top: 24px;
+  }
+  
+  
+  .navContent {
+    width: 96.25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dateTimeTemp {
+  }
+  
+  .userProfile {
+  }
+  
+  .sideNav {
+    width: 100%;
+      height: inherit;
+      display: flex;
+      
+  }
+  
+  .contentContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(149, 149, 224);
+  }
+  
+  .sideNavContent {
+    width: 5%;
+    height: inherit;
+    background-color: rgb(97, 46, 46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 8px;
+  }
+  
+  .iconStyle{
+      width: 40px;
+      height: 40px;
+      font-size: 22px;
+  }
+  
+  .mainContainer{
+      height: inherit;
+      width: 100%;
+      display: flex;
+      align-items: center;  
+  }
+  
+  p{
+      font-size: 30px;
+      color: white;
+  }
+  .playbookcontainer{
+    width: 96%;
+    height: auto;
+    display: flex;
+    flex-direction: column;  
+  }
+  .playbook-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:5.5vh;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    background: #000000;
+  }
+  h2{
+   color: #ffff;
+   font-family:Lato; 
+   font-weight: 300;
+  }
+  .Images{
+   display: flex;
+   justify-content: space-around;
+   width: 15%;
+   height:65%;
+  }
+  .playbook-middle{
+    width:87%;
+    height:76.95vh;
+    font-family:Lato; 
+    border: 1px solid red;
+  }
+  
