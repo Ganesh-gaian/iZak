@@ -35,14 +35,6 @@ var deviceTypeData = [
 
 var manufacturerTypeData = [
   {
-    name: "Entertainment",
-    img: "/images/devices/speaker2.png",
-  },
-  {
-    name: "Ambience",
-    img: "/images/devices/tableLamp1.png",
-  },
-  {
     name: "Samsung",
   },
   {
@@ -118,17 +110,41 @@ document.querySelector(".off").addEventListener("click", function () {
   document.querySelector(".on").classList.remove("active");
 });
 
+document.querySelector(".gridIconContainer").classList.add("activeGridList");
+
 document
   .querySelector(".gridIconContainer")
   .addEventListener("click", function () {
     this.classList.add("activeGridList");
-    document.querySelector(".listIconContainer").classList.remove("activeGridList");
+    document
+      .querySelector(".listIconContainer")
+      .classList.remove("activeGridList");
   });
 
 document
   .querySelector(".listIconContainer")
   .addEventListener("click", function () {
     this.classList.add("activeGridList");
-    document.querySelector(".gridIconContainer").classList.remove("activeGridList");
+    document
+      .querySelector(".gridIconContainer")
+      .classList.remove("activeGridList");
   });
+
+document.querySelector(".imgCont1").addEventListener("click", function () {
+  this.classList.add("activeGridList");
+  document.querySelector(".imgCont2").classList.remove("activeGridList");
+  document.querySelector(".imgCont3").classList.remove("activeGridList");
+});
+
+document.querySelector(".imgCont2").addEventListener("click", function () {
+  this.classList.add("activeGridList");
+  document.querySelector(".imgCont1").classList.remove("activeGridList");
+  document.querySelector(".imgCont3").classList.remove("activeGridList");
+});
+
+document.querySelector(".imgCont3").addEventListener("click", function () {
+  this.classList.add("activeGridList");
+  document.querySelector(".imgCont1").classList.remove("activeGridList");
+  document.querySelector(".imgCont2").classList.remove("activeGridList");
+});
 
