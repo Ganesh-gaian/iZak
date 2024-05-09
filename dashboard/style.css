@@ -30,7 +30,7 @@
 }
 
 .iZAKLogo {
-  width: 320px;
+  width: 150px;
   display: flex;
   justify-content: flex-start;
 }
@@ -41,7 +41,7 @@
 }
 
 .dateTimeTemp {
-  width: 320px;
+  width: 250px;
   color: var(--Color, #fff);
   font-family: Lato;
   font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
@@ -53,7 +53,7 @@
 }
 
 .userProfile {
-  width: 320px;
+  width: 310px;
   display: flex;
   justify-content: space-around;
   align-items: center;
