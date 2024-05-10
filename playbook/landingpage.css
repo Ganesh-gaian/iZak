@@ -6,8 +6,7 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-image: url("Images/morningmeditation.png");
-  background-size:cover;
+  background: url("Images/morningmeditation.png");
   position: fixed;
   top: 0;
   overflow-y: hidden;
@@ -20,7 +19,7 @@
   height: 5.13vh;
   position: fixed;
   /* top: 24px; */
-  top: 6.66vh;
+  top: 3.66vh !important;
 }
 
 .navContent {
@@ -31,16 +30,18 @@
 }
 
 .iZAKLogo {
-  width: 100px;
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.iZAKLogo img {
+.iZAKLogo svg {
   width: 32px;
   height: 32px;
 }
 
 .dateTimeTemp {
-  width: 300px;
+  width: 250px;
   color: var(--Color, #fff);
   font-family: Lato;
   font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
@@ -52,11 +53,11 @@
 }
 
 .userProfile {
-  width: 270px;
+  width: 310px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .signalGif img {
@@ -64,17 +65,58 @@
   height: 40px;
 }
 
-.line img {
-  width: 2px;
-  height: 40px;
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .NetworkSignal {
-  width: 72px;
-  height: 37px;
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal svg {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bellNotification img {
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bellNotification svg {
   width: 40px;
   height: 37px;
 }
@@ -85,28 +127,55 @@
   background-color: rgb(219, 183, 253);
   border-radius: 50%;
 }
-.contentContainer {
-    display: flex;
-    width: 100%;
-    /* height: calc(100vh - 5.13vh);  */
-    /* height of total height - navbar + top height */
-    height: calc(100vh - 11.79vh);
-    margin-top: 11vh;
-    /* border: 2px solid blue; */
-    overflow-y: hidden;
-  }
-  
-  .wrapper {
-    width: 100%;
-    height: inherit;
-    display: flex;
-  }
 
+.contentContainer {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 5.13vh);  */
+  /* height of total height - navbar + top height */
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+.sideNavContent {
+  visibility: hidden;
+  width: 5%;
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.iconStyle {
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.iconStyle svg {
+  width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+  .sideNavContent {
+    width: 6%;
+  }
+}
 .mainContainer {
   height: inherit;
   width: 100%;
   display: flex;
- 
 }
 
 p {
@@ -118,31 +187,35 @@ p {
   height: 88.21vh;
 }
 .landing-top {
-  width: 93%;
+  width: 95%;
   height: 5vh;
   display: flex;
   justify-content: space-between;
   margin-top: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
-  margin-left: clamp(0.2083375rem, 0rem + 3.3333vw, 20.8334375rem);
 }
-.landing-top img{
-  margin-left: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
-}
-.edit-image{
+
+.edit-image {
   position: relative;
   width: 100px;
-  height: 100px; 
-  margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+  height: 100px;
+  margin-left: 30px;
   cursor: pointer;
 }
-.edit-image svg{
+.circleImage {
   position: absolute;
   left: 50px;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: #ffffff1a;
 }
-.pencil-mark{
-    width: 23%; 
-    height: 40%;
-    margin-left:clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
+.edit-image > img {
+  width: 23%;
+  height: 40%;
+  margin-left: 58px;
+}
+.data {
+  width: 100%;
 }
 .data h1 {
   width: 28%;
@@ -150,16 +223,14 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
-  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
   color: #ffff;
   font-family: Lato;
   font-weight: 700;
-  font-size: 38px;
+  font-size: 36px;
 }
 .list {
   display: flex;
   color: #ffff;
-  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
   margin-top: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
   font-family: Lato;
   font-weight: 400;
@@ -175,7 +246,6 @@ p {
   font-weight: 400;
   opacity: 0.5;
   margin-top: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
-  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
 }
 .para {
   color: #ffff;
@@ -185,37 +255,46 @@ p {
   opacity: 0.5;
   margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   margin-bottom: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
-  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
 }
 .data img {
-  margin-left: clamp(0.29515rem, 0rem + 4.7222vw, 29.5140625rem);
   margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
 }
-.pause-image{
+.pauseImageMain {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.pause-image {
   position: relative;
-  width: 100px;
-  height: 100px; 
-  margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+  width: 9%;
+  height: 15vh;
   cursor: pointer;
 }
-.pause-image svg{
+.circleImage1 {
   position: absolute;
-  left: 50px;
-}
-.pause{
-  display: none;
-    width: 23%; 
-    height: 40%;
-    margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
-}
-.play{
-  width: 23%; 
+  left: -1vh;
+  width: 40%;
   height: 40%;
-  margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+  border-radius: 50%;
+  background-color: #ffffff1a;
+}
+
+.pause-image svg {
+  position: absolute;
+  left: 4px;
+}
+.pause {
+  display: none;
+  width: 23%;
+  height: 40%;
+}
+.play {
+  width: 23%;
+  height: 40%;
 }
 .landing-bottom p {
   margin-top: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
-  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+
   font-family: Lato;
   font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   font-weight: 400;
@@ -231,5 +310,4 @@ p {
   align-items: center;
   color: white;
   margin-top: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem);
-  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
 }
