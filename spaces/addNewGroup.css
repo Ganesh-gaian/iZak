@@ -57,16 +57,20 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
+
 .signalGif img {
   width: 50px;
   height: 40px;
 }
 
-.line img {
-  width: 2px;
-  height: 40px;
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .NetworkSignal {
@@ -143,7 +147,6 @@
 }
 
 .sideNavContent {
-  visibility: hidden;
   width: 5%;
   height: inherit;
   background-color: transparent;
@@ -165,11 +168,11 @@
   width: 90%;
 }
 
-.DashboardStyle {
-  width: 60px;
-  /* margin-bottom: 40px; */
+@media screen and (max-width: 800px) {
+  .sideNavContent {
+    width: 6%;
+  }
 }
-
 .mainContainer {
   height: inherit;
   width: 100%;
@@ -264,4 +267,18 @@
 .box img {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1260px) and (min-width: 1px) {
+  .homeSpaces {
+    /* width: 100%;
+    height: auto;
+    max-height: 64vh;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap; */
+    gap: 4px !important;
+    /* margin-top: 2vh; */
+  }
+
 }
