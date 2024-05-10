@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Images/background\ \(1\).png");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  /* top: 24px; */
+  top: 6.66vh;
+}
+
+.navContent {
+  width: 96.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 100px;
+}
+
+.iZAKLogo img {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 300px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 270px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line img {
+  width: 2px;
+  height: 40px;
+}
+
+.NetworkSignal {
+  width: 72px;
+  height: 37px;
+}
+
+.bellNotification img {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 5.13vh);  */
+  /* height of total height - navbar + top height */
+  height: calc(100vh - 11.79vh);
+  margin-top: 11vh;
+  /* border: 2px solid blue; */
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+.edit-page {
+  width: 100%;
+  height: 88.21vh;
+}
+.heading {
+  width: 100%;
+  height:4vh;
+  display: flex;
+  gap: 2vh;
+}
+.edit-playbook {
+  margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+  margin-left: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
+  margin-right: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
+}
+.back-arrow{
+  height: 4vh;
+  cursor: pointer;
+}
+.heading p {
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-weight: 600;
+  font-family: Lato;
+}
+.image-container{
+    width: 100%;
+    height:auto;
+    display: flex;
+}
+.delete-image{
+    width: 40%;
+    height:auto;
+    margin-top: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
+    margin-left: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem);
+}
+.delete-image img{
+    width: 100%;
+    height:40vh;
+    border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+}
+.delete-image h3{
+    color: #fff;
+    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+    font-family: Lato;
+    font-weight: 500;
+    letter-spacing: -0.096;
+    padding-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    padding-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+}
+.delete-image p{
+    color:  #9A9A9A;
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    font-family: Lato;
+    font-weight: 400;
+}
+.deleteButton {
+    width: 55%;
+    background-color: transparent;
+    color: white; 
+    border: 1px solid #fff; 
+    padding: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem) clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem); 
+    cursor: pointer; 
+    border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem); 
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem); 
+    margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+}
+.empty{
+    width:10%;
+}
+.playbook-triggers{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
+}
+.playbook{
+    display: flex;
+    justify-content: space-between;
+    gap:2vh;
+    font-size: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
+    font-family: Lato;
+}
+.playbook1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
+    gap:2vh;
+    font-size: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
+    font-family: Lato;
+}
+.add-triggers svg{
+    margin-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
+}
+.add-triggers{
+    display: flex;
+    gap:2vh;
+}
+.triggerss{
+    margin-right: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
+}
+.icon1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 25%;
+    height:12vh;
+    border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+    background: rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(40px);
+    gap: 2vh;
+    padding-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    padding-left: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    cursor: pointer;
+}
+.icon1 p{
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+}
+.icon2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 25%;
+    height:12vh;
+    border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+    background: rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(40px);
+    gap: 2vh;
+    padding-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    padding-left: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    cursor: pointer;
+}
+.icon2 p{
+    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+}
+.icon3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 25%;
+    height:12vh;
+    border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+    background: rgba(255, 255, 255, 0.44);
+    backdrop-filter: blur(40px);
+    gap: 2vh;
+    padding-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    padding-left: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    cursor: pointer;
+}
+.icon3 p{
+    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+}
+
+
+
+

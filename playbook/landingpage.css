@@ -1,128 +1,235 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .container {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("Images/morningmeditation.png");
+  background-size:cover;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  /* top: 24px; */
+  top: 6.66vh;
+}
+
+.navContent {
+  width: 96.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 100px;
+}
+
+.iZAKLogo img {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 300px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 270px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line img {
+  width: 2px;
+  height: 40px;
+}
+
+.NetworkSignal {
+  width: 72px;
+  height: 37px;
+}
+
+.bellNotification img {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+.contentContainer {
+    display: flex;
     width: 100%;
-    height: 100vh;
-    background-color: gray;
+    /* height: calc(100vh - 5.13vh);  */
+    /* height of total height - navbar + top height */
+    height: calc(100vh - 11.79vh);
+    margin-top: 11vh;
+    /* border: 2px solid blue; */
+    overflow-y: hidden;
   }
   
-  .topNav {
+  .wrapper {
     width: 100%;
+    height: inherit;
     display: flex;
-    justify-content: center;
-    height: 5.3vh;
-    background-color: aliceblue;
-    position: fixed;
-    top: 24px;
   }
-  
-  .navContent {
-    width: 96.25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-  }
-    
-  .mainContainer{
-      height: inherit;
-      width: 100%;
-      display: flex;
-      /* justify-content: center; */
-      /* align-items: center; */
-      background-image: url('Images/morningmeditation.png');
-      background-size: 100% 100%;
-  }
-  
-  p{
-      font-size: 30px;
-      color: white;
-  }
-.landingcontainer{
-    width: 100%;
-    height: 100vh;
-    /* display: flex; */
-   
+
+.mainContainer {
+  height: inherit;
+  width: 100%;
+  display: flex;
+ 
 }
-.landing-top{
-    width: 93%;
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 100px;
-    margin-left: 71px;
-    /* margin-right: 30px; */
+
+p {
+  font-size: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
+  color: white;
 }
-.data h1{
-    width: 28%;
-    height: auto;
-    display:flex;
-    flex-direction: column;
-    margin-top: 32px;
-    margin-left: 70px;
-    color: #ffff;
-    font-family:Lato;
-    font-weight: 700;
-    font-size: 38px;
+.landingcontainer {
+  width: 100%;
+  height: 88.21vh;
 }
-.list{
-    display: flex;
-    color: #ffff;
-    margin-left: 70px;
-    margin-top: 8px;
-    font-family:Lato;
-    font-weight: 400;
-    font-size: 28px;
-    opacity: 0.5;
+.landing-top {
+  width: 93%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
+  margin-left: clamp(0.2083375rem, 0rem + 3.3333vw, 20.8334375rem);
 }
-.list ul{
-    margin-right:20px;
+.landing-top img{
+  margin-left: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
 }
-.data p{
-    font-family:Lato;
-    font-size: 24px;
-    font-weight: 400px;
-    opacity: 0.5;
-    margin-top: 4px;
-    margin-left: 70px;
+.edit-image{
+  position: relative;
+  width: 100px;
+  height: 100px; 
+  margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+  cursor: pointer;
 }
-.para{
-    color: #ffff;
-    font-family:Lato;
-    font-size: 24px;
-    font-weight: 400px;
-    opacity: 0.5;
-    margin-top: 19px;
-    margin-left: 70px;
+.edit-image svg{
+  position: absolute;
+  left: 50px;
 }
-.data img{
-    margin-left: 68px;
-    margin-top: 16px;
+.pencil-mark{
+    width: 23%; 
+    height: 40%;
+    margin-left:clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
-.landing-bottom p{
-    margin-top: 70px;
-    margin-left: 70px;
-    font-family:Lato;
-    font-size: 25px;
-    font-weight: 400;
+.data h1 {
+  width: 28%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+  color: #ffff;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 38px;
+}
+.list {
+  display: flex;
+  color: #ffff;
+  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+  margin-top: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: clamp(0.121525rem, 0rem + 1.9444vw, 12.1528125rem);
+  opacity: 0.5;
+}
+.list ul {
+  margin-right: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+}
+.data p {
+  font-family: Lato;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
+  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+}
+.para {
+  color: #ffff;
+  font-family: Lato;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  margin-bottom: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+}
+.data img {
+  margin-left: clamp(0.29515rem, 0rem + 4.7222vw, 29.5140625rem);
+  margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+}
+.pause-image{
+  position: relative;
+  width: 100px;
+  height: 100px; 
+  margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+  cursor: pointer;
+}
+.pause-image svg{
+  position: absolute;
+  left: 50px;
+}
+.pause{
+  display: none;
+    width: 23%; 
+    height: 40%;
+    margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+}
+.play{
+  width: 23%; 
+  height: 40%;
+  margin-left: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+}
+.landing-bottom p {
+  margin-top: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+  font-family: Lato;
+  font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
+  font-weight: 400;
 }
 .lowerContentSlider {
-    border: 2px solid white;
-    display: flex;
-    width: 100%;
-    height: 80px;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
+  border: 2px solid white;
+  display: flex;
+  width: 60%;
+  height: 80px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem);
+  margin-left: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+}
