@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("profileimages/background\ \(1\).png");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  /* top: 24px; */
+  top: 3.66vh !important;
+}
+
+.navContent {
+  width: 96.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iZAKLogo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 250px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.NetworkSignal {
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal svg {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bellNotification svg {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 5.13vh);  */
+  /* height of total height - navbar + top height */
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+.sideNavContent {
+  visibility: hidden;
+  width: 5%;
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.iconStyle {
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.iconStyle svg {
+  width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+  .sideNavContent {
+    width: 6%;
+  }
+}
+.mainContainer {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1vh;
+}
+.manageAccountSettings {
+  display: flex;
+  width: 100%;
+  height: inherit;
+  margin-top: 40px;
+}
+.profilePhoto {
+  width: 30%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.leftImage {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0.04%,
+    rgba(0, 0, 0, 0.4) 90.69%
+  );
+}
+.leftData {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 7%;
+}
+.leftData p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 100% */
+}
+.option {
+  width: 100%;
+  height: 5vh;
+  gap: 3vh;
+  display: flex;
+  height: 56px;
+  padding: 0 16px;
+  align-items: center;
+}
+.option p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+}
+/* .option svg {
+  margin-top: 4px;
+} */
+.option {
+  cursor: pointer;
+}
+.option.selected {
+  border-radius: 8px;
+  background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
+  backdrop-filter: blur(6.87976598739624px);
+  color: white;
+}
+.emptySpace {
+  width: 10%;
+  height: inherit;
+}
+.profileData {
+  width: 55%;
+  height: inherit;
+}
+.profileData p {
+  color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+form {
+  width: 100%;
+  height: 100vh;
+  margin-top: 32px;
+}
+
+label {
+  margin-bottom: 20px;
+  color: #727272;
+  text-align: center;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.095px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  color: rgba(199, 198, 202, 0.3);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: var(--Radius-m, 8px);
+  border: 1px solid rgba(199, 198, 202, 0.2);
+  background: rgba(17, 20, 19, 0.3);
+  margin-top: 10px;
+}
+
+#editButton{
+    width: 100%;
+    padding: 16px;
+    color: var(--Color, #fff);
+    border-radius: var(--Radius-m, 8px);
+    background: #1E2023;
+    backdrop-filter: blur(10px);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    margin-top: 32px;
+  }
+
