@@ -167,6 +167,7 @@
 }
 
 .sideNavContent {
+  visibility: hidden;
   width: 5%;
   height: inherit;
   background-color: transparent;
@@ -240,14 +241,13 @@
 }
 
 .editSpace {
-  width: 9%;
+  width: 15%;
   display: flex;
   height: 30px;
   padding: 4px 12px;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  border-radius: 6px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
 }
@@ -287,7 +287,6 @@
 .weatherTemp svg {
   width: 100%;
   height: 100%;
-
 }
 .weatherTemp p {
   color: var(--Color, #fff);
@@ -334,29 +333,25 @@
 }
 
 .spaces3Wrapper {
+  /* border: 2px solid red; */
   width: 100%;
   overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
 }
 
 .Spaces3Content {
-  width: 100%;
-  /* width: fit-content; */
-
-  border: 2px solid white;
-  position: absolute;
-  bottom: 1vh;
+  /* border: 2px solid white; */
   display: flex;
-  /* flex-wrap: wrap; */
   column-gap: 12px;
-  height: 40vh;
-  overflow-x: auto;
+  align-items: flex-end;
+  width: 100%;
 }
 
 .deviceCont {
-  /* width: 276px; */
   width: 23.58%;
   height: max-content;
-  /* height: 38.33vh; */
   border-radius: 8px;
   background: linear-gradient(
     128deg,
@@ -369,10 +364,16 @@
   padding: 15px;
   display: flex;
   flex-direction: column;
+  margin-right: 15px;
+  flex-shrink: 0;
 }
 
 .deviceCont:last-child {
-  margin-right: 0; /* Remove margin from last deviceCont to avoid extra gap */
+  margin-right: 0;
+}
+
+.deviceCont:active {
+  cursor: grabbing;
 }
 
 #span8 {
@@ -434,7 +435,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin-top: 30px; */
   margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
 }
 
@@ -469,7 +469,6 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  /* margin-top: 30px; */
   margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
 }
 
@@ -524,3 +523,26 @@
   align-items: flex-end;
   width: max-content;
 }
+
+@media only screen and (max-width: 1800px) {
+  .spaces3Wrapper {
+    height: 52vh;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .spaces3Wrapper {
+    height: 54vh;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .spaces3Wrapper {
+    height: 48vh;
+  }
+}
+
+/* @media only screen and (max-width: 800px) {
+  .spaces3Wrapper {
+    height: 48vh;
+  }
+} */

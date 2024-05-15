@@ -133,11 +133,11 @@
 .contentContainer {
   display: flex;
   width: 100%;
-  /* height: calc(100vh - 5.13vh);  */
   /* height of total height - navbar + top height */
   height: calc(100vh - 8vh);
   margin-top: 8vh;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -179,14 +179,9 @@
   margin-top: 6vh;
 }
 
-/* .wrapper{
-
-
-} */
-
 .header {
   /* border: 2px solid white; */
-  width: 100%;
+  width: 99%;
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -202,17 +197,18 @@
 }
 .spaceAddSearchLogo {
   display: flex;
-  gap: 32px;
+  /* gap: 32px; */
+  column-gap: 2vw;
 }
 
 .spaceAddSearchLogo img {
-  width: 40px;
-  height: 40px;
+  /* width: 90%; */
+  width: 20px;
+  /* height: 40px; */
 }
 
 .spaceContentContainer {
   height: auto;
-  /* border: 2px solid red; */
   margin-top: 2vh;
 }
 
@@ -227,7 +223,7 @@
 
 .button {
   display: flex;
-  padding: 16px 12px;
+  padding: 12px 20px;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -236,46 +232,203 @@
   cursor: pointer;
   color: rgb(255 255 255);
   opacity: 1;
+  word-spacing: 0.25em;
 }
 
 .button:hover {
-  background: rgba(255, 255, 255, 0.64);
+  background: #0b82f9;
 }
 
 .buttonText {
   color: var(--Color, #fff);
   text-align: center;
   font-family: Lato;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 .spaceCardsContainer {
-  border: 2px solid white;
-
   width: 100%;
-  height: max-content;
+  height: 70vh;
   margin-top: 2vh;
   display: flex;
-  gap: 20px;
+  /* gap: 20px; */
+  column-gap: 2vh;
 }
 .spaceSingleCard {
-  /* border: 2px solid white; */
+  width: 24%;
+  height: 70vh;
+  position: relative;
+}
 
-  transition: all 0.5s ease 0s;
-  /* background-image: url(https://izak.aidtaas.com/image/spaces/livingroom.jpeg); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  /* width: 21.56%; */
-  width: 24.56%;
-  height: 71vh;
-  z-index: -1;
+.spaceCardImage {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .spaceCardImage img {
-  width: 21.56vw;
-  height: 71vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.contentAboveImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  z-index: 2;
+
+  justify-content: space-around;
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-bottom: 1%;
+}
+
+.textDiv {
+  font-size: 1em;
+}
+/* .spaceBgColor{
+  z-index: ;
+  background-color: #222222;
+  backdrop-filter: blur(10px);
+} */
+.kwhEdit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.kwh {
+  width: 68%;
+  display: flex;
+  height: 30px;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #d4f8d3;
+}
+
+.kwh p {
+  color: var(--Layout-800, #222);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.kwh span {
+  color: #737373;
+  font-family: Lato;
+  /* font-size: 12px; */
+  font-size: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.livingRoom {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.livingRoom p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  white-space: nowrap;
+
+}
+
+.weatherTemp {
+  /* border: 1px solid black; */
+  width: 50px;
+  height: 29px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.weatherTempImg {
+  display: flex;
+  align-items: center;
+}
+.livingRoom .weatherTemp img {
+  width: 5%;
+  height: 7%;
+  object-fit: cover;
+}
+.livingRoom .weatherTemp span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* height: 25px; */
+}
+
+.NumDevicesScenes {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 20px; */
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+}
+
+.functionalButtons {
+  /* background-color: red; */
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.circleImage {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  /* background-color: #ffffff1a; */
+  background: rgba(168, 168, 168, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circleImage img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
