@@ -1,0 +1,289 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thermContainer {
+  width: 868px;
+  height: 599px;
+  border-radius: var(--Radius-m, 8px);
+  border: 1px solid var(--Color, #fff);
+  background: linear-gradient(
+    128deg,
+    #00478e -5.15%,
+    rgba(18, 34, 50, 0.44) 50.3%,
+    rgba(201, 117, 252, 0.98) 105.74%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(32px);
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.topCont {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topLeftDiv {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+#swtichbtn {
+  background: radial-gradient(
+      104.81% 104.81% at 50% 35.58%,
+      #0d6904 0%,
+      #13c900 100%
+    ),
+    #43e533;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+
+.topLeftDivdevicecont {
+  display: flex;
+  gap: 16px;
+}
+
+.trdivtextCont {
+  display: flex;
+  flex-direction: column;
+}
+
+#thermdevicename {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#thermdeviceplace {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.topRightDiv {
+  width: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.rightDivEclipse {
+  width: 40px;
+  height: 40px;
+}
+
+.bottomCont {
+  width: 100%;
+  display: flex;
+  margin-top: 55px;
+  justify-content: space-between;
+}
+
+.leftbtmCont {
+  padding: 57px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lbtntxtCont {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 50px;
+}
+
+#temp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#mode {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rightbtmCont {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.rbtmtopCont {
+  display: flex;
+  width: auto;
+  height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 23.334px;
+}
+
+.colored {
+  background-color: #238efa !important;
+}
+
+.chngmodecont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chngmodebtn {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.rbtmtopCont span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.rbtmbtmCont {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fanspeedlabel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.speedlabel {
+  display: flex;
+  gap: 16px;
+}
+
+#speedlabelname {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#speedCount {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.fanmeter {
+  width: 100%;
+}
+
+.fanmeter > img {
+  width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .thermContainer {
+    width: 98%;
+    height: 576px;
+  }
+  .leftbtmCont {
+    padding: 10px;
+    width: 40%;
+  }
+  .leftbtmCont > img {
+    width: 100%;
+  }
+  .rightbtmCont {
+    width: 55%;
+    padding: 10px;
+  }
+  .chngmodebtn {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chngmodebtn > img {
+    width: 50%;
+    height: 50%;
+  }
+}

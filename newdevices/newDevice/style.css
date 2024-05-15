@@ -1,0 +1,559 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    position: fixed;
+    top: 0;
+    overflow-y: hidden;
+  }
+  
+  .topNav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5.13vh;
+    position: fixed;
+    /* top: 24px; */
+    top: 3.66vh !important;
+  }
+  
+  .navContent {
+    width: 96.25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .iZAKLogo {
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .iZAKLogo svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .dateTimeTemp {
+    width: 250px;
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .userProfile {
+    width: 310px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .signalGif img {
+    width: 50px;
+    height: 40px;
+  }
+  
+  .line {
+    width: 1px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .NetworkSignal {
+    display: flex;
+    align-items: center;
+  }
+  .NetworkSignal svg {
+    width: 28px;
+    height: 28px;
+  }
+  .NetworkSignal .signalTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .NetworkSignal .signalText {
+    color: white;
+    width: 62px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .NetworkSignal .signalText p {
+    color: var(--Color, #fff);
+    text-align: center;
+    font-family: Lato;
+    /* font-size: 14px; */
+    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 2px;
+  }
+  
+  .NetworkSignal .signalText span {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    /* font-size: 14px; */
+    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  
+  .bellNotification svg {
+    width: 40px;
+    height: 37px;
+  }
+  
+  .profileLogo {
+    width: 37px;
+    height: 37px;
+    background-color: rgb(219, 183, 253);
+    border-radius: 50%;
+  }
+  
+  .contentContainer {
+    display: flex;
+    width: 100%;
+    /* height: calc(100vh - 5.13vh);  */
+    /* height of total height - navbar + top height */
+    height: calc(100vh - 8vh);
+    margin-top: 8vh;
+    overflow-y: hidden;
+  }
+  
+  .wrapper {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sideNavContent {
+    width: 5%;
+    height: inherit;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6vh;
+  }
+  
+  .iconStyle {
+    width: 32px;
+    height: 32px;
+    font-size: 22px;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .iconStyle svg {
+    width: 90%;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .sideNavContent {
+      width: 6%;
+    }
+  }
+  
+  .mainContainer {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    fill: rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(175px);
+    margin-top: 1vh;
+  }
+  
+  .contentWrapper {
+    width: 96%;
+    height: auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+  }
+
+  #newDevice {
+    width: 100%;
+    height: auto;
+    /* display: flex; */
+    flex-direction: column;
+  }
+
+  #nd {
+    display: flex;
+    align-items: center;
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+    gap: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+    margin-bottom: clamp(0.19965625rem, 0rem + 3.1944vw, 19.965375rem);
+  }
+
+  #backnd{
+
+  }
+
+  .ctnCont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8.5%;
+  }
+
+  .leftndCont {
+    width: 32%;
+  }
+  
+  .ndimgCont {
+    width: 100%;
+    height: 27vh;
+    margin-bottom: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  }
+  .ndimgCont > img {
+    width: 100%;
+    height: inherit;
+    border-radius: 8px;
+  }
+  
+  #nddevicename {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+    font-style: normal;
+    font-weight: 600;
+  }
+  
+  #timend {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  }
+
+  #ndline {
+    width: 1px;
+    height: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+    background: #a7a7a7;
+  }
+  
+  #version {
+    color: #a7a7a7;
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  #warranty {
+    color: #a7a7a7;
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  #lndCont2,
+#lndCont3 {
+  display: flex;
+  gap: 18%;
+  margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+}
+
+#lndCont1 {
+  display: flex;
+  gap: 21.5%;
+  margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+}
+
+#labelnd1,
+#labelnd2,
+#labelnd3 {
+  color: #a6a6a6;
+  font-family: Lato;
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  font-style: normal;
+  font-weight: 400;
+}
+
+#ndata1,
+#ndata2,
+#ndata3 {
+  color: var(--Color, #fff);
+  text-align: right;
+  font-family: Lato;
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  font-style: normal;
+  font-weight: 400;
+}
+
+#btnContnd {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  }
+  
+  #btnContnd > button {
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--Color, #fff);
+    padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem)
+      clamp(0.121525rem, 0rem + 1.9444vw, 12.1528125rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.095px;
+  }
+
+  .rightndCont {
+    width: 40.5%;
+    height: 77vh;
+    overflow-x: auto;
+    overflow-y: scroll;
+  }
+  
+  .rightndCont::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  
+  .rightndCont::-webkit-scrollbar-track {
+    border-radius: 8px;
+    opacity: 0.1;
+    background: #f1f1f1;
+  }
+  
+  .rightndCont::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #0b82f9;
+  }
+
+  .inp1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inp2 {
+    width: 100%;
+    display: flex;
+  }
+  
+  .inp1 > img {
+    position: relative;
+    left: -8%;
+  }
+  
+  .inp1 > input {
+    display: flex;
+    width: 100%;
+    height: clamp(0.2083375rem, 0rem + 3.3333vw, 20.8334375rem);
+    padding: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem)
+      clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: #2f3134;
+    backdrop-filter: blur(6.87976598739624px);
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .inp1 > input:focus {
+    outline: none;
+  }
+  
+  .inp2 > textarea {
+    width: 95.5%;
+    height: 19vh;
+    padding: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem)
+      clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: #2f3134;
+    backdrop-filter: blur(6.87976598739624px);
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  
+  .inp2 > img {
+    position: relative;
+    left: -8%;
+    width: 24px;
+    height: 24px;
+    top: 3.5vh;
+  }
+  
+  .inp1 > textarea:focus {
+    outline: none;
+  }
+  
+  #char {
+    font-family: Lato;
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 19.2px;
+    letter-spacing: -0.09527089446783066px;
+    text-align: left;
+    color: #919191;
+    position: relative;
+    top: -5%;
+    left: 69%;
+  }
+  
+  #word {
+    font-family: Lato;
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    font-weight: 400;
+    line-height: 19.2px;
+    letter-spacing: -0.09527089446783066px;
+    text-align: left;
+    color: #919191;
+    position: relative;
+    top: 0%;
+    left: 50%;
+  }
+
+  #scontndform {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  #ndfsctitle {
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.09527089446783066px;
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  #newspace {
+    width: 95%;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background: #2f3134;
+    backdrop-filter: blur(6.87976598739624px);
+    padding: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem)
+      clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  
+  #spaces1,
+  #spaces2 {
+    width: 95%;
+    height: 17.77vh;
+    background: url("https://izak.aidtaas.com/image/livingroom.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    mix-blend-mode: luminosity;
+    border-radius: 8px;
+    margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    margin-bottom: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    z-index: 100;
+  }
+  
+  #cov1,
+  #cov2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.9) 0.13%,
+      rgba(0, 0, 0, 0) 80.19%
+    );
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  
+  #cov1span1,
+  #cov1span2 {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .iconcontnd {
+    display: flex;
+    gap: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  
+  .oneiconcontnd {
+    width: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+    height: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+    border-radius: 72px;
+    background: rgba(168, 168, 168, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .oneiconcontnd > img {
+    width: 50%;
+  }
+  
+  #fourimg1,
+  #fourimg2 {
+    width: 50%;
+  }
