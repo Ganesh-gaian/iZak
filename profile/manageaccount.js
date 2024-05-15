@@ -1,3 +1,12 @@
+document.getElementById("saveButton").addEventListener("click", function() {
+
+    window.location.href = "editdetails.html";
+});
+
+
+
+
+
 function selectOption(option) {
     // Remove 'selected' class from all options
     var options = document.querySelectorAll('.option');
@@ -26,8 +35,6 @@ function selectOption(option) {
 
 
 
-
-
 function redirect(buttonId, destination) {
     document.getElementById(buttonId).addEventListener('click', function() {
         window.location.href = destination;
@@ -35,10 +42,5 @@ function redirect(buttonId, destination) {
 }
 
 // Add click event listeners to each button
-redirect('switchAccount', 'switchaccount.html');
-redirect('manageAccountSettings', 'manageaccount.html');
-redirect('viewSubscription' , 'viewSubscription.html');
-redirect('chooseAvatar' , 'chooseAvatar.html');
-
-
+redirect('chooseAvatar', 'chooseAvatar.html');
 

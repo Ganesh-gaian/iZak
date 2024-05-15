@@ -1,3 +1,12 @@
+function redirect(buttonId, destination) {
+    document.getElementById(buttonId).addEventListener('click', function() {
+        window.location.href = destination;
+    });
+}
+
+// Add click event listeners to each button
+redirect('chooseAvatar', 'chooseAvatar.html');
+
 function selectOption(option) {
     // Remove 'selected' class from all options
     var options = document.querySelectorAll('.option');
@@ -23,22 +32,3 @@ function selectOption(option) {
         detailsDiv.style.display = 'block';
     }
 }
-
-
-
-
-
-function redirect(buttonId, destination) {
-    document.getElementById(buttonId).addEventListener('click', function() {
-        window.location.href = destination;
-    });
-}
-
-// Add click event listeners to each button
-redirect('switchAccount', 'switchaccount.html');
-redirect('manageAccountSettings', 'manageaccount.html');
-redirect('viewSubscription' , 'viewSubscription.html');
-redirect('chooseAvatar' , 'chooseAvatar.html');
-
-
-
