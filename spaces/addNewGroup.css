@@ -147,6 +147,7 @@
 }
 
 .sideNavContent {
+  visibility: hidden;
   width: 5%;
   height: inherit;
   background-color: transparent;
@@ -246,11 +247,10 @@
 
 } */
 
-.box {
-  width: 24.37%;
+.space4SingleCard {
+  position: relative;
+  width: 24%;
   height: 38.33vh;
-  /* width: 21.48%;
-  height: 37.22vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,21 +264,61 @@
   backdrop-filter: blur(32px);
 }
 
-.box img {
+.space4CardImage {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.space4CardImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.space4ContentAboveImg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  z-index: 2;
+
+  justify-content: space-around;
+  padding: 10px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-bottom: 1%;
+}
+
+.space4Room {
+  width: 100%;
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.space4Room p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 @media (max-width: 1260px) and (min-width: 1px) {
   .homeSpaces {
-    /* width: 100%;
-    height: auto;
-    max-height: 64vh;
-    overflow-y: auto;
-    display: flex;
-    flex-wrap: wrap; */
     gap: 4px !important;
-    /* margin-top: 2vh; */
   }
-
 }
