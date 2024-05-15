@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #272727;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  /* top: 24px; */
+  top: 3.66vh !important;
+}
+
+.navContent {
+  width: 96.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iZAKLogo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 250px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.NetworkSignal {
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal svg {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bellNotification svg {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 5.13vh);  */
+  /* height of total height - navbar + top height */
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+}
+
+.sideNavContent {
+  width: 5%;
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.iconStyle {
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.iconStyle svg {
+  width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+  .sideNavContent {
+    width: 6%;
+  }
+}
+
+.mainContainer {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  fill: rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(175px);
+  margin-top: 1vh;
+}
+
+.contentWrapper {
+  width: 96%;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+}
+
+.devicesHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rightdivheader {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+#span1 {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.line {
+  width: 1px;
+  height: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  opacity: 0.7;
+  background: var(--Color, #fff);
+  /* margin: 0 8px; */
+  margin: 0 clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+}
+
+#span2 {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.gridIconContainer {
+  width: 3.5%;
+  height: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  /* margin-left: 28px; */
+  margin-left: clamp(0.121525rem, 0rem + 1.9444vw, 12.1528125rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff33;
+  cursor: pointer;
+}
+
+.gridIconContainer:hover {
+  border-radius: 80px;
+  border: 1px solid var(--Foundation-Blue-blue-500, #238efa);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
+}
+
+.gridIconContainer > img {
+  width: 50%;
+  height: 50%;
+}
+
+.listIconContainer {
+  width: 3.5%;
+  height: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  /* margin-left: 24px; */
+  margin-left: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  border-radius: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff33;
+  cursor: pointer;
+}
+
+.listIconContainer:hover {
+  border-radius: 80px;
+  border: 1px solid var(--Foundation-Blue-blue-500, #238efa);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
+}
+
+.listIconContainer > img {
+  width: 50%;
+  height: 50%;
+}
+
+.activeGridList {
+  background: var(--Icon_blue, #1969e0);
+  border: 1px solid #1969e0;
+}
+
+.activeGridList:hover {
+  background: var(--Icon_blue, #1969e0);
+  border: 1px solid #1969e0;
+  box-shadow: none;
+}
+
+.leftdivheader {
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.imgCont1,
+.imgCont2,
+.imgCont3 {
+  width: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  height: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 80px;
+}
+
+.imgCont1:hover,
+.imgCont2:hover,
+.imgCont3:hover {
+  border-radius: 80px;
+  border: 1px solid var(--Foundation-Blue-blue-500, #238efa);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
+}
+
+.imgCont3 > img {
+  width: 50%;
+}
+
+.imgCont1 > img,
+.imgCont2 > img {
+  width: 50%;
+}
+
+#listDevicesScreen {
+    width: 100%;
+    height: inherit;
+    /* display: none; */
+    flex-direction: column;
+    margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  
+  #listDevicesScreen::-webkit-scrollbar {
+    width: 0.5vw;
+  }
+  
+  #listDevicesScreen::-webkit-scrollbar-track {
+    border-radius: 8px;
+    opacity: 0.1;
+    background: #f1f1f1;
+  }
+  
+  #listDevicesScreen::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: #0b82f9;
+  }
+  
+  #listDevicesScreen table {
+    border-spacing: 0px;
+  }
+  
+  tbody {
+    width: 100%;
+  }
+  
+  #listDevicesScreen th {
+    text-align: left;
+    color: var(--Layout-100, #fcfcfc);
+    font-family: Lato;
+    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: clamp(0.49947375rem, 0rem + 7.9861vw, 49.947375rem);
+    padding-bottom: 30px;
+    padding-left: 30px;
+  }
+  
+  #head {
+    padding: 10px 0;
+    height: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
+  }
+  
+  #listDevicesScreen td {
+    color: var(--Layout-100, #fcfcfc);
+    font-family: Lato;
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: clamp(0.49947375rem, 0rem + 7.9861vw, 49.947375rem);
+    padding-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    padding-bottom: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    padding-left: 30px;
+  }
+  
+  #imgtd,
+  #imgtd1,
+  #imgtd2,
+  #imgtd3,
+  #imgtd4,
+  #imgtd5,
+  #imgtd6,
+  #imgtd7,
+  #imgtd8,
+  #imgtd9,
+  #imgtd10,
+  #imgtd11 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
