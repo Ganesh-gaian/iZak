@@ -239,13 +239,24 @@
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 2vh;
+  overflow-y: auto; 
+  scrollbar-width: thin; /* Firefox support */
+  scrollbar-color: #0b82f9 #f1f1f1; /* Firefox support */
 }
 
-/* .homeSpacesMainContent{
-  width: 24.37%;
-  height: 38.33vh;
+.homeSpaces::-webkit-scrollbar {
+  width: 0.5vw;
+}
 
-} */
+.homeSpaces::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: #f1f1f1;
+}
+
+.homeSpaces::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #0b82f9;
+}
 
 .space4SingleCard {
   position: relative;

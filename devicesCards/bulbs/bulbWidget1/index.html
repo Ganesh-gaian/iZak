@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bulbWidget1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="curtainContainer">
+      <div class="contentContainer">
+        <div class="topCont">
+          <div class="topLeftDiv">
+            <div id="swtichbtn">
+              <img src="./powerbutton.png" alt="powerbutton" />
+            </div>
+            <div class="topLeftDivdevicecont">
+              <img src="./bulbLogo.svg" alt="bulbLogo" />
+              <div class="trdivtextCont">
+                <span id="curtainmdevicename">Bulb</span>
+                <span id="curtainmdeviceplace">IKEA • Master Bedroom</span>
+              </div>
+            </div>
+          </div>
+          <div class="topRightDiv">
+            <div class="rightDivEclipse">
+              <img src="./fav.png" alt="fav" />
+            </div>
+            <div class="rightDivEclipse">
+              <img src="./info.png" alt="info" />
+            </div>
+          </div>
+        </div>
+        <div class="bottomCont">
+          <div class="leftbtmCont">
+            <img src="./bulbWidget1.png" alt="bulbWidget1" />
+          </div>
+          <div class="rightbtmCont">
+            <div class="slider-container">
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                class="slider"
+                id="myRange"
+              />
+              <p>Value: <span id="sliderValue"></span></p>
+            </div>
+            <div class="color-picker-container">
+              <input type="color" id="colorPicker" />
+              <div id="selectedColor" class="selected-color"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/devicesCards/thermostat/therm1/script.js" defer></script>
+  </body>
+</html>

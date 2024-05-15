@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>bulbWidget2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="thermContainer">
+    <div class="bulbContainer">
       <div class="contentContainer">
         <div class="topCont">
           <div class="topLeftDiv">
             <div id="swtichbtn">
-              <img src="curtains/curtain2/powerbutton.png" alt="">
+              <img src="./powerbutton.png" alt="powerButton" />
             </div>
             <div class="topLeftDivdevicecont">
-              <img src="/devicesCards/thermostat/therm1/temp.png" alt="">
+              <img src="./bulbLogo.svg" alt="bulbImg" />
               <div class="trdivtextCont">
-                <span id="thermdevicename">Thermostat</span>
-                <span id="thermdeviceplace">IKEA • Master Bedroom</span>
+                <span id="bulbdevicename">Bulb</span>
+                <span id="bulbdeviceplace">IKEA • Master Bedroom</span>
               </div>
             </div>
           </div>
           <div class="topRightDiv">
             <div class="rightDivEclipse">
-              <img src="/devicesCards/thermostat/therm2/Pencil.png" alt="">            
+              <img src="./Pencil.svg" alt="" />
             </div>
           </div>
         </div>
@@ -43,14 +43,14 @@
                   <span>7:00 AM - 9:00 AM</span>
                   <div id="line"></div>
                   <div class="aftlinediv">
-                    <span id="temp">25%</span>
+                    <span id="temp">62°F</span>
                     <div id="line2"></div>
-                    <span id="mode">Close</span>
+                    <span id="mode">COOL</span>
                   </div>
                   <span id="manual">Manual</span>
                 </div>
                 <div class="detrightdiv">
-                  <img src="/devicesCards/thermostat/therm2/wid.png" alt="">
+                  <img src="./Light Mode Sunny.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -65,15 +65,14 @@
                   </div>
                   <span id="manual">Living room</span>
                 </div>
-                </div>
+              </div>
             </div>
           </div>
           <div class="btmrightcont">
-            <div class="bmtrtop">
-            </div>
+            <div class="bmtrtop"></div>
             <div class="btmrmiddle">
               <div class="devivcenameWarranty">
-                <span id="dname">Ecobee Thermostat</span>
+                <span id="dname">Philips Hue</span>
                 <span id="dwarranty">Warranty till December 31, 2023</span>
               </div>
               <div class="dinfo">
@@ -97,6 +96,6 @@
         </div>
       </div>
     </div>
-    <script src="/devicesCards/thermostat/script.js" defer></script>
+    <script src="index.js"></script>
   </body>
 </html>
