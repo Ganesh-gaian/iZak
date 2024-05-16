@@ -23,7 +23,7 @@
 }
 
 .navContent {
-  width: 96.25%;
+  width: 97.25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,7 +133,6 @@
 .contentContainer {
   display: flex;
   width: 100%;
-  /* height: calc(100vh - 5.13vh);  */
   /* height of total height - navbar + top height */
   height: calc(100vh - 8vh);
   margin-top: 8vh;
@@ -144,6 +143,7 @@
   width: 100%;
   height: inherit;
   display: flex;
+  flex-direction: row;
 }
 
 .sideNavContent {
@@ -163,6 +163,7 @@
   font-size: 22px;
   padding-left: 1%;
   padding-right: 1%;
+  cursor: pointer;
 }
 .iconStyle svg {
   width: 90%;
@@ -175,7 +176,7 @@
 }
 .mainContainer {
   height: inherit;
-  width: 100%;
+  width: 94.5%;
   display: flex;
   justify-content: center;
   flex-direction: column;

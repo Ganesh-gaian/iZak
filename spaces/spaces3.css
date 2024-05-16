@@ -28,7 +28,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(4.5px);
+  filter: blur(2.5px);
   z-index: -1;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .navContent {
-  width: 96.25%;
+  width: 97.25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,7 +153,6 @@
 .contentContainer {
   display: flex;
   width: 100%;
-  /* height: calc(100vh - 5.13vh);  */
   /* height of total height - navbar + top height */
   height: calc(100vh - 8vh);
   margin-top: 8vh;
@@ -161,9 +160,10 @@
 }
 
 .wrapper {
-  width: 100%;
+  width: 98%;
   height: inherit;
   display: flex;
+  flex-direction: row;
 }
 
 .sideNavContent {
@@ -184,6 +184,7 @@
   font-size: 22px;
   padding-left: 1%;
   padding-right: 1%;
+  cursor: pointer;
 }
 .iconStyle svg {
   width: 90%;
@@ -321,8 +322,8 @@
 
 .circleImage {
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
   background-color: #ffffff1a;
@@ -332,24 +333,21 @@
 }
 
 .circleImage img {
-  width: 60%;
-  height: 60%;
+  width: 50%;
+  height: 50%;
   object-fit: contain;
 }
-
-/* Custom Scrollbar for .spaces3Wrapper */
 .spaces3Wrapper {
   width: 100%;
-  overflow-x: auto; /* Enable horizontal scrolling */
+  height: 60vh;
   display: flex;
   justify-content: center;
-  height: 60vh;
-  scrollbar-width: thin; /* Firefox support */
-  scrollbar-color: #0B82F9 #f1f1f1; /* Firefox support */
+  overflow-x: scroll;
+  scrollbar-width: none;
 }
 
 .spaces3Wrapper::-webkit-scrollbar {
-  width: 0.5vw;
+  display: none; 
 }
 
 .spaces3Wrapper::-webkit-scrollbar-track {
@@ -360,10 +358,9 @@
 
 .spaces3Wrapper::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background: #0B82F9;
+  background: #0b82f9;
 }
 
-/* Rest of your CSS */
 .Spaces3Content {
   display: flex;
   column-gap: 12px;
