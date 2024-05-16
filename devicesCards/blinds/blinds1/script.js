@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const increaseDiv = document.querySelector('.increase');
   const decreaseDiv = document.querySelector('.decrease');
   const percentSpan = document.getElementById('percent');
+  const favBtn = document.getElementById("fav");
+  const infoBtn = document.getElementById("info");
+  const blindsImg = document.querySelector('.leftBtmCont img');
 
   const toggleActiveInactive = (clickedDiv) => {
     openPercentInactiveDivs.forEach(div => {
@@ -29,13 +32,28 @@ document.addEventListener('DOMContentLoaded', () => {
       increaseDiv.classList.remove('disabled');
     }
     percentSpan.textContent = currentPercent + '%';
+    updateBlindsImage(currentPercent); // Update image based on current percent
+  };
+
+  const updateBlindsImage = (percentValue) => {
+    if (percentValue <= 25) {
+      blindsImg.src = "/devicesCards/blinds/blinds1/25.png";
+    } else if (percentValue <= 50) {
+      blindsImg.src = "/devicesCards/blinds/blinds1/50.png";
+    } else if (percentValue <= 75) {
+      blindsImg.src = "/devicesCards/blinds/blinds1/75.png";
+    } else {
+      blindsImg.src = "/devicesCards/blinds/blinds1/100.png";
+    }
   };
 
   openPercentInactiveDivs.forEach(div => {
     div.addEventListener('click', () => {
       toggleActiveInactive(div);
-      percentSpan.textContent = div.textContent.trim();
+      const newPercent = parseInt(div.textContent.trim());
+      percentSpan.textContent = newPercent + '%';
       increaseDiv.classList.remove('disabled');
+      updateBlindsImage(newPercent); 
     });
   });
 
@@ -46,4 +64,14 @@ document.addEventListener('DOMContentLoaded', () => {
   decreaseDiv.addEventListener('click', () => {
     handleIncreaseDecrease(decreaseDiv);
   });
+
+  favBtn.addEventListener("click", () => {
+    favBtn.classList.toggle("colored");
+  });
+
+  infoBtn.addEventListener("click", () => {
+    infoBtn.classList.add("colored")
+  })
+
+  updateBlindsImage(parseInt(percentSpan.textContent));
 });

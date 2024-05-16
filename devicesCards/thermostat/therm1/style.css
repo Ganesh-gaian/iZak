@@ -14,6 +14,15 @@ body {
   align-items: center;
 }
 
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .thermContainer {
   width: 868px;
   height: 599px;
@@ -65,11 +74,17 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 80px;
+  cursor: pointer;
 }
 
 .topLeftDivdevicecont {
   display: flex;
   gap: 16px;
+}
+
+.topLeftDivdevicecont>img{
+  width: 40px;
+  height: 40px;
 }
 
 .trdivtextCont {
@@ -114,6 +129,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .bottomCont {
@@ -208,6 +224,7 @@ body {
   gap: 5px;
   border-radius: 80px;
   background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
 }
 
 .rbtmtopCont span {
@@ -259,10 +276,77 @@ body {
 
 .fanmeter {
   width: 100%;
+  position: relative;
 }
 
 .fanmeter > img {
   width: 100%;
+}
+
+#sliderSvg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 16px;
+  background: transparent;
+  outline: none;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 2;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 2;
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  background: linear-gradient(to right, #0B82F9 0%, #0B82F9 calc((100% / 4) * var(--slider-value)), transparent calc((100% / 4) * var(--slider-value)), transparent 100%);
+}
+
+.slider::-moz-range-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  background: linear-gradient(to right, #0B82F9 0%, #0B82F9 calc((100% / 4) * var(--slider-value)), transparent calc((100% / 4) * var(--slider-value)), transparent 100%);
+}
+.fanmeter {
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 750px) {

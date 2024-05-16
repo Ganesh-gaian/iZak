@@ -70,12 +70,25 @@ function generateUnitHTML(unit) {
   }
   html += '<span id="span5">' + unit.name + "</span>";
   html += "</div>";
+  
   return html;
 }
 
 function renderUnits(units) {
   var container = document.querySelector(".devicesnmanContainer");
   container.innerHTML = units.map(generateUnitHTML).join("");
+
+  var unitConts = document.querySelectorAll(".unitCont");
+  unitConts.forEach(function (cont) {
+    cont.addEventListener("click", function () {
+      // Remove colored class from all unitConts
+      unitConts.forEach(function (otherCont) {
+        otherCont.classList.remove("colored");
+      });
+      // Add colored class to the clicked unitCont
+      cont.classList.add("colored");
+    });
+  });
 }
 
 renderUnits(deviceTypeData);
@@ -130,6 +143,7 @@ document
       .classList.remove("activeGridList");
   });
 
+
 document.querySelector(".imgCont1").addEventListener("click", function () {
   this.classList.add("activeGridList");
   document.querySelector(".imgCont2").classList.remove("activeGridList");
@@ -156,6 +170,13 @@ document.addEventListener("DOMContentLoaded", function () {
   var devicesHeader = document.querySelector(".devicesHeader");
   var popupmodel = document.getElementById("popup");
   var updatingDevice = document.getElementById("updatingDevice");
+  const descriptionInput = document.getElementById('descriptionInput');
+
+  descriptionInput.addEventListener('input', () => {
+    if (descriptionInput.value.length > 120) {
+      descriptionInput.value = descriptionInput.value.slice(0, 120);
+    }
+  });
 
   function showupdatingDevice() {
     defaultScreen.style.display = "none";
@@ -171,6 +192,13 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("Pop up displayed");
     popupmodel.style.display = "flex";
     newDeviceScreen.style.filter = "blur(8px)";
+    document.addEventListener("click", function(event) {
+      if (!popupmodel.contains(event.target) && event.target !== versionbtn) {
+        popupmodel.style.display = "none";
+        newDeviceScreen.style.filter = "none";
+        showNewDeviceScreen(); 
+      }
+    });
   }
 
   function showDefaultScreen() {

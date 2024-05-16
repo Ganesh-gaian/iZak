@@ -14,17 +14,21 @@ body {
   align-items: center;
 }
 
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .thermContainer {
   width: 868px;
   height: 599px;
   border-radius: var(--Radius-m, 8px);
   border: 1px solid var(--Color, #fff);
-  background: linear-gradient(
-    128deg,
-    #00478e -5.15%,
-    rgba(18, 34, 50, 0.44) 50.3%,
-    rgba(201, 117, 252, 0.98) 105.74%
-  );
+  background: linear-gradient(128deg, #00478e -5.15%, #12223270, #c975fcfa 105.74%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(32px);
   display: flex;
@@ -65,11 +69,17 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 80px;
+  cursor: pointer;
 }
 
 .topLeftDivdevicecont {
   display: flex;
   gap: 16px;
+}
+
+.topLeftDivdevicecont>img{
+  width: 40px;
+  height: 40px;
 }
 
 .trdivtextCont {
@@ -112,6 +122,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .bottomcont {
@@ -341,6 +352,7 @@ body {
   border-radius: var(--Radius-m, 8px);
   border: 1px solid var(--Color, #fff);
   background-color: transparent;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 750px) {
