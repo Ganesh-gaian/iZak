@@ -14,6 +14,15 @@ body {
   align-items: center;
 }
 
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bulbContainer {
   width: 868px;
   height: 599px;
@@ -70,6 +79,14 @@ body {
 .topLeftDivdevicecont {
   display: flex;
   gap: 16px;
+}
+
+.topLeftDivdevicecont > img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  height: auto;
 }
 
 .trdivtextCont {
@@ -389,12 +406,33 @@ body {
     width: clamp(0.2257rem, 0rem + 3.6111vw, 22.5695625rem);
     height: clamp(0.2257rem, 0rem + 3.6111vw, 22.5695625rem);
   }
-  /* #switchbtn>svg{
-    width: 100%;
-  } */
+  #swtichbtn > img {
+    width: 50%;
+  }
+  .topLeftDivdevicecont > img {
+    width: 20px;
+  }
+  .rightDivEclipse {
+    width: 50px;
+    height: 50px;
+  }
+  .rightDivEclipse > img {
+    width: 50%;
+  }
+  .detdiv {
+    height: 95px;
+  }
+  .detdiv1 {
+    height: 95px;
+  }
+  .detrightdiv {
+    width: 30%;
+  }
+  .btmrbtm > button {
+    padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem)
+      clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
+  }
   .btmrbtm {
-    width: 80%;
-    /* display: flex;
-    justify-content: space-between; */
+    width: 60%;
   }
 }

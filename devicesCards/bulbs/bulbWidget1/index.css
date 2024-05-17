@@ -13,6 +13,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .curtainContainer {
   width: 868px;
@@ -71,6 +79,13 @@ body {
   display: flex;
   gap: 16px;
 }
+.topLeftDivdevicecont > img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
 
 .trdivtextCont {
   display: flex;
@@ -109,59 +124,141 @@ body {
 .rightDivEclipse {
   width: 40px;
   height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .bottomCont {
-  border: 1px solid black;
   width: 100%;
   display: flex;
   margin-top: 55px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .leftbtmCont {
   width: 50%;
-  border: 1px solid black;
-
-  /* padding: 57px; */
+  padding: 57px 40px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.leftbtmCont img {
+  width: 100%; /* Ensure the image takes up the full width of its container */
+}
+
+.overlayText {
+  position: absolute;
+  top: 48%;
+  right: 8%;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-align: right;
+  text-overflow: ellipsis;
+  font-family: Lato;
+  /* font-size: 40px; */
+  font-size: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.overlayText span {
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .rightbtmCont {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-  border: 1px solid black;
-  padding: 70px 0;
+.rbtmtopCont {
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
-  gap: 60px;
-}
-.colored {
-  background-color: #238efa !important;
+  gap: 24px;
+  margin-bottom: 10%;
 }
 
-.slider-container {
-  width: 50%;
-  margin: 50px auto;
+.Intensitylabel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.speedlabel {
+  display: flex;
+  gap: 16px;
+}
+
+#speedlabelname {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#intensityCount {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.intensitymeter {
+  width: 100%;
+  position: relative;
+}
+
+.intensitymeter > img {
+  width: 100%;
+}
+
+#sliderSvg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 10px;
-  border-radius: 5px;
-  background: #d3d3d3;
+  height: 16px;
+  background: transparent;
   outline: none;
-  opacity: 0.7;
-  -webkit-transition: 0.2s;
-  transition: opacity 0.2s;
-}
-
-.slider:hover {
-  opacity: 1;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
 }
 
 .slider::-webkit-slider-thumb {
@@ -170,37 +267,130 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4caf50;
+  background: #ffffff;
   cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 2;
 }
 
 .slider::-moz-range-thumb {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4caf50;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 2;
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    #0b82f9 0%,
+    #0b82f9 calc((100% / 4) * var(--slider-value)),
+    transparent calc((100% / 4) * var(--slider-value)),
+    transparent 100%
+  );
+}
+
+.slider::-moz-range-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  background: linear-gradient(
+    to right,
+    #0b82f9 0%,
+    #0b82f9 calc((100% / 4) * var(--slider-value)),
+    transparent calc((100% / 4) * var(--slider-value)),
+    transparent 100%
+  );
+}
+.fanmeter {
+  display: flex;
+  align-items: center;
+}
+
+.rbtmbtmCont {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 7%;
+}
+
+.color-picker-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.color-slider {
+  width: 100%;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: linear-gradient(
+    90deg,
+    #f00 0%,
+    #ff6b00 14.58%,
+    #ffe600 25%,
+    #24ff00 40.1%,
+    #00fff0 51.56%,
+    #0029ff 66.15%,
+    rgba(143, 0, 255, 0.78) 73.44%,
+    #ff00e5 86.98%,
+    #f00 100%
+  );
+  border-radius: 8px;
+  outline: none;
   cursor: pointer;
 }
 
-/* .color-picker-container {
-  width: 50%;
-  margin: 50px auto;
+.color-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
 }
 
-.selected-color {
+.color-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.color-display {
   width: 50px;
   height: 50px;
-  margin-top: 10px;
   border-radius: 50%;
   border: 2px solid #000;
 }
-
-#colorPicker {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
+.colorlabel span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 @media screen and (max-width: 750px) {
   .curtainContainer {
@@ -217,5 +407,10 @@ body {
   .rightbtmCont {
     width: 55%;
     padding: 10px;
+  }
+  .overlayText {
+    position: absolute;
+    top: 50%;
+    right: 3%;
   }
 }
