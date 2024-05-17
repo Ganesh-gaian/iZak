@@ -376,8 +376,11 @@
 #updatingDevice{
   width: 100%;
   height: auto;
-  /* display: none; */
+  display: flex;
   flex-direction: column;
+  overflow-x: auto;
+  overflow-y: scroll; 
+  margin-top: 2vh;
 }
 
 #listDevicesScreen {
@@ -657,6 +660,7 @@ tbody {
   position: relative;
   left: -8%;
   width: 2vw;
+  height: 4vh;
 }
 
 .inp1 > input {
@@ -710,7 +714,7 @@ tbody {
   position: relative;
   left: -8%;
   width: 2vw;
-  height: 24px;
+  height: 4vh;
   top: 3.5vh;
 }
 
