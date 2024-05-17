@@ -14,6 +14,15 @@ body {
   align-items: center;
 }
 
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .thermContainer {
   width: 868px;
   height: 599px;
@@ -65,12 +74,19 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 80px;
+  cursor: pointer;
 }
 
 .topLeftDivdevicecont {
   display: flex;
   gap: 16px;
 }
+
+.topLeftDivdevicecont>img{
+  width: 40px;
+  height: 40px;
+}
+
 
 .trdivtextCont {
   display: flex;
@@ -114,6 +130,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .bottomCont {
