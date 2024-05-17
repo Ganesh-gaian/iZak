@@ -13,54 +13,89 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="curtainContainer">
-      <div class="contentContainer">
-        <div class="topCont">
-          <div class="topLeftDiv">
-            <div id="swtichbtn">
-              <img src="./powerbutton.png" alt="powerbutton" />
+    <div class="mainContainer">
+      <div class="curtainContainer">
+        <div class="contentContainer">
+          <div class="topCont">
+            <div class="topLeftDiv">
+              <div id="swtichbtn">
+                <img src="./powerbutton.png" alt="powerbutton" />
+              </div>
+              <div class="topLeftDivdevicecont">
+                <img src="./bulbLogo.svg" alt="bulbLogo" />
+                <div class="trdivtextCont">
+                  <span id="curtainmdevicename">Bulb</span>
+                  <span id="curtainmdeviceplace">IKEA • Master Bedroom</span>
+                </div>
+              </div>
             </div>
-            <div class="topLeftDivdevicecont">
-              <img src="./bulbLogo.svg" alt="bulbLogo" />
-              <div class="trdivtextCont">
-                <span id="curtainmdevicename">Bulb</span>
-                <span id="curtainmdeviceplace">IKEA • Master Bedroom</span>
+            <div class="topRightDiv">
+              <div class="rightDivEclipse" id="fav">
+                <img src="./fav.png" alt="">
+              </div>
+              <div class="rightDivEclipse">
+                <img src="./info.png" alt="info" />
               </div>
             </div>
           </div>
-          <div class="topRightDiv">
-            <div class="rightDivEclipse">
-              <img src="./fav.png" alt="fav" />
+          <div class="bottomCont">
+            <div class="leftbtmCont">
+              <img src="./bulbWidget1.png" alt="bulbWidget1" />
+              <div class="overlayText">25 <span>%</span></div>
             </div>
-            <div class="rightDivEclipse">
-              <img src="./info.png" alt="info" />
+            <div class="rightbtmCont">
+              <div class="rbtmtopCont">
+                <div class="Intensitylabel">
+                    <div class="speedlabel">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_3694_116303)">
+                          <path d="M5.5 12.0039C5.5 13.7278 6.18482 15.3811 7.40381 16.6001C8.62279 17.8191 10.2761 18.5039 12 18.5039C13.7239 18.5039 15.3772 17.8191 16.5962 16.6001C17.8152 15.3811 18.5 13.7278 18.5 12.0039C18.5 10.28 17.8152 8.6267 16.5962 7.40771C15.3772 6.18873 13.7239 5.50391 12 5.50391C10.2761 5.50391 8.62279 6.18873 7.40381 7.40771C6.18482 8.6267 5.5 10.28 5.5 12.0039Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 2.5V0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M5.28119 5.28119L3.86719 3.86719" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2.5 12H0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M5.28119 18.7188L3.86719 20.1327" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 21.5V23.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.7188 18.7188L20.1327 20.1327" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M21.5 12H23.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M18.7188 5.28119L20.1327 3.86719" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M12 8V16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_3694_116303">
+                            <rect width="24" height="24" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                          <span id="speedlabelname">Intensity</span>
+                    </div>
+                    <span id="intensityCount">25%</span>
+                </div>
+                <div class="intensitymeter">
+                  <input type="range" min="1" max="100" value="25" class="slider" id="intensityRange">
+                  <svg id="sliderSvg" xmlns="http://www.w3.org/2000/svg" width="390" height="16" viewBox="0 0 390 16" fill="none">
+                      <path d="M0 13.6328C0 12.3522 1.0184 11.3037 2.29847 11.2665L381.887 0.235756C386.329 0.106674 390 3.6724 390 8.11621C390 12.4703 386.47 16 382.116 16H2.36721C1.05983 16 0 14.9402 0 13.6328Z" fill="#B3B3B3"/>
+                  </svg>
+                </div>
             </div>
+
+            <div class="rbtmbtmCont">
+              <div class="Intensitylabel">
+                  <div class="colorlabel">
+                        <span id="colorlabelname">Color</span>
+                  </div>
+              </div>
+              <div class="intensitymeter">
+                <div class="color-picker-container">
+                  <input type="range" class="color-slider" min="0" max="360" value="0" id="colorSlider">
+                  <!-- <div class="color-display" id="colorDisplay"></div> -->
+              </div>
+              </div>
           </div>
-        </div>
-        <div class="bottomCont">
-          <div class="leftbtmCont">
-            <img src="./bulbWidget1.png" alt="bulbWidget1" />
-          </div>
-          <div class="rightbtmCont">
-            <div class="slider-container">
-              <input
-                type="range"
-                min="0"
-                max="100"
-                value="50"
-                class="slider"
-                id="myRange"
-              />
-              <p>Value: <span id="sliderValue"></span></p>
-            </div>
-            <div class="color-picker-container">
-              <input type="color" id="colorPicker" />
-              <div id="selectedColor" class="selected-color"></div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="/devicesCards/thermostat/therm1/script.js" defer></script>
+    <script src="index.js" defer></script>
   </body>
 </html>

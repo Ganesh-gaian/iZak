@@ -13,6 +13,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+.mainContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .curtainContainer {
   width: 868px;
@@ -71,6 +79,13 @@ body {
   display: flex;
   gap: 16px;
 }
+.topLeftDivdevicecont>img{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
 
 .trdivtextCont {
   display: flex;
@@ -109,6 +124,12 @@ body {
 .rightDivEclipse {
   width: 40px;
   height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
 .bottomCont {
@@ -120,7 +141,7 @@ body {
 }
 
 .leftbtmCont {
-  /* padding: 57px; */
+  padding: 57px 40px 57px 40px;
   position: relative;
   display: flex;
   align-items: center;
@@ -188,6 +209,7 @@ body {
   background-blend-mode: overlay;
   backdrop-filter: blur(20px);
   padding: 4px 21px 4px 19px;
+
   height: 32px;
 }
 
@@ -208,6 +230,7 @@ body {
   backdrop-filter: blur(20px);
   padding: 4px 21px 4px 19px;
   border: 1px solid #fff;
+  
   height: 32px;
 
 }
