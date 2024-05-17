@@ -23,7 +23,7 @@
 }
 
 .navContent {
-  width: 96.25%;
+  width: 97.25%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -141,9 +141,10 @@
 }
 
 .wrapper {
-  width: 100%;
+  width: 99%;
   height: inherit;
   display: flex;
+  flex-direction: row;
 }
 
 .sideNavContent {
@@ -164,6 +165,7 @@
   font-size: 22px;
   padding-left: 1%;
   padding-right: 1%;
+  cursor: pointer;
 }
 .iconStyle svg {
   width: 90%;
@@ -223,6 +225,8 @@
   border: 1px solid var(--Color, #fff);
   background: #2f3134;
   backdrop-filter: blur(6.87976598739624px);
+  outline: none;
+  color: gray;
 }
 
 .homewrapper {
@@ -234,14 +238,11 @@
   width: 100%;
   height: auto;
   max-height: 64vh;
-  overflow-y: auto;
+  overflow-y: scroll;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 2vh;
-  overflow-y: auto; 
-  scrollbar-width: thin; /* Firefox support */
-  scrollbar-color: #0b82f9 #f1f1f1; /* Firefox support */
 }
 
 .homeSpaces::-webkit-scrollbar {
@@ -250,6 +251,7 @@
 
 .homeSpaces::-webkit-scrollbar-track {
   border-radius: 8px;
+  opacity: 0.1;
   background: #f1f1f1;
 }
 

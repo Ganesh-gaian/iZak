@@ -133,7 +133,6 @@
 .contentContainer {
   display: flex;
   width: 100%;
-  /* height: calc(100vh - 5.13vh);  */
   /* height of total height - navbar + top height */
   height: calc(100vh - 8vh);
   margin-top: 8vh;
@@ -141,9 +140,10 @@
 }
 
 .wrapper {
-  width: 100%;
+  width: 99%;
   height: inherit;
   display: flex;
+  flex-direction: row;
 }
 
 .sideNavContent {
@@ -164,6 +164,7 @@
   font-size: 22px;
   padding-left: 1%;
   padding-right: 1%;
+  cursor: pointer;
 }
 .iconStyle svg {
   width: 90%;
@@ -234,6 +235,9 @@
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.096px;
+  outline: none;
+  border: none;
+  padding-left: 1.5%;
 }
 
 .addNewSpaceInput input::placeholder {
@@ -264,6 +268,7 @@
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .imageWrapper {
@@ -295,6 +300,7 @@
   border: 2px solid var(--Color, #fff);
   width: 6.17vw;
   height: 10.83vh;
+  cursor: pointer;
 }
 
 .plusSign img {
@@ -342,29 +348,40 @@
   word-spacing: 0.25em;
 }
 
-.space1button:hover {
-  background: #0b82f9;
+.button:hover {
+  transform: scale(1.05);
 }
 
 .space1buttonText {
   color: var(--Color, #fff);
   text-align: center;
   font-family: Lato;
-  /* font-size: 14px; */
   font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.selected {
+  background-color: #0b82f9;
+}
+
 .space1buttonText img {
   width: 80%;
 }
 
 .spaces1RightCont {
-  /* border: 2px solid white; */
   width: 50%;
 }
 
+.assignDevices {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+}
 .assignDevices p {
   display: flex;
   justify-content: flex-start;
@@ -379,6 +396,23 @@
   line-height: normal;
 }
 
+.imgCont2 {
+  width: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  height: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 80px;
+}
+
+.imgCont2:hover {
+  border-radius: 80px;
+  border: 1px solid var(--Foundation-Blue-blue-500, #238efa);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
+}
+
 .space1horizontalRightDiv {
   width: 100%;
   display: flex;
@@ -386,7 +420,6 @@
   align-content: center;
   flex-wrap: wrap;
   margin-top: 4vh;
-  /* gap: 20px; */
   row-gap: 2vw;
   column-gap: 2vh;
 }
@@ -400,7 +433,7 @@
   border-radius: 100px;
   background-color: #ffffff1a;
   cursor: pointer;
-  color: rgb(255 255 255);
+  color: rgb(255, 255, 255);
   opacity: 1;
 }
 
@@ -412,6 +445,7 @@
   display: flex;
   align-items: center;
 }
+
 .space1btnImg img {
   width: 14px;
   height: 14px;
@@ -422,12 +456,16 @@
   color: var(--Color, #fff);
   text-align: center;
   font-family: Lato;
-  /* font-size: 14px; */
   font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   word-spacing: 0.25em;
+  column-gap: 3px;
+}
+
+.selected {
+  background-color: #0b82f9;
 }
 
 .spaces1CardCont {
@@ -464,6 +502,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  row-gap: 3px;
 }
 
 .space1MiniCardLeft p {
@@ -534,6 +573,7 @@
   line-height: normal;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .popup {
@@ -597,13 +637,6 @@
   white-space: nowrap;
 }
 
-.close {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  cursor: pointer;
-}
-
 .circleImagePopup {
   position: relative;
   width: 35px;
@@ -648,19 +681,13 @@
   border: 2px solid white;
 }
 
-/* .btnSave {
-  display: flex;
-  width: 10vw;
-  justify-content: center;
-} */
-
 .btnSave:hover {
   background-color: white;
   columns: #1969e0;
 }
 
 .spaces1PopUpRight button {
-  color: #FFF;
+  color: #fff;
   font-family: Lato;
   /* font-size: 16px; */
   font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
@@ -679,11 +706,10 @@
   background-color: white;
   display: flex;
   justify-content: center;
+  transform: scaleX(1.05); 
 }
 
-
 .circleImage {
-  border: 2px solid red;
   position: relative;
   width: 50px;
   height: 50px;
@@ -717,9 +743,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-
-  /* width: 21vw;
-  height: 34.44vh; */
   width: 24vw;
   height: 40.44vh;
 
@@ -730,7 +753,6 @@
 
 .scannerPopupInner {
   height: 34.44vh;
-  /* gap: 24px; */
   gap: 3.33%;
   display: flex;
   flex-direction: column;
@@ -741,8 +763,6 @@
 .scannerPopupInnerImg img {
   width: 14.06vw;
   height: 25vh;
-  /* width: 180px;
-  height: 180px; */
 }
 
 .scannerPopupInner p {
@@ -756,6 +776,5 @@
   line-height: normal;
 }
 
-@media  only screen and (max-width:800px) {
-  
-}
+/* @media only screen and (max-width: 800px) {
+} */
