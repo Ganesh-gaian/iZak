@@ -70,12 +70,23 @@ var deviceTypeData = [
     }
     html += '<span id="span5">' + unit.name + "</span>";
     html += "</div>";
+    
     return html;
   }
   
   function renderUnits(units) {
     var container = document.querySelector(".devicesnmanContainer");
     container.innerHTML = units.map(generateUnitHTML).join("");
+  
+    var unitConts = document.querySelectorAll(".unitCont");
+    unitConts.forEach(function (cont) {
+      cont.addEventListener("click", function () {
+        unitConts.forEach(function (otherCont) {
+          otherCont.classList.remove("colored");
+        });
+        cont.classList.add("colored");
+      });
+    });
   }
   
   renderUnits(deviceTypeData);

@@ -192,14 +192,14 @@
     flex-direction: column;
     margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
   }
-
+  
   .devicesHeader {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
+  
   .rightdivheader {
     display: flex;
     width: 100%;
@@ -233,6 +233,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 0.5vh;
+  }
+  
+  .colored {
+    background-color: #238efa !important;
   }
   
   .gridIconContainer {
@@ -335,7 +340,7 @@
     width: 50%;
   }
 
-  #defaultScreen {
+  #updatingDevice{
     width: 100%;
     height: auto;
     display: flex;
@@ -345,22 +350,23 @@
     margin-top: 2vh;
   }
 
-  #defaultScreen::-webkit-scrollbar {
+  #updatingDevice::-webkit-scrollbar {
     width: 0.5vw;
   }
   
-  #defaultScreen::-webkit-scrollbar-track {
+  #updatingDevice::-webkit-scrollbar-track {
     border-radius: 8px;
     opacity: 0.1;
     background: #f1f1f1;
   }
   
-  #defaultScreen::-webkit-scrollbar-thumb {
+  #updatingDevice::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background: #0b82f9;
   }
 
-  #newdsspan1, #newdsspan2 {
+  #newdsspan3,
+  #newdsspan2 {
     color: var(--Color, #fff);
     font-family: Lato;
     font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
@@ -399,49 +405,68 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    cursor: pointer;
   }
 
-  #span8, #span81, #span82, #span83, #span84, #span813{
-    color: var(--Color, #fff);
-    font-family: Lato;
-    /* font-size: 20px; */
-    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    /* margin-bottom: 8px; */
-    margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
-  }
+  #span8ud,
+#span8ud2,
+#span813,
+#span82,
+#span83,
+#span84 {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 20px; */
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* margin-bottom: 8px; */
+  margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+}
 
-  #span9, #span91, #span92, #span93, #span94, #span913{
-    overflow: hidden;
-    color: var(--Color, #fff);
-    text-overflow: ellipsis;
-    font-family: Lato;
-    /* font-size: 14px; */
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+#span9ud,
+#span9ud2,
+#span913,
+#span92,
+#span93,
+#span94 {
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
-  .new {
+.newud {
     width: 22%;
     height: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
     position: relative;
     border-radius: 20px 8px 0px 20px;
-    background: var(--Color, #fff);
     top: -57px;
     left: 84%;
-    color: #1969e0;
-    font-family: Lato;
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
+  }
+  
+  .newud > svg {
+    width: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+    height: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+  }
+  
+  .newud > span {
+    color: #fff;
+    font-family: Lato;
+    font-size: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 
   .statusCont {
@@ -458,18 +483,35 @@
   .statusCont > img {
     height: 100%;
   }
+
+  .statusCont1 {
+    width: 40%;
+    height: clamp(0.4879335rem, 0rem + 7.7778vw, 48.79335rem);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
   
-  .dbottomContnd {
+  .statusCont1 > img {
+    height: 80%;
+    width: 80%;
+  }
+
+  .dbottomContndud{
     width: 115%;
     height: clamp(0.190975rem, 0rem + 3.0556vw, 19.0973125rem);
     background: rgba(50, 50, 50, 0.61);
     position: relative;
     bottom: -15px;
     left: -7%;
+    display: flex;
+    justify-content: space-around;
   }
 
-  .inner {
-    width: 65%;
+  .innerud {
+    width: 98%;
     height: clamp(0.190975rem, 0rem + 3.0556vw, 19.0973125rem);
     background: linear-gradient(
       90deg,
@@ -478,11 +520,11 @@
     );
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 5px;
+    justify-content: center;
+    gap: 60%;
   }
   
-  .inner > span {
+  .innerud>span{
     color: var(--Color, #fff);
     font-family: Lato;
     font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
@@ -513,9 +555,10 @@
     align-items: flex-start;
     row-gap: 24px;
     column-gap: 20px;
+    /* overflow-x: auto;
+    overflow-y: scroll; */
   }
 
-  
   .dbottomCont {
     /* width: 245px; */
     height: auto;
@@ -533,7 +576,14 @@
     width: max-content;
   }
 
- #span121, #span122, #span123, #span124, #span125, #span126, #span127, #span128 {
+  #span121,
+  #span122,
+  #span123,
+  #span124,
+  #span125,
+  #span126,
+  #span127,
+  #span128{
     color: #aeaeae;
     text-align: center;
     font-family: Lato;
@@ -546,7 +596,14 @@
     margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
   }
 
-  #span131, #span132, #span133, #span134, #span135, #span136, #span137, #span138{
+  #span131,
+  #span132,
+  #span133,
+  #span134,
+  #span135,
+  #span136,
+  #span137,
+  #span138{
     color: var(--Color, #fff);
     text-align: center;
     font-family: Lato;
@@ -559,7 +616,14 @@
     margin-bottom: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
   }
 
-  #span141, #span142, #span143, #span144, #span145, #span146, #span147, #span148{
+  #span141,
+  #span142,
+  #span143,
+  #span144,
+  #span145,
+  #span146,
+  #span147,
+  #span148{
     color: var(--Color, #fff);
     font-family: Lato;
     /* font-size: 12px; */
@@ -575,19 +639,4 @@
     justify-content: flex-end;
     align-items: flex-end;
     width: max-content;
-  }
-
-  .statusCont1 {
-    width: 40%;
-    height: clamp(0.4879335rem, 0rem + 7.7778vw, 48.79335rem);
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .statusCont1 > img {
-    height: 80%;
-    width: 80%;
   }

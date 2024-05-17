@@ -338,7 +338,7 @@
 #listDevicesScreen {
     width: 100%;
     height: inherit;
-    /* display: none; */
+    display: flex;
     flex-direction: column;
     margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
     overflow-x: hidden;

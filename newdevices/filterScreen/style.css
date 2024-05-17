@@ -406,6 +406,15 @@
     border-radius: 100px;
     background: rgba(255, 255, 255, 0.44);
     background-blend-mode: overlay;
+    cursor: pointer;
+  }
+
+  .unitCont:hover{
+    background: #0b82f9;
+  }
+
+  .colored {
+    background-color: #238efa !important;
   }
   
   .unitCont > img {
