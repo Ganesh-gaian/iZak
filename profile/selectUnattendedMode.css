@@ -57,7 +57,7 @@
   border-radius: 8px;
   color: white;
 }
-.Button:hover{
+.Button:hover {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(88, 88, 88, 0.5);
@@ -97,7 +97,7 @@
 }
 
 .Button.selected .textAndArrow span {
-  color: var(--Color, #FFF);
+  color: var(--Color, #fff);
 }
 
 .arrowMark {
@@ -105,4 +105,15 @@
   height: 24px;
   fill: #c7c6ca;
   opacity: 0.4;
+}
+
+@media only screen and (max-width: 1080px) {
+  .arrowMark {
+    width: 16px;
+    height: 16px;
+  }
+
+  .textAndArrow {
+    gap: 0vw;
+  }
 }

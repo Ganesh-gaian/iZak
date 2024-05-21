@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       !plusSign.contains(event.target)
     ) {
       scannerPopup.style.display = "none";
-    }kk
+    }
   });
 });
 
