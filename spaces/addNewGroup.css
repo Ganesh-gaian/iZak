@@ -6,8 +6,10 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-color: #272727;
-  position: fixed;
+  background: url("../images/background (1).png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  position: fixed;
   top: 0;
   overflow-y: hidden;
 }
@@ -238,7 +240,7 @@
   width: 100%;
   height: auto;
   max-height: 64vh;
-  overflow-y: scroll;
+  overflow-y: scroll !important;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -246,18 +248,18 @@
 }
 
 .homeSpaces::-webkit-scrollbar {
-  width: 0.5vw;
+  width: 0.5vw !important;
 }
 
 .homeSpaces::-webkit-scrollbar-track {
-  border-radius: 8px;
-  opacity: 0.1;
-  background: #f1f1f1;
+  border-radius: 8px !important;
+  opacity: 0.1 !important;
+  background: #f1f1f1 !important;
 }
 
 .homeSpaces::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: #0b82f9;
+  border-radius: 8px !important;
+  background: #0b82f9 !important;
 }
 
 .space4SingleCard {
