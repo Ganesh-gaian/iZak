@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .selectThemeMainContainer {
+    width: 100%;
+    height: 100vh;
+    background: url("profileimages/background\ \(1\).png");
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    overflow-y: hidden;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .selectThemeMainContainer h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
+    font-family: Lato;
+    /* font-size: 32px; */
+    font-size: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 10vh;
+  }
+  
+  .Buttons {
+    height: inherit;
+    overflow-y: scroll;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  
+  .Buttons::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  
+  .Button {
+    width: 48.75vw;
+    height: 10vh;
+    padding: 3vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background: #1e2023;
+    border-radius: 8px;
+    color: white;
+  }
+
+  .Button:hover{
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(88, 88, 88, 0.5);
+    box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2);
+  }
+  
+  .Button.selected {
+    border-radius: 8px;
+    background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
+    backdrop-filter: blur(6.87976598739624px);
+    color: white;
+  }
+  
+  .Button p {
+    color: inherit;
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  
+.circleSvg,
+.tickMark {
+  display: none;
+}
+
+.Button.selected .circleSvg {
+  display: inline-block;
+  position: absolute;
+  right: 28px;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.Button.selected .tickMark {
+  display: inline-block;
+  position: absolute;
+  right: 31px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+@media only screen and (max-width: 800px) {
+  .Button.selected .circleSvg {
+    width: 22px;
+    height: 22px;
+  }
+  .Button.selected .tickMark {
+    width: 18px;
+    height: 18px;
+  }
+}

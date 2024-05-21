@@ -353,7 +353,6 @@
   transform: scale(1.05);
 }
 
-
 .space1buttonText {
   color: var(--Color, #fff);
   text-align: center;
@@ -413,7 +412,6 @@
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
 }
-
 
 .space1horizontalRightDiv {
   width: 100%;
@@ -678,13 +676,13 @@
 }
 
 .spaces1PopUpRight button {
-  color: #1969e0;
+  color: #fff;
   font-family: Lato;
   /* font-size: 16px; */
   font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
+  /* line-height: 24px; */
   letter-spacing: 0.25px;
   display: flex;
   flex-direction: row;
@@ -693,10 +691,11 @@
 }
 
 .spaces1PopUpRight button:hover {
+  color: #1969e0;
   background-color: white;
   display: flex;
   justify-content: center;
-  transform: scaleX(1.05); 
+  transform: scaleX(1.05);
 }
 
 .circleImage {
@@ -782,4 +781,21 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media only screen and (max-width: 1080px) {
+  .popup-content {
+    width: 90vw;
+    height: 24vh;
+  }
+
+  .spaces1PopUpRight {
+    width: 28vw;
+  }
+
+  .space1horizontalRightDiv {
+    margin-top: 3vh;
+    row-gap: 1vw;
+    column-gap: 1.5vh;
+  }
 }
