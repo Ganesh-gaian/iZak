@@ -9,7 +9,8 @@
   background: url("https://izak.aidtaas.com/image/background.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;  position: fixed;
+  background-size: cover;
+  position: fixed;
   top: 0;
   overflow-y: hidden;
 }
@@ -173,9 +174,41 @@
   width: 90%;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 1080px) {
   .sideNavContent {
     width: 6%;
+  }
+
+  .userProfile {
+    width: 290px;
+    gap: 2px;
+  }
+
+  .signalGif img {
+    width: 40px;
+    height: 30px;
+  }
+
+  .bellNotification svg {
+    width: 28px;
+    height: 25px;
+  }
+
+  .profileLogo {
+    width: 27px;
+    height: 27px;
+    background-color: rgb(219, 183, 253);
+    border-radius: 50%;
+  }
+
+  .NetworkSignal svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .NetworkSignal .signalText {
+    width: 52px;
+    height: 12px;
   }
 }
 .mainContainer {
@@ -485,13 +518,16 @@
   width: 13.82vw;
   height: 12.5vh;
   border-radius: 8px;
-  opacity: 0.7;
+  opacity: 0.4;
   background: linear-gradient(
     128deg,
     #00478e -5.15%,
     rgba(11, 130, 249, 0.44) 50.3%,
     rgba(201, 117, 252, 0.72) 105.74%
   );
+}
+.space1MiniCard:hover{
+  opacity: 0.7;
 }
 
 .space1MiniCardInside {
@@ -554,7 +590,6 @@
 }
 .spaces1MainBtn {
   display: flex;
-  /* width: 473px; */
   width: 36vw;
   height: 39px;
   padding: 10px 75px;
@@ -577,10 +612,12 @@
   outline: none;
   cursor: pointer;
 }
-.spaces1MainBtn:hover{
-  transform: scaleX(10px);
-
-
+.spaces1MainBtn:hover {
+  transform: scale(1.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2);
 }
 
 .popup {
@@ -649,6 +686,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   width: 20vw;
 }
@@ -669,20 +707,7 @@
   box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
     0px 1px 3px 0px rgba(0, 0, 0, 0.3);
   border: 2px solid white;
-}
 
-/* .btnSave {
-    display: flex;
-    width: 10vw;
-    justify-content: center;
-  } */
-
-.btnSave:hover {
-  background-color: white;
-  columns: blue;
-}
-
-.spaces1PopUpRight button {
   color: #fff;
   font-family: Lato;
   /* font-size: 16px; */
@@ -694,7 +719,6 @@
   display: flex;
   flex-direction: row;
   height: 50px;
-  width: inherit;
 }
 
 .spaces1PopUpRight button:hover {
@@ -704,6 +728,33 @@
   justify-content: center;
   transform: scaleX(1.05);
 }
+
+/* .spaces1PopUpRight button {
+  color: #fff;
+  font-family: Lato;
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: inherit;
+  border-radius: 12px;
+  background: transparent;
+  border: 2px solid #fff;
+  justify-content: center;
+  align-items: center;
+} */
+
+.btnSave:hover {
+  background-color: white;
+  columns: #1969e0;
+}
+
+/* .spaces1PopUpRight button {
+
+} */
 
 .circleImage {
   position: relative;

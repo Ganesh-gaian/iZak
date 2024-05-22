@@ -192,9 +192,41 @@
   width: 90%;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 1080px) {
   .sideNavContent {
     width: 6%;
+  }
+
+  .userProfile {
+    width: 290px;
+    gap: 2px;
+  }
+
+  .signalGif img {
+    width: 40px;
+    height: 30px;
+  }
+
+  .bellNotification svg {
+    width: 28px;
+    height: 25px;
+  }
+
+  .profileLogo {
+    width: 27px;
+    height: 27px;
+    background-color: rgb(219, 183, 253);
+    border-radius: 50%;
+  }
+
+  .NetworkSignal svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .NetworkSignal .signalText {
+    width: 52px;
+    height: 12px;
   }
 }
 .mainContainer {

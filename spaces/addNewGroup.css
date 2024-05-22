@@ -173,9 +173,41 @@
   width: 90%;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 1080px) {
   .sideNavContent {
     width: 6%;
+  }
+
+  .userProfile {
+    width: 290px;
+    gap: 2px;
+  }
+
+  .signalGif img {
+    width: 40px;
+    height: 30px;
+  }
+
+  .bellNotification svg {
+    width: 28px;
+    height: 25px;
+  }
+
+  .profileLogo {
+    width: 27px;
+    height: 27px;
+    background-color: rgb(219, 183, 253);
+    border-radius: 50%;
+  }
+
+  .NetworkSignal svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .NetworkSignal .signalText {
+    width: 52px;
+    height: 12px;
   }
 }
 .mainContainer {
@@ -270,13 +302,20 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: linear-gradient(
+  /* background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0) 81.82%
     ),
     url(<path-to-image>) lightgray 50% / cover no-repeat;
-  backdrop-filter: blur(32px);
+  backdrop-filter: blur(32px); */
+}
+.space4SingleCard:hover{
+  border-radius: 8px;
+  border: 1px solid var(--Color, #FFF);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 81.82%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.50);
+  /* backdrop-filter: blur(32px);   */
 }
 
 .space4CardImage {
