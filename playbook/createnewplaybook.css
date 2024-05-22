@@ -6,7 +6,7 @@
 .container {
   width: 100%;
   height: 100vh;
-  background:url("Images/background\ \(1\).png");
+  background:url("https://izak.aidtaas.com/image/background.png");
   background-size: cover;
   position: fixed;
   top: 0;
@@ -243,25 +243,29 @@
   width: 10%;
 }
 .playbook-triggers {
-  width: 50%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   margin-top: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
 }
 .playbook {
+  height: 2vh;
   display: flex;
   justify-content: space-between;
   gap: 2vh;
   font-size: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
   font-family: Lato;
+  margin-bottom: 10px;
 }
 .playbook1 {
+  height: 2vh;
   display: flex;
   justify-content: space-between;
   margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
   gap: 2vh;
   font-size: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
   font-family: Lato;
+  margin-bottom: 10px;
 }
 .add-triggers svg {
   margin-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
@@ -269,6 +273,14 @@
 .add-triggers {
   display: flex;
   gap: 2vh;
+}
+.add-triggers p {
+  font-size: 24px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .icon1 {
   display: flex;

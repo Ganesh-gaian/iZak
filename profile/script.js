@@ -11,6 +11,16 @@ function selectOption(option) {
     selectedOption.classList.add("selected");
   }
 
+   // If the logout option is selected, handle the logout
+   if (option === 'option7') {
+    
+    window.location.href = 'logout.html'; 
+}
+if (option === 'option4') {
+    
+    window.location.href = 'Wallet.html'; 
+}
+
   // Show the details div corresponding to the clicked option
   var detailsDiv = document.getElementById("details-" + option);
   if (detailsDiv) {
@@ -35,3 +45,10 @@ redirect("switchAccount", "switchaccount.html");
 redirect("manageAccountSettings", "manageaccount.html");
 redirect("viewSubscription", "viewSubscription.html");
 redirect("changePassword", "changePassword.html");
+
+
+
+
+function Logout() {
+        window.location.href = 'logout.html'; 
+}
