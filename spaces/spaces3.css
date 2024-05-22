@@ -9,10 +9,6 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: url("../images/background (1).png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
 }
 
 .container::before {
@@ -32,8 +28,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(2.5px);
+  filter: blur(1.5px);
   z-index: -1;
+  border: none;
+  outline: none;
 }
 
 .topNav {
@@ -351,7 +349,7 @@
 }
 
 .spaces3Wrapper::-webkit-scrollbar {
-  display: none;
+  display: none; 
 }
 
 .spaces3Wrapper::-webkit-scrollbar-track {
@@ -563,8 +561,4 @@
   }
 }
 
-/* @media only screen and (max-width: 800px) {
-  .spaces3Wrapper {
-    height: 48vh;
-  }
-} */
+

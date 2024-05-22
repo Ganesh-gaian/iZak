@@ -641,3 +641,13 @@
   font-weight: 600;
   line-height: normal;
 }
+@media only screen and (max-width: 1080px) {
+  .arrowMark {
+    width: 16px;
+    height: 16px;
+  }
+
+  .textAndArrow {
+    gap: 0vw;
+  }
+}
