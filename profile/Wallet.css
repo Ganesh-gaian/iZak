@@ -183,62 +183,29 @@
     flex-direction: column;
     margin-top: 1vh;
   }
-  .chooseAccount {
+ .walletContainer{
     width: 90%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-  }
-  .chooseAccount p {
-    color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
-    text-align: center;
-    font-family: Lato;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-  }
-  .accounts{
+    align-items: flex-start;
+    margin-top: 50px;
+    /* top: 0; */
+ }
+ .walletContainer p{
+    color: var(--Color, #FFF);
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+ }
+ .Balance-Points{
     display: flex;
-    gap: 8vh;
-    margin-top: 20px;
-    border-radius: 30px;
-    margin-top: 30px;
-  }
-.account1 img{
-    width: 100%;
-    height: 55vh;
-    margin-top: 20px;
-    cursor: pointer;
-} 
-.account2 img{
-    width: 100%;
-    height: 55vh;
-    margin-top: 20px;
-    cursor: pointer;
-} 
-.account3 img{
-    width: 100%;
-    height: 55vh;
-    margin-top: 20px;
-    cursor: pointer;
-} 
-
-  #chooseAvatar{
-    width: 60%;
-    padding: 16px;
-    color: var(--Color, #fff);
-    border-radius: var(--Radius-m, 8px);
-    background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
-    backdrop-filter: blur(6.87976598739624px);
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.25px;
-    margin-top: 80px;
-  }
-  
+    flex-direction: column;
+ }
+ .Balance{
+    display: flex;
+    justify-content: space-between;
+ }
