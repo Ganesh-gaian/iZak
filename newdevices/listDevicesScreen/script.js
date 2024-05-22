@@ -1,4 +1,4 @@
-document.querySelector(".gridIconContainer").classList.add("activeGridList");
+document.querySelector(".listIconContainer").classList.add("activeGridList");
 
 document
   .querySelector(".gridIconContainer")

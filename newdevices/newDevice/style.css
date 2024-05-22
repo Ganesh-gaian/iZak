@@ -140,7 +140,7 @@
     overflow-y: hidden;
   }
   
-  .wrapper {
+  .wrapper1 {
     width: 100%;
     height: inherit;
     display: flex;
@@ -200,7 +200,7 @@
     flex-direction: column;
   }
 
-  #nd {
+  #ndbackbtn {
     display: flex;
     align-items: center;
     color: var(--Color, #fff);
@@ -568,4 +568,18 @@
   #fourimg1,
   #fourimg2 {
     width: 50%;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 750px) {
+    .mainContainer {
+      margin-top: 2vh;
+    }
+    .inp1>img{
+      width: 12px;
+      height: 12px;
+    }
+    .inp2>img{
+      width: 12px;
+      height: 12px;
+    }
   }
