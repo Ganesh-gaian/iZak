@@ -140,7 +140,7 @@
     overflow-y: hidden;
   }
   
-  .wrapper {
+  .wrapper1 {
     width: 100%;
     height: inherit;
     display: flex;
@@ -288,14 +288,14 @@
   }
   
   .activeGridList {
-    background: var(--Icon_blue, #1969e0);
+    background: #1969e0 !important;
     border: 1px solid #1969e0;
   }
   
   .activeGridList:hover {
-    background: var(--Icon_blue, #1969e0);
-    border: 1px solid #1969e0;
-    box-shadow: none;
+    background: #1969e0 !important;
+    border: 1px solid #1969e0 !important;
+    box-shadow: none !important;
   }
   
   .leftdivheader {
@@ -346,18 +346,18 @@
   }
 
   #defaultScreen::-webkit-scrollbar {
-    width: 0.5vw;
+    width: 0.5vw !important;
   }
   
   #defaultScreen::-webkit-scrollbar-track {
-    border-radius: 8px;
-    opacity: 0.1;
-    background: #f1f1f1;
+    border-radius: 8px !important;
+    opacity: 0.1 1important;
+    background: #f1f1f1 1important;
   }
   
   #defaultScreen::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background: #0b82f9;
+    border-radius: 8px 1important;
+    background: #0b82f9 1important;
   }
 
   #newdsspan1, #newdsspan2 {
@@ -590,4 +590,22 @@
   .statusCont1 > img {
     height: 80%;
     width: 80%;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 750px) {
+    .new {
+      top: -38px;
+      left: 90%;
+    }
+  }
+  @media screen and (min-width: 1300px) and (max-width: 1400px) {
+    .new {
+      top: -58px;
+    }
+  }
+  @media screen and (min-width: 1900px) and (max-width: 1950px) {
+    .new {
+      top: -77px;
+      left: 82%;
+    }
   }

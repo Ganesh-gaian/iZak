@@ -140,7 +140,7 @@
   overflow-y: hidden;
 }
 
-.wrapper {
+.wrapper1 {
   width: 100%;
   height: inherit;
   display: flex;
@@ -359,10 +359,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-}
-
-#span3,
-#span4 {
   cursor: pointer;
 }
 
@@ -423,7 +419,7 @@
   }
   
   #span5 {
-    color: var(--Color, #fff);
+    color: #fff;
     text-align: center;
     font-family: Lato;
     /* font-size: 14px; */
@@ -537,13 +533,13 @@
 }
 
 .listCont::-webkit-scrollbar {
-  width: 0.5vw;
+  width: 0.5vw !important;
 }
 
 .listCont::-webkit-scrollbar-track {
-  border-radius: 8px;
-  opacity: 0.1;
-  background: #f1f1f1;
+  border-radius: 8px !important;
+  opacity: 0.1 !important;
+  background: #f1f1f1 !important;
 }
 
 .listCont::-webkit-scrollbar-thumb {
