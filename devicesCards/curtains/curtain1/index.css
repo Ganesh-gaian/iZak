@@ -211,6 +211,7 @@ body {
   padding: 4px 21px 4px 19px;
 
   height: 32px;
+  cursor: pointer;
 }
 
 .openPercentactive {
@@ -263,6 +264,7 @@ body {
   border-radius: 100px;
   background: rgba(255, 255, 255, 0.44);
   background-blend-mode: overlay;
+  cursor: pointer;
 }
 
 #percent {

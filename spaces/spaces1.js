@@ -1,4 +1,3 @@
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
   var selectedImageWrapper = document.querySelector(
     ".selectedImageWrapper img"
@@ -12,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
 //QR scanner popup.
 document.addEventListener("DOMContentLoaded", function () {
   const plusSign = document.getElementById("plusSign");
