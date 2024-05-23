@@ -383,8 +383,12 @@
   word-spacing: 0.25em;
 }
 
-.button:hover {
-  transform: scale(1.05);
+.space1button:hover {
+  /* transform: scale(1.02); */
+  background: #0b82f9;
+  border: 1px solid var(--Foundation-Blue-blue-400, #4fa5fb);
+  background: rgba(255, 255, 255, 0.44);
+  box-shadow: 0px 0px 8px 0px rgba(25, 105, 224, 0.8);
 }
 
 .space1buttonText {
@@ -474,6 +478,9 @@
 
 .space1Rightbutton:hover {
   background: #0b82f9;
+  border: 1px solid var(--Foundation-Blue-blue-400, #4fa5fb);
+  background: rgba(255, 255, 255, 0.44);
+  box-shadow: 0px 0px 8px 0px rgba(25, 105, 224, 0.8);
 }
 
 .space1btnImg {

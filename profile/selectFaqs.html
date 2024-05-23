@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="selectFaqs.css" />
+  </head>
+  <body>
+    <div class="containerFaqs">
+      <h1>FAQ’s</h1>
+      <div class="accordion">
+        <div class="accordion-item" id="item1">
+          <div class="accordion-header" onclick="toggleAccordion('item1')">
+            Is my profile information private?
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g opacity="0.4">
+                <path d="M18.59 16.4102L20 15.0002L12 7.00016L4 15.0002L5.41 16.4102L12 9.83016" fill="#C7C6CA"/>
+              </g>
+            </svg>
+          </div>
+          <div class="accordion-content">
+            <p>Inform users about the privacy settings available for their profile and how they can control who sees their information.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" id="item2">
+          <div class="accordion-header" onclick="toggleAccordion('item2')">
+            Can I deactivate or delete my account?
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g opacity="0.4">
+                <path d="M18.59 16.4102L20 15.0002L12 7.00016L4 15.0002L5.41 16.4102L12 9.83016" fill="#C7C6CA"/>
+              </g>
+            </svg>
+          </div>
+          <div class="accordion-content">
+            <p>Inform users about the delete settings available for their profile and how they can control who sees their information.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item" id="item3">
+          <div class="accordion-header" onclick="toggleAccordion('item3')">
+            How do I verify my account?
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <g opacity="0.4">
+                <path d="M18.59 16.4102L20 15.0002L12 7.00016L4 15.0002L5.41 16.4102L12 9.83016" fill="#C7C6CA"/>
+              </g>
+            </svg>
+          </div>
+          <div class="accordion-content">
+            <p>Inform users about the verify settings available for their profile and how they can control who sees their information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="selectFaqs.js"></script>
+  </body>
+</html>

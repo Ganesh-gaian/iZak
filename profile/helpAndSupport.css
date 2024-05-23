@@ -3,6 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body.blurred {
+  filter: blur(5px);
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   height: 100vh;
@@ -15,6 +21,7 @@
 
 .topNav {
   visibility: hidden;
+  /* display: none; */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -248,12 +255,12 @@
   margin-top: 4px;
 }
 
-.option:hover{
+.option:hover {
   cursor: pointer;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(88, 88, 88, 0.5);
-  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2); 
+  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2);
 }
 .option.selected {
   border-radius: 8px;
@@ -401,7 +408,7 @@
 }
 .Buttons {
   width: 100%;
-  height: inherit;
+  /* height: inherit; */
   /* overflow-y: scroll; */
   margin-top: 12vh;
 }
@@ -423,7 +430,7 @@
   padding: 3vh 0.5vh;
   margin-bottom: 3vh;
 }
-.Button:hover{
+.Button:hover {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(88, 88, 88, 0.5);
@@ -457,7 +464,7 @@
 .textAndArrow {
   display: flex;
   align-items: center;
-  gap: 1vw;
+  gap: 0vw;
 }
 
 .textAndArrow span {
@@ -641,6 +648,93 @@
   font-weight: 600;
   line-height: normal;
 }
+
+.popupHeading {
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 10%;
+  transform: translate(-50%, -100%);
+  z-index: 10000;
+  background:red; 
+  color: #fff; 
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 24px; 
+  font-weight: bold;
+  text-align: center; 
+}
+
+
+.scannerPopup,
+.contactPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 38vw;
+  height: 58.44vh;
+  padding: 20px 14px;
+  border-radius: 8px;
+  background: rgb(65, 65, 65);
+}
+
+.scannerPopupInner,
+.contactPopupInner {
+  height: 98%;
+  gap: 3.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scannerPopupInnerImg svg,
+.contactPopupInnerImg svg {
+  width: 30vw;
+  height: 45vh;
+}
+
+.scannerPopupInner p,
+.contactPopupInner p {
+  color: #d3d3d3;
+  text-align: center;
+  font-family: Lato;
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+}
+
+.scannerPopupInner span,
+.contactPopupInner span {
+  color: #0B82F9;
+  font-family: Lato;
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.contactPopupInnerImg img {
+  width: 10vw;
+  height: 20vh;
+}
+
+.popupBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 999;
+  display: none;
+}
+
+
 @media only screen and (max-width: 1080px) {
   .arrowMark {
     width: 16px;

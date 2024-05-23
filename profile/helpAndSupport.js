@@ -7,7 +7,7 @@ function selectButton(button) {
   button.classList.add("selected");
 
   setTimeout(function () {
-    var option = button.id; 
+    var option = button.id;
     if (option === "selectLanguage") {
       window.location.href = "selectLanguage.html";
     }
@@ -17,7 +17,7 @@ function selectButton(button) {
     if (option === "selectNotification") {
       window.location.href = "selectNotification.html";
     }
-  }, 100); 
+  }, 100);
 }
 
 function selectOption(option) {
@@ -48,6 +48,60 @@ function redirect(buttonId, destination) {
   });
 }
 
+// popup for privacy policy and contact
+const privacyButton = document.getElementById("selectPrivacyPolicy");
+const privacyPopup = document.getElementById("privacyPopup");
+const contactButton = document.getElementById("selectContactUs");
+const contactPopup = document.getElementById("contactPopup");
+const popupBackdrop = document.getElementById("popupBackdrop");
+const popupHeading = document.getElementById("popupHeading");
+
+function showPopup(popup, headingText) {
+    popup.style.display = "block";
+    document.body.classList.add("blurred");
+    popupBackdrop.style.display = "block";
+    popupHeading.textContent = headingText;
+    popupHeading.style.display = "block";
+}
+
+function hidePopup(popup) {
+    popup.style.display = "none";
+    document.body.classList.remove("blurred");
+    popupBackdrop.style.display = "none";
+    popupHeading.style.display = "none";
+}
+
+privacyButton.addEventListener("click", function () {
+    showPopup(privacyPopup, "PRIVACY POLICY");
+});
+
+contactButton.addEventListener("click", function () {
+    showPopup(contactPopup, "CONTACT US");
+});
+
+document.addEventListener("click", function (event) {
+    if (
+        !privacyPopup.contains(event.target) &&
+        event.target !== privacyButton &&
+        !privacyButton.contains(event.target)
+    ) {
+        hidePopup(privacyPopup);
+    }
+
+    if (
+        !contactPopup.contains(event.target) &&
+        event.target !== contactButton &&
+        !contactButton.contains(event.target)
+    ) {
+        hidePopup(contactPopup);
+    }
+
+    if (event.target === popupBackdrop) {
+        hidePopup(privacyPopup);
+        hidePopup(contactPopup);
+    }
+});
+
 // Add click event listeners to each button to redirect
 redirect("switchAccount", "switchaccount.html");
 redirect("manageAccountSettings", "manageaccount.html");
@@ -56,12 +110,11 @@ redirect("changePassword", "changePassword.html");
 
 // for settings navigation
 redirect("selectLanguage", "selectLanguage.html");
-redirect("selectTheme" , "selectTheme.html");
+redirect("selectTheme", "selectTheme.html");
 redirect("selectNotification", "selectNotification.html");
 redirect("selectUnattendedMode", "selectUnattendedMode.html");
 redirect("select3D", "select3D.html");
 
 // for help and support navigation
-redirect("selectFaqs", "selectFaqs.html"); 
-redirect("selectPrivacyPolicy", "selectPrivacyPolicy.html");
-redirect("selectContactUs", "selectContactUs.html");
+redirect("selectFaqs", "selectFaqs.html");
+

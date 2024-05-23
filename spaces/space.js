@@ -24,7 +24,7 @@ btn3.addEventListener("click", function () {
   btn4.classList.remove("selected");
 });
 
-btn3.addEventListener("click", function () {
+btn4.addEventListener("click", function () {
   btn1.classList.remove("selected");
   btn2.classList.remove("selected");
   btn3.classList.remove("selected");
