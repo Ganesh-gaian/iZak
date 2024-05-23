@@ -218,27 +218,27 @@
 display: flex;
 flex-direction: column;
 }
-.selectedImageWrapperr {
+.selectedImageWrapper {
   width: 38.04vw;
   height: 39.72vh;
   margin-bottom: 2vh;
 }
 
-.selectedImageWrapperr img {
+.selectedImageWrapper img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
   object-fit: cover;
 }
 
-.imageWrapperr {
+.imageWrapper {
   width: 38.04vw;
   height: 11vh;
   display: flex;
   justify-content: space-between;
 }
 
-.imageDiv1 {
+.imageDiv {
   /* width: 79px; */
   /* height: 78px; */
   width: 6.17vw;
@@ -246,13 +246,13 @@ flex-direction: column;
   display: flex;
 }
 
-.imageDiv1 img {
+.imageDiv img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
 }
-.plusSignn {
+.plusSign {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -263,12 +263,12 @@ flex-direction: column;
   cursor: pointer;
 }
 
-.plusSignn img {
+.plusSign img {
   width: 50%;
   object-fit: cover;
   border-radius: 8px;
 }
-.scannerPopupp {
+.scannerPopup {
   display: none;
   position: fixed;
   top: 50%;
@@ -283,7 +283,7 @@ flex-direction: column;
   background: var(--Color, #fff);
 }
 
-.scannerPopupInnerr {
+.scannerPopupInner {
   height: 34.44vh;
   gap: 3.33%;
   display: flex;
@@ -292,12 +292,12 @@ flex-direction: column;
   align-items: center;
 }
 
-.scannerPopupInnerImg1 img {
+.scannerPopupInnerImg img {
   width: 14.06vw;
   height: 25vh;
 }
 
-.scannerPopupInnerr p {
+.scannerPopupInner p {
   color: #000;
   text-align: center;
   font-family: Lato;
@@ -307,6 +307,7 @@ flex-direction: column;
   font-weight: 500;
   line-height: normal;
 }
+
 
 .empty {
   width: 15%;

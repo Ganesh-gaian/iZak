@@ -287,7 +287,7 @@
   gap: 2vh;
 }
 .add-triggers p {
-  font-size: 24px;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   color: var(--Color, #fff);
   font-family: Lato;
   font-style: normal;
@@ -298,7 +298,7 @@
   margin-right: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 24px;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;

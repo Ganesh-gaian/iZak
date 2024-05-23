@@ -11,6 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monofett&family=Montserrat:wght@100&family=Plus+Jakarta+Sans:wght@200&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monofett&family=Montserrat:wght@100&family=Plus+Jakarta+Sans:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Monofett&family=Montserrat:wght@100&family=Plus+Jakarta+Sans:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -135,16 +141,113 @@
                     <div class="Balance-Points">
                         <div class="Balance">
                         <p>Available Balance</p>
-                        <p>$ 20,000</p>
+                        <span>$ 20,000</span>
                         </div>
                         <div class="Points">
                             <p>iZak Cashpoints</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-                                <path d="M1 16C1 19.9782 2.58035 23.7936 5.3934 26.6066C8.20644 29.4196 12.0218 31 16 31C19.9782 31 23.7936 29.4196 26.6066 26.6066C29.4196 23.7936 31 19.9782 31 16C31 12.0218 29.4196 8.20644 26.6066 5.3934C23.7936 2.58035 19.9782 1 16 1C12.0218 1 8.20644 2.58035 5.3934 5.3934C2.58035 8.20644 1 12.0218 1 16Z" fill="#FFC700"/>
-                                <path d="M16.9596 8.57258L19.0156 13.0032H23.0156C23.2173 12.9953 23.4165 13.0499 23.5861 13.1595C23.7556 13.2691 23.8871 13.4284 23.9627 13.6156C24.0383 13.8028 24.0542 14.0088 24.0083 14.2054C23.9624 14.4019 23.8569 14.5796 23.7062 14.7139L20.2396 18.1299L22.1636 22.5486C22.2475 22.7509 22.266 22.9744 22.2164 23.1878C22.1668 23.4011 22.0515 23.5936 21.8869 23.7381C21.7223 23.8825 21.5165 23.9718 21.2985 23.9933C21.0805 24.0148 20.8612 23.9675 20.6716 23.8579L16.0222 21.2432L11.3676 23.8579C11.1779 23.9675 10.9586 24.0148 10.7406 23.9933C10.5226 23.9718 10.3169 23.8825 10.1522 23.7381C9.98758 23.5936 9.87235 23.4011 9.82272 23.1878C9.7731 22.9744 9.79158 22.7509 9.87555 22.5486L11.7996 18.1326L8.33289 14.7166C8.18102 14.5832 8.07417 14.4061 8.02701 14.2096C7.97986 14.013 7.9947 13.8067 8.06951 13.619C8.14432 13.4312 8.27543 13.2712 8.44482 13.161C8.61421 13.0507 8.81359 12.9956 9.01555 13.0032H13.0156L15.0689 8.57258C15.1591 8.3999 15.295 8.25525 15.4616 8.15431C15.6283 8.05337 15.8194 8 16.0142 8C16.2091 8 16.4002 8.05337 16.5668 8.15431C16.7335 8.25525 16.8693 8.3999 16.9596 8.57258Z" fill="white"/>
-                              </svg>
-                              <p>1000</p>
-                              <a href="#" id="redeemPoints">Redeem Points</a>
+                            <div class="money">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M1 16C1 19.9782 2.58035 23.7936 5.3934 26.6066C8.20644 29.4196 12.0218 31 16 31C19.9782 31 23.7936 29.4196 26.6066 26.6066C29.4196 23.7936 31 19.9782 31 16C31 12.0218 29.4196 8.20644 26.6066 5.3934C23.7936 2.58035 19.9782 1 16 1C12.0218 1 8.20644 2.58035 5.3934 5.3934C2.58035 8.20644 1 12.0218 1 16Z" fill="#FFC700"/>
+                                    <path d="M16.9596 8.57258L19.0156 13.0032H23.0156C23.2173 12.9953 23.4165 13.0499 23.5861 13.1595C23.7556 13.2691 23.8871 13.4284 23.9627 13.6156C24.0383 13.8028 24.0542 14.0088 24.0083 14.2054C23.9624 14.4019 23.8569 14.5796 23.7062 14.7139L20.2396 18.1299L22.1636 22.5486C22.2475 22.7509 22.266 22.9744 22.2164 23.1878C22.1668 23.4011 22.0515 23.5936 21.8869 23.7381C21.7223 23.8825 21.5165 23.9718 21.2985 23.9933C21.0805 24.0148 20.8612 23.9675 20.6716 23.8579L16.0222 21.2432L11.3676 23.8579C11.1779 23.9675 10.9586 24.0148 10.7406 23.9933C10.5226 23.9718 10.3169 23.8825 10.1522 23.7381C9.98758 23.5936 9.87235 23.4011 9.82272 23.1878C9.7731 22.9744 9.79158 22.7509 9.87555 22.5486L11.7996 18.1326L8.33289 14.7166C8.18102 14.5832 8.07417 14.4061 8.02701 14.2096C7.97986 14.013 7.9947 13.8067 8.06951 13.619C8.14432 13.4312 8.27543 13.2712 8.44482 13.161C8.61421 13.0507 8.81359 12.9956 9.01555 13.0032H13.0156L15.0689 8.57258C15.1591 8.3999 15.295 8.25525 15.4616 8.15431C15.6283 8.05337 15.8194 8 16.0142 8C16.2091 8 16.4002 8.05337 16.5668 8.15431C16.7335 8.25525 16.8693 8.3999 16.9596 8.57258Z" fill="white"/>
+                                  </svg>
+                                  <p>1000</p>
+                            </div>
+                        
+                            <a href="#" id="redeemPoints">Redeem Points</a>                          
+                             
+                        </div>
+                        
+                     
+                    </div>
+                    <div class="Cards">
+                        <p>Payment Cards</p>
+                        <div class="cardImages">
+                            <div class="card1" id="Card1">
+                              <div class="cardName">
+                                <img src="profileimages/Rectangle 11662.svg" />
+                                <p>CHASE</p>
+                              </div>
+                             <div id="masked-card-number" class="masked-card-number">
+                              <p>****</p>
+                              <p>****</p>
+                              <p>****</p>
+                              <p>6457</p>
+                             </div>
+                             <div class="chipWifi">
+                                <img src="profileimages/chip.svg" />
+                                <img src="profileimages/NFC.svg" />
+                             </div>
+                             <div class="cardHolder">
+                                <div class="holderName">
+                                    <p>T U L I K A</p>
+                                    <p>P A N D E Y</p>
+                                </div>
+                                <div class="cardType">
+                                    <img src="profileimages/Payment Method.svg" />
+                                 </div>
+                             </div>
+                             
+                            </div>
+                            <div class="card2" id="Card2">
+                                <div class="cardName">
+                                    <!-- <img src="profileimages/Rectangle 11662.svg" /> -->
+                                    <p>GOLD</p>
+                                  </div>
+                                 <div id="masked-card-number" class="masked-card-number">
+                                  <p>****</p>
+                                  <p>****</p>
+                                  <p>****</p>
+                                  <p>6457</p>
+                                 </div>
+                                 <div class="chipWifi">
+                                    <img src="profileimages/chip.svg" />
+                                    <img src="profileimages/NFC.svg" />
+                                 </div>
+                                 <div class="cardHolder">
+                                    <div class="holderName">
+                                        <p>A V I</p>
+                                        <p>S H A N E</p>
+                                    </div>
+                                    <div class="cardType">
+                                        <img src="profileimages/Payment Method (1).svg" />
+                                     </div>
+                                 </div>  
+                            </div>
+                            <div class="card3" id="Card3">
+                                <div class="addCard">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <g clip-path="url(#clip0_4766_131031)">
+                                          <path d="M10 1V19" stroke="#AEAEAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                          <path d="M1 10H19" stroke="#AEAEAE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_4766_131031">
+                                            <rect width="20" height="20" fill="white"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                      <p>Add New Card</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="linkedAccounts">
+                        <p>Linked Accounts</p>
+                        <div class="accounts">
+                            <form class="radio-form">
+                                <div class="radio-group">
+                                    <input type="radio" id="option1" name="options" value="option1">
+                                    <label for="option1">AmazonPay</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="option2" name="options" value="option2">
+                                    <label for="option2">ApplePay</label>
+                                </div>
+                                <div class="radio-group">
+                                    <input type="radio" id="option3" name="options" value="option3">
+                                    <label for="option3">Paypal</label>
+                                </div>
+                            </form>
                         </div>
                     </div>
                  </div>
@@ -158,4 +261,4 @@
 </body>
 
 </html>
-<script src="logout.js"></script>
+<script src="Wallet.js"></script>
