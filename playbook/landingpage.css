@@ -160,7 +160,7 @@
 .iconStyle {
   width: 32px;
   height: 32px;
-  font-size: 22px;
+  font-size: clamp(0.09548125rem, 0rem + 1.5278vw, 9.548625rem);
   padding-left: 1%;
   padding-right: 1%;
 }

@@ -1,211 +1,442 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .container {
-    width: 100%;
-    height: 100vh;
-    background: url("https://izak.aidtaas.com/image/background.png");
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    overflow-y: hidden;
-  }
-  
-  .topNav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 5.13vh;
-    position: fixed;
-    /* top: 24px; */
-    top: 3.66vh !important;
-  }
-  
-  .navContent {
-    width: 96.25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .iZAKLogo {
-    width: 150px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .iZAKLogo svg {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .dateTimeTemp {
-    width: 250px;
-    color: var(--Color, #fff);
-    font-family: Lato;
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .userProfile {
-    width: 310px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 6px;
-  }
-  
-  .signalGif img {
-    width: 50px;
-    height: 40px;
-  }
-  
-  .line {
-    width: 1px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-  }
-  
-  .NetworkSignal {
-    display: flex;
-    align-items: center;
-  }
-  .NetworkSignal svg {
-    width: 28px;
-    height: 28px;
-  }
-  .NetworkSignal .signalTextContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .NetworkSignal .signalText {
-    color: white;
-    width: 62px;
-    height: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .NetworkSignal .signalText p {
-    color: var(--Color, #fff);
-    text-align: center;
-    font-family: Lato;
-    /* font-size: 14px; */
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-right: 2px;
-  }
-  
-  .NetworkSignal .signalText span {
-    color: var(--Color, #fff);
-    font-family: Lato;
-    /* font-size: 14px; */
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  
-  .bellNotification svg {
-    width: 40px;
-    height: 37px;
-  }
-  
-  .profileLogo {
-    width: 37px;
-    height: 37px;
-    background-color: rgb(219, 183, 253);
-    border-radius: 50%;
-  }
-  
-  .contentContainer {
-    display: flex;
-    width: 100%;
-    /* height: calc(100vh - 5.13vh);  */
-    /* height of total height - navbar + top height */
-    height: calc(100vh - 8vh);
-    margin-top: 8vh;
-    overflow-y: hidden;
-  }
-  
-  .wrapper {
-    width: 100%;
-    height: inherit;
-    display: flex;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("https://izak.aidtaas.com/image/background.png");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  /* top: 24px; */
+  top: 3.66vh !important;
+}
+
+.navContent {
+  width: 96.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iZAKLogo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 250px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.NetworkSignal {
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal svg {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bellNotification svg {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 5.13vh);  */
+  /* height of total height - navbar + top height */
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+.sideNavContent {
+  visibility: hidden;
+  width: 5%;
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.iconStyle {
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.iconStyle svg {
+  width: 90%;
+}
+
+@media screen and (max-width: 800px) {
   .sideNavContent {
-    visibility: hidden;
-    width: 5%;
-    height: inherit;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6vh;
+    width: 6%;
   }
-  
-  .iconStyle {
-    width: 32px;
-    height: 32px;
-    font-size: 22px;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-  .iconStyle svg {
-    width: 90%;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .sideNavContent {
-      width: 6%;
-    }
-  }
-  .mainContainer {
-    height: inherit;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1vh;
-  }
- .walletContainer{
-    width: 90%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 50px;
-    /* top: 0; */
- }
- .walletContainer p{
-    color: var(--Color, #FFF);
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
- }
- .Balance-Points{
-    display: flex;
-    flex-direction: column;
- }
- .Balance{
-    display: flex;
-    justify-content: space-between;
- }
+}
+.mainContainer {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1vh;
+}
+.walletContainer {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
+  margin-top: 50px;
+  /* top: 0; */
+}
+.walletContainer p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Balance-Points {
+  width: 90%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.Balance {
+  width: 90%;
+  height: 5vh;
+  display: flex;
+  gap: 15vh;
+  margin-bottom: 15px;
+}
+.Balance p {
+  color: #d9d9d9;
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 122.222% */
+}
+.Balance span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px; /* 91.667% */
+}
+.money {
+  display: flex;
+  gap: 1vh;
+}
+.money p {
+  color: var(--Color, #fff);
+  text-align: right;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+}
+.Points {
+  width: 90%;
+  height: 5vh;
+  display: flex;
+  gap: 16vh;
+}
+.Points p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 91.667% */
+  margin-top: 0.4vh;
+}
+.Points a {
+  color: #0b82f9;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 122.222% */
+  text-decoration: none;
+}
+.Cards {
+  width: 90%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.Cards p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  margin-bottom: 24px;
+}
+.cardImages {
+  width: 100%;
+  display: flex;
+  gap: 10vh;
+}
+.card1 {
+  width: 30%;
+  height: 30vh;
+  background: url("profileimages/Card\ Rectangle.png");
+  background-size: cover;
+  padding-left: 35px;
+}
+.cardName {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  gap: 1vh;
+  padding-top: 20px;
+}
+.cardName p {
+  color: #fdfdfd;
+  text-align: center;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: 2px;
+  padding-top: 6px;
+}
+.masked-card-number {
+  width: 100%;
+  height: 5vh;
+  margin-top: 10px;
+  color: rgba(212, 212, 212, 0.8);
+  text-align: flex-start;
+  text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.5);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 114.286% */
+  letter-spacing: 2px;
+  column-gap: 35px;
+  display: flex;
+  margin-top: 20px;
+}
+.chipWifi {
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 22vh;
+}
+.cardHolder {
+  display: flex;
+}
+.holderName {
+  width: 100%;
+  height: 5vh;
+  margin-top: 35px;
+  display: flex;
+  gap: 3vh;
+}
+.holderName p {
+  color: rgba(197, 197, 197, 0.8);
+  text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke-width: 1;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.03);
+  font-family: "IBM Plex Mono";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.cardType img {
+  padding-top: 20px;
+  margin-right: 10vh;
+}
+
+.card2 {
+  width: 30%;
+  height: 30vh;
+  background: url("profileimages/Card\ Rectangle.png");
+  background-size: cover;
+  padding-left: 35px;
+}
+.card3 {
+  width: 30%;
+  height: 30vh;
+  background: url("profileimages/Card\ Rectangle.png");
+  background-size: cover;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.addCard {
+  display: inline-flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 24px;
+}
+.addCard svg {
+  width: 20px;
+  height: 20px;
+}
+.addCard p {
+  color: #aeaeae;
+  text-align: center;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 66.667% */
+}
+.linkedAccounts p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.radio-form {
+  /* background-color: #fff; */
+  /* padding: 30px; */
+  margin-top: 25px;
+  /* margin-right: 10px; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.radio-group {
+  margin-bottom: 25px;
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 10px;
+  /* width: 15%; */
+  /* height: 3vh; */
+}
+
+.radio-group label {
+  color: #c4c7c4;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
