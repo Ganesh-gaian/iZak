@@ -11,6 +11,27 @@ function selectOption(option) {
     selectedOption.classList.add("selected");
   }
 
+
+  if (option === "option3") {
+    window.location.href = "rewards.html";
+  }
+
+  if (option === "option4") {
+    window.location.href = "Wallet.html";
+  }
+
+  if (option === "option5") {
+    window.location.href = "settings.html"
+  }
+
+  if (option === "option6") {
+    window.location.href = "helpAndSupport.html"
+  }
+
+  if (option === "option7") {
+    window.location.href = "logout.html";
+  }
+
   // Show the details div corresponding to the clicked option
   var detailsDiv = document.getElementById("details-" + option);
   if (detailsDiv) {
@@ -35,3 +56,12 @@ redirect("switchAccount", "switchaccount.html");
 redirect("manageAccountSettings", "manageaccount.html");
 redirect("viewSubscription", "viewSubscription.html");
 redirect("changePassword", "changePassword.html");
+
+redirect("helpAndSupport", "helpAndSupport.html");
+redirect("settings", "settings.html");
+
+
+
+function Logout() {
+  window.location.href = "logout.html";
+}
