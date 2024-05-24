@@ -250,6 +250,9 @@
   font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
 }
+.deleteData{
+  margin-left: 15px;
+}
 .empty {
   width: 10%;
 }
@@ -279,7 +282,7 @@
   font-family: Lato;
   margin-bottom: 10px;
 }
-.add-triggers img {
+/* .add-triggers img {
   margin-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
 }
 .add-triggers {
@@ -293,12 +296,27 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+} */
+.add-triggers svg {
+  margin-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
+}
+.add-triggers {
+  display: flex;
+  gap: 2vh;
+}
+.add-triggers p {
+  font-size: 24px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 .triggerss p{
   margin-right: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;

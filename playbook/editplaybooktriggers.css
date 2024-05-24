@@ -251,7 +251,7 @@ a {
 .icon{
   width: 20%; 
   height: 33%;
-  margin-left:clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
+  margin-left:5px;
   top:5px;
 }
 .empty-space {
