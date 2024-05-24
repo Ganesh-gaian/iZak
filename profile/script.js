@@ -90,6 +90,8 @@ redirect("changePassword", "changePassword.html");
 
 redirect("helpAndSupport", "helpAndSupport.html");
 redirect("settings", "settings.html");
+redirect("rewards", "rewards.html");
+
 
 
 

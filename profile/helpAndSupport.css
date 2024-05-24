@@ -153,16 +153,19 @@ body.blurred {
   margin-top: 20px;
 }
 
-#details-option1{
+#details-option1 {
   display: none;
 }
-#details-option2{
+#details-option2 {
   display: none;
-}#details-option3{
+}
+#details-option3 {
   display: none;
-}#details-option4{
+}
+#details-option4 {
   display: none;
-}#details-option5{
+}
+#details-option5 {
   display: none;
 }
 
@@ -285,45 +288,63 @@ body.blurred {
   left: 10%;
   transform: translate(-50%, -100%);
   z-index: 10000;
-  background:red; 
-  color: #fff; 
+  background: red;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 8px;
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: bold;
-  text-align: center; 
+  text-align: center;
 }
-
 
 .scannerPopup,
 .contactPopup {
   display: none;
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  width: 38vw;
-  height: 58.44vh;
-  padding: 20px 14px;
+  width: 33vw;
+  height: 70vh;
+  padding: 0;
   border-radius: 8px;
-  background: rgb(65, 65, 65);
+  overflow: hidden;
+}
+
+.contactPopupHeader {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHeading {
+  color: #d3d3d3;
+  font-family: Lato;
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-weight: 700;
+  margin: 0;
 }
 
 .scannerPopupInner,
 .contactPopupInner {
-  height: 98%;
+  height: calc(100% - 40px);
   gap: 3.33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgb(29, 28, 28);
+  padding: 20px 14px 40px 14px;
 }
 
 .scannerPopupInnerImg svg,
 .contactPopupInnerImg svg {
   width: 30vw;
-  height: 45vh;
+  height: 38vh;
 }
 
 .scannerPopupInner p,
@@ -331,38 +352,40 @@ body.blurred {
   color: #d3d3d3;
   text-align: center;
   font-family: Lato;
-  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  font-size: clamp(0.8rem, 1.25vw, 1.25rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; 
+  line-height: 24px;
+  background-color: transparent;
 }
 
 .scannerPopupInner span,
 .contactPopupInner span {
-  color: #0B82F9;
+  color: #0b82f9;
   font-family: Lato;
-  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  font-size: clamp(0.8rem, 1.25vw, 1.25rem);
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
 
-.contactPopupInnerImg img {
+.transparentPop {
+  background-color: transparent;
+  height: 5vh;
+}
+/* .contactPopupInnerImg img {
   width: 10vw;
   height: 20vh;
-}
+} */
 
-.popupBackdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); 
-  z-index: 999;
-  display: none;
+.contactHeading {
+  color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 87.5% */
 }
-
 
 @media only screen and (max-width: 1080px) {
   .arrowMark {
@@ -372,5 +395,15 @@ body.blurred {
 
   .textAndArrow {
     gap: 0vw;
+  }
+  .scannerPopup,
+  .contactPopup {
+    width: 38vw;
+    height: 64vh;
+  }
+  .scannerPopupInnerImg svg,
+  .contactPopupInnerImg svg {
+    width: 22vw;
+    height: 30vh;
   }
 }
