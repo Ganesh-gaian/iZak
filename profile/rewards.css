@@ -183,47 +183,43 @@
     flex-direction: column;
     margin-top: 1vh;
   }
-  .manageAccountSettings {
-    display: flex;
+  .profileContainer {
     width: 100%;
     height: inherit;
-    margin-top: 40px;
+    display: flex;
   }
-  .profilePhoto {
-    width: 30%;
+  .leftContainer {
+    width: 35%;
     height: inherit;
     display: flex;
     flex-direction: column;
   }
-  .leftImage {
+  .heading {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    gap: 2vh;
+    margin-bottom: 30px;
+  }
+  .heading p {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.442px;
+  }
+  .dropdown {
+    opacity: 0.7;
+  }
+  .profileOptions {
     width: 100%;
     height: 50vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0) 0.04%,
-      rgba(0, 0, 0, 0.4) 90.69%
-    );
-  }
-  .leftData {
-    width: 100%;
-    height: 20vh;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 7%;
-  }
-  .leftData p {
-    color: var(--Color, #fff);
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 20px; /* 100% */
+    margin-bottom: 35%;
   }
   .option {
     width: 100%;
@@ -241,9 +237,9 @@
     font-style: normal;
     font-weight: 500;
   }
-  /* .option svg {
+  .option svg {
     margin-top: 4px;
-  } */
+  }
   .option {
     cursor: pointer;
   }
@@ -253,85 +249,353 @@
     backdrop-filter: blur(6.87976598739624px);
     color: white;
   }
-  .emptySpace {
-    width: 10%;
+  .details {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .logoutButton {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    gap: 3vh;
+    margin-left: 20px;
+  }
+  .logoutButton p {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+  }
+  .empty {
+    width: 5%;
     height: inherit;
   }
-  .profileData {
+  .profile {
     width: 55%;
     height: inherit;
+    display: flex;
+    flex-direction: column;
   }
-  .profileData p {
-    color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
+  .details {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  #details-option1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .profileName {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    gap: 5vh;
+    margin-bottom: 30px;
+    /* flex-direction: column; */
+  }
+  .profilepic {
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .profilePic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+  }
+  .profilePic img {
+    width: 100%;
+    height: 30vh;
+  }
+  .profileData {
+    width: 100%;
+    height: 26vh;
+    /* border: 2px solid yellow; */
+    position: absolute;
+    top: 24vh;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(27.5px);
+    padding: 24px;
+  }
+  .namePoints {
+    color: var(--Color, #fff);
     font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px;
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
   }
-  
-  form {
-    width: 100%;
-    height: 100vh;
+  .namePoints svg {
+    margin-left: 60px;
+  }
+  .name {
+    color: #d9d9d9;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5px;
+  }
+  .day {
+    display: flex;
+    /* justify-content: space-between; */
     margin-top: 32px;
+    gap: 1vh;
+  }
+  .day p {
+    color: var(--Grey-200, #d3d3d3);
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* margin-right: 20px; */
+  }
+  .walletMoney {
+    display: flex;
+    margin-left: 65px;
+    gap: 2vh;
+  }
+  .city {
+    display: flex;
+    margin-top: 16px;
+    color: var(--Grey-200, #d3d3d3);
+    text-align: center;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    gap: 1vh;
+  }
+  .points {
+    width: 50%;
+    height: 50vh;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(27.5px);
+    border: 1px solid red;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Buttons {
+    width: 100%;
+    height: inherit;
+    overflow-y: scroll;
+  }
+  .Buttons::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
   }
   
-  label {
+  .Button p {
+    width: 100%;
+    height: 10vh;
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.095px;
+    border: none;
+    border-radius: 8px;
+    background: #1e2023;
+    backdrop-filter: blur(10px);
+    display: flex;
+    padding: 16px 24px;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 20px;
-    color: #727272;
-    text-align: center;
+  }
+  .Button {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+  }
+  .arrowMark {
+    position: absolute;
+    margin-left: 93%;
+    top: 3vh;
+  }
+  .History p {
+    color: var(--Grey-200, #d3d3d3);
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    letter-spacing: -0.095px;
   }
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    color: var(--Color, #FFF);
+  .Data {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 3vh;
+    margin-top: 24px;
+  }
+  .data1 p {
+    color: #ebeaea;
     font-family: Lato;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    border-radius: var(--Radius-m, 8px);
-    border: 1px solid rgba(199, 198, 202, 0.2);
-    background: rgba(17, 20, 19, 0.3);
+    line-height: 25px;
+  }
+  .data2 p {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .data3 p {
+    color: var(--Grey-200, #d3d3d3);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 32px;
+  }
+  .bullet-points {
+    color: var(--Grey-200, #d3d3d3);
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-left: 20px;
+    margin-top: 24px;
+  }
+  .data4 p {
     margin-top: 10px;
-  }
-  
-  #saveButton{
-    width: 100%;
-    padding: 16px;
-    color: var(--Color, #fff);
-    border-radius: var(--Radius-m, 8px);
-    background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
-    backdrop-filter: blur(6.87976598739624px);
+    color: var(--Grey-200, #d3d3d3);
     font-family: Lato;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.25px;
-    margin-top: 32px;
+    line-height: normal;
   }
-  
-  button {
+  .deliveryDetails {
+    display: flex;
+    margin-top: 24px;
     width: 100%;
-    padding: 16px;
-    color: var(--Color, #fff);
+    height: 25vh;
     border-radius: var(--Radius-m, 8px);
-    background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
-    backdrop-filter: blur(6.87976598739624px);
-    font-family: Lato;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.25px;
-    margin-top: 32px;
+    background: rgba(255, 255, 255, 0.44);
+    background-blend-mode: overlay;
+    backdrop-filter: blur(40px);
+    padding: 16px;
+    background: url("profileimages/background\ \(1\).png");
+    background-size: cover;
   }
-  
+  .productImage {
+    width: 35%;
+    height: 20vh;
+    background: url("profileimages/image\ 161.png");
+    background-size: cover;
+    border-radius: 8px;
+  }
+  .estimation {
+    display: flex;
+    flex-direction: column;
+    /* padding: 16px; */
+  }
+  .deliveryEst {
+    display: flex;
+    gap: 1vh;
+    padding: 0 16px;
+  }
+  .delivered p {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    opacity: 0.7;
+  }
+  .date p {
+    opacity: 0.7;
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.7;
+  }
+  .Qty p {
+    color: #238efa;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .productName {
+    padding: 0 16px;
+  }
+  .ratingChat {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+  }
+  .rating {
+    display: flex;
+    padding: 16px;
+    gap: 1vh;
+  }
+  .rating p {
+    margin-top: 0;
+  }
+  .mailChat {
+    display: flex;
+    padding: 16px;
+    gap: 1vh;
+  }
+  .mailChat p {
+    margin-top: 0;
+  }
+  .rate {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: space-between;
+  }
+  .sold p {
+    color: #d9d9d9;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 16px;
+    margin-top: 0;
+  }
+  .dollarRate p {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
   

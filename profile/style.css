@@ -13,129 +13,9 @@
   overflow-y: hidden;
 }
 
-.topNav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  height: 5.13vh;
-  position: fixed;
-  /* top: 24px; */
-  top: 3.66vh !important;
-}
-
-.navContent {
-  width: 96.25%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.iZAKLogo {
-  width: 150px;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.iZAKLogo svg {
-  width: 32px;
-  height: 32px;
-}
-
-.dateTimeTemp {
-  width: 250px;
-  color: var(--Color, #fff);
-  font-family: Lato;
-  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  justify-content: center;
-}
-
-.userProfile {
-  width: 310px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 6px;
-}
-
-.signalGif img {
-  width: 50px;
-  height: 40px;
-}
-
-.line {
-  width: 1px;
-  height: 35px;
-  display: flex;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.NetworkSignal {
-  display: flex;
-  align-items: center;
-}
-.NetworkSignal svg {
-  width: 28px;
-  height: 28px;
-}
-.NetworkSignal .signalTextContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.NetworkSignal .signalText {
-  color: white;
-  width: 62px;
-  height: 17px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.NetworkSignal .signalText p {
-  color: var(--Color, #fff);
-  text-align: center;
-  font-family: Lato;
-  /* font-size: 14px; */
-  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding-right: 2px;
-}
-
-.NetworkSignal .signalText span {
-  color: var(--Color, #fff);
-  font-family: Lato;
-  /* font-size: 14px; */
-  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-
-.bellNotification svg {
-  width: 40px;
-  height: 37px;
-}
-
-.profileLogo {
-  width: 37px;
-  height: 37px;
-  background-color: rgb(219, 183, 253);
-  border-radius: 50%;
-}
-
 .contentContainer {
   display: flex;
   width: 100%;
-  /* height: calc(100vh - 5.13vh);  */
-  /* height of total height - navbar + top height */
   height: calc(100vh - 8vh);
   margin-top: 8vh;
   overflow-y: hidden;
@@ -618,3 +498,5 @@
   font-weight: 600;
   line-height: normal;
 }
+
+
