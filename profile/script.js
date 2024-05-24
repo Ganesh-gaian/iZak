@@ -11,6 +11,37 @@ function selectOption(option) {
     selectedOption.classList.add("selected");
   }
 
+   // If the logout option is selected, handle the logout
+   if (option === 'option7') {
+    
+    window.location.href = 'logout.html'; 
+}
+if (option === 'option4') {
+    
+    window.location.href = 'Wallet.html'; 
+}
+
+
+  if (option === "option3") {
+    window.location.href = "rewards.html";
+  }
+
+  if (option === "option4") {
+    window.location.href = "Wallet.html";
+  }
+
+  if (option === "option5") {
+    window.location.href = "settings.html"
+  }
+
+  if (option === "option6") {
+    window.location.href = "helpAndSupport.html"
+  }
+
+  if (option === "option7") {
+    window.location.href = "logout.html";
+  }
+
 
   if (option === "option3") {
     window.location.href = "rewards.html";

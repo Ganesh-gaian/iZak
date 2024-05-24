@@ -9,46 +9,40 @@ document.querySelector('.nextButton').addEventListener('click', function() {
 
 
 
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
-    var selectedImageWrapperr = document.querySelector(
-      ".selectedImageWrapperr img"
-    );
-  
-    var imageDivs = document.querySelectorAll(".imageDiv1 img");
-  
-    imageDivs.forEach(function (img) {
-      img.addEventListener("click", function () {
-        selectedImageWrapperr.src = img.src;
-      });
+  var selectedImageWrapper = document.querySelector(
+    ".selectedImageWrapper img"
+  );
+
+  var imageDivs = document.querySelectorAll(".imageDiv img");
+
+  imageDivs.forEach(function (img) {
+    img.addEventListener("click", function () {
+      selectedImageWrapper.src = img.src;
     });
   });
+});
   
-  //QR scanner popup.
-  document.addEventListener("DOMContentLoaded", function () {
-    const plusSign1 = document.getElementById("plusSign1");
-    const scannerPopup1 = document.getElementById("scannerPopup1");
-  
-    plusSign.addEventListener("click", function () {
-      scannerPopupp.style.display = "block";
-    });
-  
-    // Close the popup when clicking outside of it
-    document.addEventListener("click", function (event) {
-      if (
-        !scannerPopupp.contains(event.target) &&
-        event.target !== plusSignn &&
-        !plusSignn.contains(event.target)
-      ) {
-        scannerPopupp.style.display = "none";
-      }kk
-    });
+//QR scanner popup.
+  const plusSign = document.getElementById("plusSign");
+  const scannerPopup = document.getElementById("scannerPopup");
+
+  plusSign.addEventListener("click", function () {
+      scannerPopup.style.display = "block";
   });
 
+  document.addEventListener("click", function (event) {
+      if (
+          !scannerPopup.contains(event.target) &&
+          event.target !== plusSign &&
+          !plusSign.contains(event.target)
+      ) {
+          scannerPopup.style.display = "none";
+      }
+  });
 
 
   // for NEXT button popUp -----------------
-document.addEventListener("DOMContentLoaded", function () {
     const openButton = document.getElementById("openPopup");
     const popup = document.getElementById("popup");
   
@@ -69,4 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       console.error("One or more elements are missing: openButton, popup");
     }
-  });
