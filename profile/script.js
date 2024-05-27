@@ -10,7 +10,7 @@ function selectOption(option) {
   if (selectedOption) {
     selectedOption.classList.add("selected");
   }
-
+ 
   
  
 
@@ -88,6 +88,6 @@ redirect("rewards", "rewards.html");
 
 
 
-function Logout() {
-  window.location.href = "logout.html";
-}
+// function Logout() {
+//   window.location.href = "logout.html";
+// }
