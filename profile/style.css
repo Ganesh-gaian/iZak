@@ -217,6 +217,10 @@
   display: flex;
   justify-content: space-between;
 }
+.SvgAndtext{
+  display: flex;
+  gap: 0.5vw;
+}
 .namePoints svg {
   /* margin-left: 24vh; */
   margin-left: 10vh;
@@ -232,11 +236,14 @@
 }
 .day {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   margin-top: 30px;
   gap: 1vh;
 }
-
+.svgAndday{
+  display: flex;
+  gap: 0.5vw;
+}
 .day p {
   color: var(--Grey-200, #d3d3d3);
   text-align: center;
