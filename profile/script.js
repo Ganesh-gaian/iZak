@@ -11,15 +11,8 @@ function selectOption(option) {
     selectedOption.classList.add("selected");
   }
 
-   // If the logout option is selected, handle the logout
-   if (option === 'option7') {
-    
-    window.location.href = 'logout.html'; 
-}
-if (option === 'option4') {
-    
-    window.location.href = 'Wallet.html'; 
-}
+  
+ 
 
 
   if (option === "option3") {
@@ -63,10 +56,10 @@ if (option === 'option4') {
     window.location.href = "logout.html";
   }
 
-  // Show the details div corresponding to the clicked option
+ 
   var detailsDiv = document.getElementById("details-" + option);
   if (detailsDiv) {
-    // Hide all other details divs
+
     var details = document.querySelectorAll(".details");
     details.forEach(function (div) {
       div.style.display = "none";
