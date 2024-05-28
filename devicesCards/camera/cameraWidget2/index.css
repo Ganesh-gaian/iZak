@@ -1,0 +1,445 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cameraContainer {
+  width: 868px;
+  height: 599px;
+  border-radius: var(--Radius-m, 8px);
+  border: 1px solid var(--Color, #fff);
+  background: linear-gradient(
+    128deg,
+    #00478e -5.15%,
+    rgba(18, 34, 50, 0.44) 50.3%,
+    rgba(201, 117, 252, 0.98) 105.74%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(32px);
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.topCont {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topLeftDiv {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+#swtichbtn {
+  background: radial-gradient(
+      104.81% 104.81% at 50% 35.58%,
+      #0d6904 0%,
+      #13c900 100%
+    ),
+    #43e533;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+}
+
+.topLeftDivdevicecont {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.topLeftDivdevicecont > img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.trdivtextCont {
+  display: flex;
+  flex-direction: column;
+}
+
+#curtainmdevicename {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#curtainmdeviceplace {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.topRightDiv {
+  width: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.rightDivEclipse {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.rightDivEclipse:hover {
+  border-radius: 80px;
+  border: 1px solid var(--Foundation-Blue-blue-500, #238efa);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
+}
+
+.bottomcont {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btmleftcont {
+  display: flex;
+  flex-direction: column;
+  width: 287px;
+  gap: 32px;
+}
+
+.firstCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.secondCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.firstCont > span,
+.secondCont > span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.detdiv {
+  width: 100%;
+  display: flex;
+  border-radius: var(--Radius-m, 8px);
+  background: #003060;
+  padding: 16px;
+}
+
+.detdiv1 {
+  width: 100%;
+  display: flex;
+  border-radius: var(--Radius-m, 8px);
+  background: url("./landscapePerson.png");
+  padding: 16px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 1px solid #eac3c3;
+}
+
+.detleftdiv {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detleftdiv1 {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detleftdiv > span,
+.detleftdiv1 > span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.9;
+}
+
+#line {
+  width: 100%;
+  height: 1px;
+  opacity: 0.7;
+  background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  margin: 8px 0;
+}
+
+#line2 {
+  width: 1px;
+  height: 18px;
+  background: #fff;
+  margin: 0 5px;
+}
+
+.aftlinediv {
+  display: flex;
+  flex-direction: row;
+}
+
+.aftlinediv > span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#mode {
+  font-weight: 400;
+}
+
+#manual {
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.detrightdiv {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.btmrightcont {
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bmtrtop {
+  width: 100%;
+  height: 150px;
+  background: url("./camera.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: var(--Radius-m, 8px);
+}
+
+.btmrmiddle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.devivcenameWarranty {
+  display: flex;
+  flex-direction: column;
+}
+
+#dname {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#dwarranty {
+  color: #a7a7a7;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.dinfo {
+  display: flex;
+  gap: 30px;
+}
+
+.leftdinfo,
+.rightdinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.leftdinfo > span {
+  color: #a6a6a6;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rightdinfo > span {
+  width: 100%;
+  text-align: justify !important;
+  color: var(--Color, #fff);
+  text-align: right;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btmrbtm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btmrbtm > button {
+  display: flex;
+  /* width: 183px;
+      height: 54px; */
+  padding: 16px 31px 16px 30px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.095px;
+  border-radius: var(--Radius-m, 8px);
+  border: 1px solid var(--Color, #fff);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+  .cameraContainer {
+    width: 98%;
+    height: 576px;
+  }
+  #curtainmdevicename {
+    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  }
+  #curtainmdeviceplace {
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  .firstCont > span,
+  .secondCont > span {
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  .detleftdiv > span,
+  .detleftdiv1 > span {
+    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  }
+  .aftlinediv > span {
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  #dname {
+    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  }
+  #dwarranty {
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  }
+  .leftdinfo > span,
+  .rightdinfo > span {
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  .btmrbtm > button {
+    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  }
+  .btmleftcont {
+    width: 40%;
+  }
+  .btmrightcont {
+    width: 50%;
+  }
+  #swtichbtn {
+    width: clamp(0.2257rem, 0rem + 3.6111vw, 22.5695625rem);
+    height: clamp(0.2257rem, 0rem + 3.6111vw, 22.5695625rem);
+  }
+  #swtichbtn > img {
+    width: 50%;
+  }
+  .topLeftDivdevicecont > img {
+    width: 20px;
+  }
+  .rightDivEclipse {
+    width: 50px;
+    height: 50px;
+  }
+  .rightDivEclipse > img {
+    width: 50%;
+  }
+  .detdiv {
+    height: 95px;
+  }
+  .detdiv1 {
+    height: 95px;
+  }
+  .detrightdiv {
+    width: 30%;
+  }
+  .btmrbtm > button {
+    padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem)
+      clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
+  }
+  .btmrbtm {
+    width: 60%;
+  }
+}

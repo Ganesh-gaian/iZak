@@ -239,13 +239,11 @@ body {
 .intensitymeterInputRange{
   width: 100%;
   position: relative;
-
 }
 .intensitymeterInputRange > img{
   width: 100%;
-
-
 }
+
 .ColorPickerInputRange {
   width: 100%;
   position: relative;

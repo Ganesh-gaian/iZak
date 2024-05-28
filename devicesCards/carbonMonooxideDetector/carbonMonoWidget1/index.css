@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carbonContainer {
+  width: 868px;
+  height: 599px;
+  border-radius: var(--Radius-m, 8px);
+  border: 1px solid var(--Color, #fff);
+  background: linear-gradient(
+    128deg,
+    #00478e -5.15%,
+    rgba(18, 34, 50, 0.44) 50.3%,
+    rgba(201, 117, 252, 0.98) 105.74%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(32px);
+  display: flex;
+  justify-content: center;
+}
+
+.contentContainer {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.topCont {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topLeftDiv {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+#swtichbtn {
+  background: radial-gradient(
+      104.81% 104.81% at 50% 35.58%,
+      #0d6904 0%,
+      #13c900 100%
+    ),
+    #43e533;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 80px;
+  cursor: pointer;
+}
+
+.topLeftDivdevicecont {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.topLeftDivdevicecont > img {
+  width: 40px;
+  height: 40px;
+}
+
+.trdivtextCont {
+  display: flex;
+  flex-direction: column;
+}
+
+#thermdevicename {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#thermdeviceplace {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.topRightDiv {
+  width: auto;
+  display: flex;
+  gap: 32px;
+}
+
+.rightDivEclipse {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bottomCont {
+  width: 100%;
+  display: flex;
+  /* margin-top: 55px; */
+  margin-top: 8vh;
+  justify-content: space-between;
+}
+
+.leftbtmCont {
+  padding: 57px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lbtntxtCont {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 50px;
+}
+
+#temp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#mode {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.rightbtmCont {
+  /* border: 1px solid green; */
+  /* padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 60px; */
+  display: inline-flex;
+  padding: 75px 93px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  row-gap: 7vh;
+}
+
+.rbtmtopCont {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.colored {
+  background-color: #238efa !important;
+}
+
+.rbtmbtmCont {
+  /* border: 1px solid black; */
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.imgBg img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.imgBg {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textAndDigits{
+  width: 100px;
+}
+.textAndDigits p {
+  color: #a9a9a9;
+
+  /* Lato/Normal/18/400-Regular */
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textAndDigits span {
+  color: var(--Color, #fff);
+
+  /* Lato/Normal/24/500-Medium */
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 750px) {
+  .carbonContainer {
+    width: 98%;
+    height: 576px;
+  }
+  .leftbtmCont {
+    padding: 10px;
+    width: 40%;
+  }
+  .leftbtmCont > img {
+    width: 100%;
+  }
+  .rightbtmCont {
+    width: 40%;
+    padding: 10px;
+  }
+  .chngmodebtn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chngmodebtn > img {
+    width: 50%;
+    height: 50%;
+  }
+  #thermdevicename {
+    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  }
+  #speedlabelname,
+  #speedCount {
+    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  }
+  #thermdeviceplace {
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  #temp {
+    font-size: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  }
+  #mode {
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  }
+  .rbtmtopCont span {
+    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  }
+  #swtichbtn {
+    width: clamp(0.2257rem, 0rem + 3.6111vw, 22.5695625rem);
+    height: clamp(0.2257rem, 0rem + 3.6111vw, 22.5695625rem);
+  }
+  #swtichbtn > img {
+    width: 50%;
+  }
+  .topLeftDivdevicecont > img {
+    width: 20px;
+  }
+  .rightDivEclipse {
+    width: 25px;
+    height: 25px;
+  }
+  .rightDivEclipse > img {
+    width: 60%;
+  }
+  .rbtmtopCont {
+    justify-content: flex-start;
+    gap: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  }
+  .rbtmbtmCont {
+    justify-content: flex-start;
+    width: 80%;
+  }
+}
