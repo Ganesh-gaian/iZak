@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>camera widget 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="cameraContainer">
+        <div class="contentContainer">
+          <div class="topCont">
+            <div class="topLeftDiv">
+              <div id="swtichbtn">
+                <img src="./powerbutton.png" alt="" />
+              </div>
+              <div class="topLeftDivdevicecont">
+                <img src="./Surveillance-Camera-logo.svg" alt="" />
+                <div class="trdivtextCont">
+                  <span id="thermdevicename">Camera</span>
+                  <span id="thermdeviceplace">TP Link • Outdoor Area</span>
+                </div>
+              </div>
+            </div>
+            <div class="topRightDiv">
+              <div class="rightDivEclipse" id="fav">
+                <img src="./fav.png" alt="" />
+              </div>
+              <div class="rightDivEclipse" id="info">
+                <img src="./info.png" alt="" />
+              </div>
+              <div class="rightDivEclipse" id="recycle">
+                <img src="./Recycle-Bin.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomContent">
+            <div class="leftBottomContent">
+              <div class="imageContainer">
+                <img src="camera-img.svg" alt="Image" />
+              </div>
+
+              <div class="buttonContainer">
+                <div class="space1Rightbutton" id="1Screens">
+                  <span class="space1btnImg space1btntxt">
+                    <img src="./1-screen.svg" alt="Plus Logo" />
+                    1 Screens
+                  </span>
+                </div>
+                <div class="space1Rightbutton" id="2Screens">
+                  <span class="space1btnImg space1btntxt">
+                    <img src="./2-screen.svg" alt="Plus Logo" />
+                    2 Screens
+                  </span>
+                </div>
+                <div class="space1Rightbutton" id="4Screens">
+                  <span class="space1btnImg space1btntxt">
+                    <img src="./4-screen.svg" alt="Plus Logo" />
+                    4 Screens
+                  </span>
+                </div>
+                <div class="space1Rightbutton" id="9Screens">
+                  <span class="space1btnImg space1btntxt">
+                    <img src="./9-screen.svg" alt="Plus Logo" />
+                    9 Screens
+                  </span>
+                </div>
+                <div class="space1Rightbutton" id="6Screens">
+                  <span class="space1btnImg space1btntxt">
+                    <img src="./6-screen.svg" alt="Plus Logo" />
+                    6 Screens
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rightBottomContent">
+              <div class="rbtmtopCont">
+                <div class="chngmodecont">
+                  <div class="chngmodebtn" id="talkmodebtn">
+                    <img src="./voiceMail.svg" alt="" />
+                  </div>
+                  <span>Talk</span>
+                </div>
+                <div class="chngmodecont">
+                  <div class="chngmodebtn" id="alarmoffmodebtn">
+                    <img src="./Block-Bell-Notification.svg" alt="" />
+                  </div>
+                  <span>Alarm Off</span>
+                </div>
+                <div class="chngmodecont">
+                  <div class="chngmodebtn" id="privacymodebtn">
+                    <img src="./Shield.svg" alt="" />
+                  </div>
+                  <span>Privacy</span>
+                </div>
+                <div class="chngmodecont">
+                  <div class="chngmodebtn" id="recordingmodebtn">
+                    <img src="./Webcam-Video.svg" alt="" />
+                  </div>
+                  <span>Recording</span>
+                </div>
+              </div>
+
+              <div class="rbtmbtmCont" id="talkContent">
+                <div class="Intensitylabel">
+                  <div class="intensitySvgAndText">
+                    <img src="./Volume.svg" alt="Volume" />
+                    <span id="intensitylabelname">Volume</span>
+                  </div>
+                  <span class="percentageValue" id="intensityCount">25%</span>
+                </div>
+                <div class="intensitymeterInputRange">
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="25"
+                    class="slider"
+                    id="intensityRange"
+                  />
+                  <svg
+                    id="sliderSvg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="390"
+                    height="16"
+                    viewBox="0 0 390 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M0 13.6328C0 12.3522 1.0184 11.3037 2.29847 11.2665L381.887 0.235756C386.329 0.106674 390 3.6724 390 8.11621C390 12.4703 386.47 16 382.116 16H2.36721C1.05983 16 0 14.9402 0 13.6328Z"
+                      fill="#B3B3B3"
+                    />
+                  </svg>
+                </div>
+              </div>
+
+              <div class="alarmOffContentCustom" id="alarmOffContent">
+                <div class="containerBox">
+                  <div class="customListItem" data-target="alarmTypeContent">
+                    <div class="leftSection">
+                      <div class="itemIcon">
+                        <img src="./Alarm-type.svg" alt="" />
+                      </div>
+                      <div class="itemText">Alarm Type</div>
+                    </div>
+                    <div class="downArrow">
+                      <img src="./downArrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="additionalContent" id="alarmTypeContent">
+                    <div class="radioContainer" id="soundRadio">
+                      <input
+                        type="radio"
+                        id="option1"
+                        name="alarmTypeOptions"
+                        checked
+                      />
+                      <label for="option1">Sound</label>
+                    </div>
+                    <div class="radioContainer" id="lightRadio">
+                      <input
+                        type="radio"
+                        id="option2"
+                        name="alarmTypeOptions"
+                      />
+                      <label for="option2">Light</label>
+                    </div>
+                    <div class="radioContainer" id="soundAndLightRadio">
+                      <input
+                        type="radio"
+                        id="option3"
+                        name="alarmTypeOptions"
+                      />
+                      <label for="option3">Sound & Light</label>
+                    </div>
+                  </div>
+
+                  <div class="customListItem" data-target="alarmSoundContent">
+                    <div class="leftSection">
+                      <div class="itemIcon">
+                        <img src="./Alarm-type.svg" alt="" />
+                      </div>
+                      <div class="itemText">Alarm Sound</div>
+                    </div>
+                    <div class="downArrow">
+                      <img src="./downArrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="additionalContent" id="alarmSoundContent">
+                    <div class="radioContainer" id="alarmSoundRadio">
+                      <input
+                        type="radio"
+                        id="soundOption1"
+                        name="alarmSoundOptions"
+                        checked
+                      />
+                      <label for="soundOption1">Siren</label>
+                    </div>
+                    <div class="radioContainer" id="alarmLightRadio">
+                      <input
+                        type="radio"
+                        id="soundOption2"
+                        name="alarmSoundOptions"
+                      />
+                      <label for="soundOption2">Tone</label>
+                    </div>
+                  </div>
+
+                  <div
+                    class="customListItem"
+                    data-target="alarmScheduleContent"
+                  >
+                    <div class="leftSection">
+                      <div class="itemIcon">
+                        <img src="./Alarm-type.svg" alt="" />
+                      </div>
+                      <div class="itemText">Alarm Schedule</div>
+                    </div>
+                    <div class="downArrow">
+                      <img src="./downArrow.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="additionalContent" id="alarmScheduleContent">
+                    <div class="radioContainer scheduleCont" id="alarmScheduleSoundRadio">
+                      <div class="inputAndText">
+                        <input
+                          type="radio"
+                          id="scheduleOption1"
+                          name="alarmScheduleOptions"
+                          checked
+                        />
+                        <label for="scheduleOption1">All day</label>
+                      </div>
+                      <div>
+                        <p>Arm a Light/ Sound whenever activity is detected</p>
+                      </div>
+                    </div>
+                    <div class="radioContainer scheduleCont" id="alarmScheduleLightRadio">
+                      <div class="inputAndText">
+                        <input
+                          type="radio"
+                          id="scheduleOption2"
+                          name="alarmScheduleOptions"
+                        />
+                        <label for="scheduleOption2">During the Day</label>
+                      </div>
+                      <div>
+                        <p>On from 8:00 AM to 8:00 PM</p>
+                      </div>
+                    </div>
+                    <div
+                      class="radioContainer scheduleCont"
+                      id="alarmScheduleSoundAndLightRadio"
+                    >
+                      <div class="inputAndText">
+                        <input
+                          type="radio"
+                          id="scheduleOption3"
+                          name="alarmScheduleOptions"
+                        />
+                        <label for="scheduleOption3">During the Night</label>
+                      </div>
+                      <div>
+                        <p>On from 8:00 PM to 8:00 AM</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="radioContainer scheduleCont"
+                      id="alarmCustomSchedule"
+                    >
+                      <div class="inputAndText">
+                        <input
+                          type="radio"
+                          id="scheduleOption4"
+                          name="alarmScheduleOptions"
+                        />
+                        <label for="scheduleOption4">Custom Schedule</label>
+                      </div>
+                      <div>
+                        <p>On during set time</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="radioContainer scheduleCont"
+                      id="alarmEveryday"
+                    >
+                      <div class="inputAndText">
+                        <input
+                          type="radio"
+                          id="scheduleOption5"
+                          name="alarmScheduleOptions"
+                        />
+                        <label for="scheduleOption5">12:00 AM - 11:59 PM</label>
+                      </div>
+                      <div>
+                        <p>Everyday</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
