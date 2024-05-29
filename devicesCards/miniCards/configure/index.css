@@ -1,63 +1,40 @@
 .deviceCont {
-  /* width: 276px; */
-  width: 23.58%;
-  height: max-content;
+  /* width: 23.58%;
+  height: max-content; */
   border-radius: 8px;
-  background: linear-gradient(
-    128deg,
-    #00478e -5.15%,
-    #0b82f970,
-    #c975fcb8 105.74%
-  );
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(32px);
   padding: 15px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  margin: 10px;
+
+  width: 21.56vw;
+  height: 37.33vh;
 }
 
 #span8,
-#span81,
-#span82,
-#span83,
-#span84,
-#span813 {
+#span9 {
   color: var(--Color, #fff);
   font-family: Lato;
-  /* font-size: 20px; */
   font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  /* margin-bottom: 8px; */
   margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
 }
 
-#span9,
-#span91,
-#span92,
-#span93,
-#span94,
-#span913 {
-  overflow: hidden;
-  color: var(--Color, #fff);
-  text-overflow: ellipsis;
-  font-family: Lato;
-  /* font-size: 14px; */
-  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-  font-style: normal;
+#span9 {
   font-weight: 400;
-  line-height: normal;
 }
 
 .new {
   width: 22%;
   height: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
+  /* height: 30px; */
   position: relative;
   border-radius: 20px 8px 0px 20px;
   background: var(--Color, #fff);
-  top: -57px;
+  top: -67px;
   left: 84%;
   color: #1969e0;
   font-family: Lato;
@@ -71,14 +48,17 @@
 }
 
 .statusCont {
-  width: 40%;
-  /* height: 112px; */
-  height: clamp(0.4879335rem, 0rem + 7.7778vw, 48.79335rem);
+  /* width: 40%;
+  height: clamp(0.4879335rem, 0rem + 7.7778vw, 48.79335rem); */
   display: flex;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
   align-items: center;
+  width: 11.17vw;
+  height: 21.94vh;
+  position: relative;
+  top: 36px;
 }
 
 .statusCont > img {
@@ -115,4 +95,22 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (min-width: 700px) and (max-width: 750px) {
+  .new {
+    top: -38px;
+    left: 90%;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  .new {
+    top: -68px;
+  }
+}
+@media screen and (min-width: 1900px) and (max-width: 1950px) {
+  .new {
+    top: -91px;
+    left: 82%;
+  }
 }

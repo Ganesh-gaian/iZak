@@ -267,6 +267,13 @@ body {
   line-height: normal;
 }
 
+.rightDivEclipse:hover {
+  border-radius: 80px;
+  border: 1px solid var(--Foundation-Blue-blue-500, #238efa);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
+}
+
 @media screen and (max-width: 750px) {
   .carbonContainer {
     width: 98%;
