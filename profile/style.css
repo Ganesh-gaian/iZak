@@ -123,6 +123,13 @@
 .option {
   cursor: pointer;
 }
+.option:hover{
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2); 
+}
 .option.selected {
   border-radius: 8px;
   background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
@@ -205,30 +212,51 @@
   border-radius: 20px;
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(27.5px);
-  padding: 24px;
+  padding: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
 }
 .namePoints {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
 }
+.namePoints svg {
+  margin-left: 10vh;
+}
+
+.svgAndday{
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.svgAndday svg{
+ width: 24px;
+ height: 24px;
+}
+
 .SvgAndtext{
   display: flex;
   gap: 0.5vw;
 }
-.namePoints svg {
-  /* margin-left: 24vh; */
-  margin-left: 10vh;
+.SvgAndtext svg{
+  width: 24px;
+  height: 24px;
 }
+.SvgAndtext p{
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+}
+
 .name {
   color: #d9d9d9;
   font-family: Lato;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -237,32 +265,37 @@
 .day {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 4vh;
   gap: 1vh;
 }
-.svgAndday{
-  display: flex;
-  gap: 0.5vw;
-}
+
 .day p {
   color: var(--Grey-200, #d3d3d3);
   text-align: center;
   font-family: Lato;
-  font-size: 18px;
+  /* font-size: 20px;*/
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  /* margin-right: 50px; */
 }
 .walletMoney {
   display: flex;
-  margin-left: 65px;
+  align-items: center;
+  margin-left: 2vw;
   gap: 2vh;
-  /* margin-left: 25vh; */
+}
+.walletMoney svg{
+  width: 24px;
+  height: 24px;
+}
+.walletMoney p{
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+
 }
 .city {
   display: flex;
-  margin-top: 16px;
+  margin-top: 2.22vh;
   color: var(--Grey-200, #d3d3d3);
   text-align: center;
   font-family: Lato;
@@ -271,6 +304,14 @@
   font-weight: 500;
   line-height: 24px;
   gap: 1vh;
+}
+.city svg{
+  width: 24px;
+  height: 24px;
+}
+.city p{
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+
 }
 .points {
   width: 50%;
