@@ -317,6 +317,9 @@ body {
   display: flex;
   gap: 16px;
 }
+.intensitySvgAndText img {
+  height: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+}
 
 #intensitylabelname {
   color: var(--Color, #fff);
@@ -326,6 +329,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  align-items: center;
 }
 
 #intensityCount {
@@ -662,10 +667,6 @@ body {
   padding: 10px;
   height: 150px;
 }
-
-/* .chngmodebtn {
-  display: inline-block; 
-} */
 
 .chngmodebtn img {
   display: block;
