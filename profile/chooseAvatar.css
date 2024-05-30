@@ -195,7 +195,7 @@
     color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
     text-align: center;
     font-family: Lato;
-    font-size: 24px;
+    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
@@ -203,42 +203,42 @@
   .accounts{
     display: flex;
     gap: 8vh;
-    margin-top: 20px;
+    margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
     border-radius: 30px;
-    margin-top: 30px;
+    margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
   }
 .account1 img{
     width: 100%;
     height: 55vh;
-    margin-top: 20px;
+    margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
     cursor: pointer;
 } 
 .account2 img{
     width: 100%;
     height: 55vh;
-    margin-top: 20px;
+    margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
     cursor: pointer;
 } 
 .account3 img{
     width: 100%;
     height: 55vh;
-    margin-top: 20px;
+    margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
     cursor: pointer;
 } 
 
   #chooseAvatar{
     width: 60%;
-    padding: 16px;
+    padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
     color: var(--Color, #fff);
     border-radius: var(--Radius-m, 8px);
     background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
     backdrop-filter: blur(6.87976598739624px);
     font-family: Lato;
-    font-size: 20px;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.25px;
-    margin-top: 80px;
+    margin-top: clamp(0.3472375rem, 0rem + 5.5556vw, 34.7224375rem);
   }
   

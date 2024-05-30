@@ -84,7 +84,7 @@
 .heading p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 25px;
+  font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -113,7 +113,7 @@
 .option p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 25px;
+  font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   font-style: normal;
   font-weight: 500;
 }
@@ -153,7 +153,7 @@
 .logoutButton p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 20px;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -299,7 +299,8 @@
   color: var(--Grey-200, #d3d3d3);
   text-align: center;
   font-family: Lato;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
@@ -340,7 +341,8 @@
   height: 10vh;
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -375,7 +377,8 @@
 .History p {
   color: var(--Grey-200, #d3d3d3);
   font-family: Lato;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -391,7 +394,8 @@
 .data1 p {
   color: #ebeaea;
   font-family: Lato;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
@@ -400,7 +404,8 @@
 .data2 p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size:clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
@@ -412,7 +417,8 @@
 .data3 p {
   color: var(--Grey-200, #d3d3d3);
   font-family: Lato;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -421,7 +427,8 @@
 .bullet-points {
   color: var(--Grey-200, #d3d3d3);
   font-family: Lato;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -436,7 +443,8 @@
   margin-top: 10px;
   color: var(--Grey-200, #d3d3d3);
   font-family: Lato;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -474,7 +482,8 @@
 .delivered p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -484,7 +493,8 @@
   opacity: 0.7;
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -493,7 +503,8 @@
 .Qty p {
   color: #238efa;
   font-family: Lato;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -531,7 +542,8 @@
 .sold p {
   color: #d9d9d9;
   font-family: Lato;
-  font-size: 12px;
+  /* font-size: 12px; */
+  font-size: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -541,7 +553,8 @@
 .dollarRate p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 600;
   line-height: normal;
