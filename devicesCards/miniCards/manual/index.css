@@ -1,0 +1,150 @@
+.deviceCont {
+    border-radius: 8px;
+    backdrop-filter: blur(32px);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 21.56vw;
+    height: 37.33vh;
+  }
+  
+  #span85, #span86, #span87, #span88, #span89, #span80, #span811, #span822 {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  }
+  
+  #span95, #span96, #span97, #span98, #span99, #span90, #span911, #span922 {
+    overflow: hidden;
+    color: var(--Color, #fff);
+    text-overflow: ellipsis;
+    font-family: Lato;
+    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .statusCont {
+    /* width: 40%;
+    height: clamp(0.4879335rem, 0rem + 7.7778vw, 48.79335rem); */
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 11.17vw;
+    height: 21.94vh;
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .newud {
+    width: 22%;
+    height: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
+    position: relative;
+    border-radius: 20px 8px 0px 20px;
+    top: -50px;
+    left: 84%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.newud > svg {
+    width: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+    height: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+}
+
+.newud > span {
+    color: #fff;
+    font-family: Lato;
+    font-size: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+  .statusCont > img {
+    height: 100%;
+  }
+  
+  .dbottomCont {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
+  }
+  
+  .dbLetfCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: max-content;
+  }
+  
+  #span129, #span120, #span1211, #span1222, #span1233, #span1244, #span1255, #span1266, #span1277, #span1288, #span1299, #span1200, #span12111, #span12222, #span12333, #span12 {
+    color: #aeaeae;
+    text-align: center;
+    font-family: Lato;
+    font-size: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  }
+  
+  #span139, #span130, #span1311, #span1322, #span1333, #span1344, #span1355, #span1366, #span1377, #span1388, #span1399, #span1300, #span13111, #span13222, #span13333, #span13 {
+    color: var(--Color, #fff);
+    text-align: center;
+    font-family: Lato;
+    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
+  }
+  
+  #span149, #span140, #span1411, #span1422, #span1433, #span1444, #span1455, #span1466, #span1477, #span1488, #span1499, #span1400, #span14111, #span14222, #span14333, #span14 {
+    color: var(--Color, #fff);
+    font-family: Lato;
+    font-size: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  
+  .dbRightCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: max-content;
+  }
+  
+  /* .statusCont1 {
+    width: 40%;
+    height: clamp(0.4879335rem, 0rem + 7.7778vw, 48.79335rem);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .statusCont1 > img {
+    height: 80%;
+    width: 80%;
+  } */
+  
