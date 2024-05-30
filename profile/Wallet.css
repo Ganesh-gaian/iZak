@@ -59,13 +59,13 @@
   flex-direction: column;
   justify-content: flex-start;
   /* align-items: flex-start; */
-  margin-top: 8px;
+  margin-top: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
   /* top: 0; */
 }
 .walletContainer p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 20px;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -75,30 +75,30 @@
   height: 10vh;
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
+  margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
 }
 .Balance {
   width: 90%;
   height: 5vh;
   display: flex;
   gap: 15vh;
-  margin-bottom: 15px;
+  margin-bottom: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
 }
 .Balance p {
   color: #d9d9d9;
   font-family: Lato;
-  font-size: 18px;
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 122.222% */
+  line-height: 22px; 
 }
 .Balance span {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 24px;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 700;
-  line-height: 22px; /* 91.667% */
+  line-height: 22px;
 }
 .money {
   display: flex;
@@ -108,10 +108,10 @@
   color: var(--Color, #fff);
   text-align: right;
   font-family: Lato;
-  font-size: 24px;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px; 
 }
 .Points {
   width: 90%;
@@ -122,19 +122,19 @@
 .Points p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 18px;
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 91.667% */
+  line-height: 22px; 
   margin-top: 0.4vh;
 }
 .Points a {
   color: #0b82f9;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 122.222% */
+  line-height: 22px; 
   text-decoration: none;
 }
 .Cards {
@@ -142,15 +142,15 @@
   height: 40vh;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
 }
 .Cards p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 20px;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 120% */
+  line-height: 24px; 
   margin-bottom: 24px;
 }
 .cardImages {
@@ -163,43 +163,43 @@
   height: 33vh;
   background: url("profileimages/Card\ Rectangle.png");
   background-size: cover;
-  padding-left: 35px;
+  padding-left: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
 }
 .cardName {
   width: 100%;
   height: 5vh;
   display: flex;
   gap: 1vh;
-  padding-top: 20px;
+  padding-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
 }
 .cardName p {
   color: #fdfdfd;
   text-align: center;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
   font-family: Roboto;
-  font-size: 16px;
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 300;
-  line-height: 16px; /* 114.286% */
+  line-height: 16px; 
   letter-spacing: 2px;
-  padding-top: 6px;
+  padding-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
 }
 .masked-card-number {
   width: 100%;
   height: 5vh;
-  margin-top: 10px;
+  margin-top: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
   color: rgba(212, 212, 212, 0.8);
   text-align: flex-start;
   text-shadow: -1px 5px 4px rgba(0, 0, 0, 0.5);
   font-family: Roboto;
-  font-size: 14px;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 500;
   line-height: 16px; /* 114.286% */
   letter-spacing: 2px;
   column-gap: 30px;
   display: flex;
-  margin-top: 20px;
+  margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
 }
 .chipWifi {
   width: 100%;
@@ -216,7 +216,7 @@
   justify-content: space-between;
 }
 .holderName { 
-    margin-top: 35px;
+    margin-top: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
   display: flex;
   gap: 2vh;
 }
@@ -226,13 +226,13 @@
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.03);
   font-family: "IBM Plex Mono";
-  font-size: 11px;
+  font-size: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
 .cardType img {
-  padding-top: 20px;
+  padding-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   /* margin-right: 8vh; */
 }
 
@@ -241,14 +241,14 @@
   height: 33vh;
   background: url("profileimages/Card\ Rectangle.png");
   background-size: cover;
-  padding-left: 35px;
+  padding-left: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
 }
 .card3 {
   width: 30%;
   height: 33vh;
   background: url("profileimages/Card\ Rectangle.png");
   background-size: cover;
-  padding-right: 10px;
+  padding-right: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,10 +270,10 @@
   text-align: center;
   text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
   font-family: Lato;
-  font-size: 24px;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; /* 66.667% */
+  line-height: 16px; 
 }
 .accounts{
   width: 100%;
@@ -282,25 +282,25 @@
 .linkedAccounts p {
   color: var(--Color, #fff);
   font-family: Lato;
-  font-size: 25px;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 .radio-form {
-  margin-top: 20px;
+  margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .radio-group {
-  margin-bottom: 20px;
+  margin-bottom: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   display: flex;
   justify-content: space-between;
 }
 
 .radio-group input[type="radio"] {
-  margin-right: 10px;
+  margin-right: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 
 
@@ -337,7 +337,7 @@ input[type="radio"]:checked {
 .radio-group label {
   color: #c4c7c4;
   font-family: Lato;
-  font-size: 20px;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -345,12 +345,12 @@ input[type="radio"]:checked {
 .radio-group3 a{
   color: #0b82f9;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; /* 122.222% */
+  line-height: 22px; 
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 
 

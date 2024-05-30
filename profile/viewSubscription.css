@@ -1,349 +1,350 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .container {
-    width: 100%;
-    height: 100vh;
-    background: url("https://izak.aidtaas.com/image/background.png");
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    overflow-y: hidden;
-  }
-  
-  .topNav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 5.13vh;
-    position: fixed;
-    /* top: 24px; */
-    top: 3.66vh !important;
-  }
-  
-  .navContent {
-    width: 96.25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .iZAKLogo {
-    width: 150px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .iZAKLogo svg {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .dateTimeTemp {
-    width: 250px;
-    color: var(--Color, #fff);
-    font-family: Lato;
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .userProfile {
-    width: 310px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 6px;
-  }
-  
-  .signalGif img {
-    width: 50px;
-    height: 40px;
-  }
-  
-  .line {
-    width: 1px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-  }
-  
-  .NetworkSignal {
-    display: flex;
-    align-items: center;
-  }
-  .NetworkSignal svg {
-    width: 28px;
-    height: 28px;
-  }
-  .NetworkSignal .signalTextContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .NetworkSignal .signalText {
-    color: white;
-    width: 62px;
-    height: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .NetworkSignal .signalText p {
-    color: var(--Color, #fff);
-    text-align: center;
-    font-family: Lato;
-    /* font-size: 14px; */
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-right: 2px;
-  }
-  
-  .NetworkSignal .signalText span {
-    color: var(--Color, #fff);
-    font-family: Lato;
-    /* font-size: 14px; */
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  
-  .bellNotification svg {
-    width: 40px;
-    height: 37px;
-  }
-  
-  .profileLogo {
-    width: 37px;
-    height: 37px;
-    background-color: rgb(219, 183, 253);
-    border-radius: 50%;
-  }
-  
-  .contentContainer {
-    display: flex;
-    width: 100%;
-    /* height: calc(100vh - 5.13vh);  */
-    /* height of total height - navbar + top height */
-    height: calc(100vh - 8vh);
-    margin-top: 8vh;
-    overflow-y: hidden;
-  }
-  
-  .wrapper {
-    width: 100%;
-    height: inherit;
-    display: flex;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("https://izak.aidtaas.com/image/background.png");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  /* top: 24px; */
+  top: 3.66vh !important;
+}
+
+.navContent {
+  width: 96.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iZAKLogo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 250px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.NetworkSignal {
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal svg {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 14px; */
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bellNotification svg {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  /* height: calc(100vh - 5.13vh);  */
+  /* height of total height - navbar + top height */
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+.sideNavContent {
+  visibility: hidden;
+  width: 5%;
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.iconStyle {
+  width: 32px;
+  height: 32px;
+  font-size: 22px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.iconStyle svg {
+  width: 90%;
+}
+
+@media screen and (max-width: 800px) {
   .sideNavContent {
-    visibility: hidden;
-    width: 5%;
-    height: inherit;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6vh;
+    width: 6%;
   }
-  
-  .iconStyle {
-    width: 32px;
-    height: 32px;
-    font-size: 22px;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-  .iconStyle svg {
-    width: 90%;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .sideNavContent {
-      width: 6%;
-    }
-  }
-  .mainContainer {
-    height: inherit;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 1vh;
-  }
-  .subscriptionContainer{
-    width: 90%;
-    height: 90vh;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    /* align-items: flex-start; */
-    margin-top: 70px;
-  }
-  .subscriberPhoto{
-    width: 60%;
-    height: 90vh;
-  }
- .subscriberPhoto img{
-    width: 100%;
-    height: 65vh;
-    /* margin-top: 50px; */
- }
- .empty{
-    width: 15%;
-    height: 90vh;
- }
- .subscriptionPlan{
-    width: 65%;
-    height: 65vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* margin-top: 50px; */
- }
- .subscriptionPlan p{
-    color: var(--Fitness-sys-dark-on-surface, #C4C7C4);
-font-family: Lato;
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px; /* 116.667% */
- }
- .goldPlan{
-    width: 50%;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 3vh;
-    /* margin-top: 32px; */
- }
- .goldRate {
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 90vh;
- }
+}
+.mainContainer {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1vh;
+}
+.subscriptionContainer {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  /* align-items: flex-start; */
+  margin-top: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+}
+.subscriberPhoto {
+  width: 60%;
+  height: 90vh;
+}
+.subscriberPhoto img {
+  width: 100%;
+  height: 65vh;
+  /* margin-top: 50px; */
+}
+.empty {
+  width: 15%;
+  height: 90vh;
+}
+.subscriptionPlan {
+  width: 65%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-top: 50px; */
+}
+.subscriptionPlan p {
+  color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
+  font-family: Lato;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; /* 116.667% */
+}
+.goldPlan {
+  width: 50%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3vh;
+  /* margin-top: 32px; */
+}
+.goldRate {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 90vh;
+}
 
- .rate{
-    display: flex;
-    gap: 1vh;
- }
- .rate span{
-    /* margin-top: 0.5vh; */
-    color: #C4C7C4;
-text-align: center;
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 100% */
- }
- 
- input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid #C4C7C4;
-    outline: none;
-    cursor: pointer;
-  }
-  
-  /* Color for checked radio button */
-  input[type="radio"]:checked {
-    background-color:#C4C7C4;
-    box-shadow: inset 0 0 0 3px black;
-    
-  }
- .goldPlan,.silverPlan p{
-    color: var(--Color, #FFF);
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 16px; /* 80% */
- }
- .goldPlan, .silverPlan{
-    color: var(--Fitness-sys-dark-on-surface, #C4C7C4);
-font-family: Lato;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 100% */
- }
- .silverPlan{
-    width: 50%;
-    height: 10vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 3vh;
-    /* margin-top: 50px; */
- }
- .silverRate{
-    display: flex;
-    /* justify-content: space-between; */
-    gap: 90vh;
- }
- .subscription{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
- }
+.rate {
+  display: flex;
+  gap: 1vh;
+}
+.rate span {
+  /* margin-top: 0.5vh; */
+  color: #c4c7c4;
+  text-align: center;
+  font-family: Lato;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 100% */
+}
 
- .subscribe-button{
-    width: 100%;
-    /* height: 7vh; */
-    display: flex;
-padding: 16px 0px;
-justify-content: center;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
-border-radius: var(--Radius-m, 8px);
-background: linear-gradient(96deg, #0B82F9 0.58%, #00478E 100%);
-backdrop-filter: blur(6.87976598739624px);
-color: #fff;
-color: var(--Color, #FFF);
-font-family: Lato;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 83.333% */
-border: none;
- }
- .unsubscribe-button{
-    width: 100%;
-    /* height: 7vh; */
-    display: flex;
-padding: 16px 0px;
-justify-content: center;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
-border-radius: var(--Radius-m, 8px);
-background: #1E2023;
-backdrop-filter: blur(10px);
-color: #fff;
-color: var(--Color, #FFF);
-font-family: Lato;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 83.333% */
-border: none;
- }
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #c4c7c4;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Color for checked radio button */
+input[type="radio"]:checked {
+  background-color: #c4c7c4;
+  box-shadow: inset 0 0 0 3px black;
+}
+.goldPlan,
+.silverPlan p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 80% */
+}
+.goldPlan,
+.silverPlan {
+  color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
+  font-family: Lato;
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 100% */
+}
+.silverPlan {
+  width: 50%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 3vh;
+  /* margin-top: 50px; */
+}
+.silverRate {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 90vh;
+}
+.subscription {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subscribe-button {
+  width: 100%;
+  /* height: 7vh; */
+  display: flex;
+  padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem) 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: var(--Radius-m, 8px);
+  background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
+  backdrop-filter: blur(6.87976598739624px);
+  color: #fff;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 83.333% */
+  border: none;
+}
+.unsubscribe-button {
+  width: 100%;
+  /* height: 7vh; */
+  display: flex;
+  padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem) 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: var(--Radius-m, 8px);
+  background: #1e2023;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 83.333% */
+  border: none;
+}
