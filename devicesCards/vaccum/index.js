@@ -53,6 +53,7 @@ const intensityCount = document.getElementById("intensityCount");
 intensityRange.addEventListener("input", () => {
   intensityCount.textContent = `${intensityRange.value}%`;
 });
+
 //timer
 document.addEventListener('DOMContentLoaded', () => {
   const timerInputs = document.querySelectorAll('.timer-box');

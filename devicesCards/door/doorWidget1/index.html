@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>door1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="doorContainer">
+        <div class="contentContainer">
+          <div class="topCont">
+            <div class="topLeftDiv">
+              <div id="swtichbtn">
+                <img src="./powerbutton.png" alt="powerbutton" />
+              </div>
+              <div class="topLeftDivdevicecont">
+                <img src="./doorLogo.svg" alt="techIotvacuum" />
+                <div class="trdivtextCont">
+                  <span id="thermdevicename">Yale Door</span>
+                  <span id="thermdeviceplace">Yale • Outdoor Area</span>
+                </div>
+              </div>
+            </div>
+            <div class="topRightDiv">
+              <div class="rightDivEclipse" id="fav">
+                <img src="./fav.png" alt="" />
+              </div>
+              <div class="rightDivEclipse" id="info">
+                <img src="./info.png" alt="" />
+              </div>
+              <div class="rightDivEclipse" id="recycle">
+                <img src="./Recycle-Bin.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="bottomCont">
+            <div class="leftbtmCont">
+              <img src="./shutter-open.png" alt="shutter" class="shutter-img" />
+              <img src="./Padlock.png" alt="Padlock" class="padlock-img" />
+            </div>
+
+            <div class="rightbtmCont">
+              <div class="rbtmtopCont">
+                <div class="chngmodecont">
+                  <div class="chngmodebtn colored" id="imprintBtn">
+                    <img src="./imprint.svg" alt="imprint" />
+                  </div>
+                  <span>Imprint</span>
+                </div>
+                <div class="chngmodecont">
+                  <div class="chngmodebtn" id="faceIdBtn">
+                    <img src="./Face-Scan.svg" alt="Face" />
+                  </div>
+                  <span>Face ID</span>
+                </div>
+                <div class="chngmodecont">
+                  <div class="chngmodebtn" id="codeBtn">
+                    <img src="./password.svg" alt="password" />
+                  </div>
+                  <span>Code</span>
+                </div>
+                <div class="chngmodecont">
+                  <div class="chngmodebtn" id="guestBtn">
+                    <img src="./Guest.svg" alt="Guest" />
+                  </div>
+                  <span>Guest</span>
+                </div>
+              </div>
+
+              <div class="rbtmbtmCont" id="imprintContent">
+                <div class="Buttons">
+                  <div class="Button" id="prachiFingerprint">
+                    <p>Prachi’s FingerPrint</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+
+                  <div class="Button" id="cherryFingerprint">
+                    <p>Cherry Fingerprint</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+
+                  <div class="Button" id="yanaFingerprint">
+                    <p>Yana’s Fingerprint</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+
+                  <div class="Button" id="moonFingerprint">
+                    <p>Moon’s Left Fingerprint</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="rbtmbtmCont" id="faceIdContent" style="display: none">
+                <div class="Buttons">
+                  <div class="Button" id="prachifaceIdContent">
+                    <p>Prachi</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+
+                  <div class="Button" id="cherryfaceIdContent">
+                    <p>Cherry</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+
+                  <div class="Button" id="yanafaceIdContent">
+                    <p>Yana</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+
+                  <div class="Button" id="moonfaceIdContent">
+                    <p>Moon</p>
+                    <img src="./Ellipse.svg" alt="" class="circleSvg" />
+                    <img src="./Check.svg" alt="" class="tickMark" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="rbtmbtmCont" id="GuestIdContent" style="display: none">
+                <div class="Guestbtns">
+
+                  <div class="guestButton" id="prachifaceIdContent">
+                    <div class="guestImg">
+                      <img src="./Fingerprint.svg" alt="" class="GuestbtnImg" />
+                    </div>
+                    <div class="guestTexts">
+                      <p>Serena Williams</p>
+                      <span>Access till Mar 9, 2024 | 7:00 PM</span>
+                    </div>
+                  </div>
+
+                  <div class="guestButton" id="prachifaceIdContent">
+                    <div class="guestImg">
+                      <img src="./Correct-password.svg" alt="" class="GuestbtnImg" />
+                    </div>
+                    <div class="guestTexts">
+                      <p>Taylor Swift</p>
+                      <span>Access till Mar 9, 2024 | 7:00 PM</span>
+                    </div>
+                  </div>
+
+                  <div class="guestButton" id="prachifaceIdContent">
+                    <div class="guestImg">
+                      <img src="./Face-Scan-2.svg" alt="" class="GuestbtnImg" />
+                    </div>
+                    <div class="guestTexts">
+                      <p>Madhav Baliga</p>
+                      <span>Access till Mar 9, 2024 | 7:00 PM</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

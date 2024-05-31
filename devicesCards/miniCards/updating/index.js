@@ -7,7 +7,7 @@ const devices = [
     statusImg: "./camera-img.svg",
     configureImg: "https://izak.aidtaas.com/svg/configure.svg",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-    background: "#6a6969",
+    background: "#5A616B",
   },
   {
     id: "updateCarbonDevice",
@@ -16,17 +16,17 @@ const devices = [
     isNew: false,
     statusImg: "./ppm.svg",
     configureImg: "https://izak.aidtaas.com/svg/configure.svg",
-    background: "#6a6969",
+    background: "#5A616B",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
   },
   {
-    id: "updateVaccum",
+    id: "updatevacuum",
     title: "Vacuum",
     location: "iRobot • Living Room",
     isNew: false,
-    statusImg: "./wirelessVaccumCleaner.svg",
+    statusImg: "./wirelessvacuumCleaner.svg",
     configureImg: "https://izak.aidtaas.com/svg/configure.svg",
-    background: "#6a6969",
+    background: "#5A616B",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
   }
 ];
@@ -51,7 +51,7 @@ function createDeviceCard(device) {
                           <circle cx="6" cy="6" r="6" fill="#FF0606"/>
                         </svg><span>Live</span>`;
 
-  if (device.id === "updateCarbonDevice" || device.id === "updateVaccum") {
+  if (device.id === "updateCarbonDevice" || device.id === "updatevacuum") {
     newDiv.style.visibility = "hidden";
   } else if (!device.isNew) {
     newDiv.style.display = "none";

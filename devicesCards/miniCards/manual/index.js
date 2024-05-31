@@ -44,11 +44,11 @@ const devices = [
     nextScheduled: false,
   },
   {
-    id: "updateVaccum",
-    title: "Vaccum",
+    id: "updatevacuum",
+    title: "vacuum",
     location: "iRobot • Living Room",
     isNew: false,
-    statusImg: "./wirelessVaccumCleaner.svg",
+    statusImg: "./wirelessvacuumCleaner.svg",
     background:
       "linear-gradient(128deg, #00478e -5.15%, #0b82f970, #c975fcb8 105.74%)",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
@@ -59,11 +59,11 @@ const devices = [
     nextScheduled: true,
   },
   {
-    id: "updateVaccumBg",
-    title: "Vaccum",
+    id: "updatevacuumBg",
+    title: "vacuum",
     location: "iRobot • Living Room",
     isNew: false,
-    statusImg: "./wirelessVaccumCleaner.svg",
+    statusImg: "./wirelessvacuumCleaner.svg",
     background: "#6a6969",
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     lastUsed: {
@@ -186,4 +186,4 @@ function displayDevice(deviceId) {
   }
 }
 
-displayDevice("updateVaccumBg");
+displayDevice("updateCarbonMonoBg");

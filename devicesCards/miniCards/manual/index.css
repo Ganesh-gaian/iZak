@@ -6,7 +6,7 @@
   flex-direction: column;
   overflow: hidden;
   width: 21.56vw;
-  height: 37.33vh;
+  /* height: 37.33vh; */
 }
 
 #span85,
@@ -68,7 +68,7 @@
 .statusCont.updateCameraDevice {
   top: 10px;
 }
-.statusCont.updateVaccum {
+.statusCont.updatevacuum {
   top: 30px;
 }
 
@@ -97,7 +97,7 @@
   height: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
   position: relative;
   border-radius: 20px 8px 0px 20px;
-  top: -40px;
+  top: -50px;
   left: 84%;
   display: flex;
   justify-content: center;
@@ -123,7 +123,6 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  /* margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem); */
   margin-top: 5px;
 }
 
@@ -160,7 +159,7 @@
   line-height: normal;
   margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
 }
-#span120{
+#span120 {
   /* font-size: 12px !important; */
   font-size: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem) !important;
 }
@@ -190,7 +189,8 @@
   margin-bottom: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
 }
 
-#span130, #span140{
+#span130,
+#span140 {
   display: none;
 }
 #span149,
@@ -232,6 +232,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .imgAboveTextManual img {
@@ -246,11 +247,35 @@
     gap: 5px;
   }
 }
-/* @media only screen and (max-width: 2000px) and (min-width: 1800px) {
+@media only screen and (max-width: 1600px) and (min-width: 1400px) {
+  .statusCont {
+    width: 9vw;
+    height: 18vh;
+    top: 0px !important;
+    text-align: center;
+  }
+
+  .statusCont.updatevacuum {
+    top: 10px;
+  }
+
+  .statusCont.updateCarbonMonoBg {
+    top: 80px !important;
+  }
+  .statusCont.updateCarbonMono {
+    top: 80px !important;
+  }
+  
+  .statusCont.updateCameraDevice {
+    top: 10px;
+  }
+
+  .dbottomCont {
+    margin-top: 12px;
+  }
+
   .newud {
     width: 22%;
-    top: -40px;
-    left: 84%;
-    gap: 5px;
-  }
-} */
+    top: -52px;}
+
+}
