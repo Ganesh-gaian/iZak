@@ -191,7 +191,7 @@
   margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
   /* margin-left: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem); */
   margin-right: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
-  margin-bottom: clamp(0.1736125rem, 0rem + 2.7778vw, 17.3611875rem);
+  margin-bottom: 20px;
 }
 .top-heading {
   display: flex;
@@ -219,40 +219,88 @@ a {
 }
 .playbook-triggers {
   width: 35%;
-  height: auto;
-}
-.triggers {
-  width: 100%;
   display: flex;
-  /* margin-left: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem); */
+  flex-direction: column;
+  gap: 1vh;
 }
-.triggers svg {
+.option {
+  width: 100%;
+  height: 9vh !important;
+  /* gap: 1vw; */
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+}
+.option svg {
   border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
   backdrop-filter: blur(6.87976598739624px);
 }
-.triggers p {
+.option p {
   font-size: clamp(0.09548125rem, 0rem + 1.5278vw, 9.548625rem);
   font-family: Lato;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   margin-top: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
 }
+.option:hover{
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2); 
+}
+.option.selected {
+  border-radius: 8px;
+  background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
+  backdrop-filter: blur(6.87976598739624px);
+  color: white;
+}
+
+/* .arrowMark {
+  height: 5vh;
+  padding: 3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  color: white;
+}
+.arrow{
+  display: none;
+}
+.arrowMark.selected .arrow {
+  display: inline-block;
+  position: absolute;
+  left: 14vw;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  } */
+
 .trigger-icon {
   position: relative;
   width: 20%;
   height: 9vh;
   margin-right: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem);
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .trigger-icon svg {
   position: absolute;
-  left: 50px;
+  /* left: 35px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon{
   width: 20%; 
   height: 33%;
-  margin-left:5px;
-  top:5px;
+  /* margin-left:5px; */
+  /* top:5px; */
 }
 .empty-space {
   width: 30%;
@@ -265,7 +313,7 @@ a {
 }
 #fname {
   width: 100%;
-  padding: 12px 20px;
+  padding: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem) clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   margin: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem) 0;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -287,8 +335,9 @@ a {
   right: 12px;
   top: 18px;
 }
-.selection-data p{
+.details p{
   width: 100%;
+  height: 3vh;
   margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
   font-family: Lato;
   font-size: clamp(0.09548125rem, 0rem + 1.5278vw, 9.548625rem);
@@ -296,3 +345,106 @@ a {
   color:  rgba(255, 255, 255, 0.60);
 }
 
+.details {
+  width: 100%;
+  height: inherit;
+  display: none;
+  margin-top: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
+}
+.details {
+  height: inherit;
+  overflow-y: scroll;
+  display: none;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  /* margin-top: 10vh; */
+}
+
+.details::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+#details-option1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.Button {
+  width: 100%;
+  height: 5vh;
+  padding: 3vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  /* background: #1e2023; */
+  border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  color: white;
+}
+
+.Button:hover{
+  border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2);
+}
+
+.Button.selected {
+  border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
+  backdrop-filter: blur(6.87976598739624px);
+  color: white;
+}
+
+.Button p {
+  color: rgba(255, 255, 255, 0.60);
+  font-family: Lato;
+  /* font-size: 20px; */
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+
+.circleSvg,
+.tickMark {
+display: none;
+}
+.Button.selected .circleSvg {
+display: inline-block;
+position: absolute;
+right: 8px;
+z-index: 1;
+width: 30px;
+height: 30px;
+}
+.Button.selected .tickMark {
+display: inline-block;
+position: absolute;
+right: 12px;
+z-index: 1;
+width: 20px;
+height: 20px;
+}
+
+
+/* @media only screen and (max-width: 800px) {
+.Button.selected .circleSvg {
+  right: 22px;
+  width: 22px;
+  height: 22px;
+}
+.Button.selected .tickMark {
+  right: 25px;
+  width: 16px;
+  height: 16px;
+}
+} */
