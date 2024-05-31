@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vaccum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="vaccumContainer">
+        <div class="contentContainer">
+          <div class="topCont">
+            <div class="topLeftDiv">
+              <div id="swtichbtn">
+                <img src="./powerbutton.png" alt="powerbutton">
+              </div>
+              <div class="topLeftDivdevicecont">
+                <img src="./techIotVaccum.svg" alt="techIotVaccum">
+                <div class="trdivtextCont">
+                  <span id="thermdevicename">Vacuum</span>
+                  <span id="thermdeviceplace">iRobot • Indoor Area</span>
+                </div>
+              </div>
+            </div>
+            <div class="topRightDiv">
+                <div class="rightDivEclipse" id="fav">
+                  <img src="./fav.png" alt="" />
+                </div>
+                <div class="rightDivEclipse" id="info">
+                  <img src="./info.png" alt="" />
+                </div>
+                <div class="rightDivEclipse" id="recycle">
+                  <img src="./Recycle-Bin.png" alt="" />
+                </div>
+              </div>
+          </div>
+          <div class="bottomCont">
+
+              <div class="leftbtmCont">
+                  <img src="./wirelessVaccumCleaner.svg" alt="">
+              </div>
+              
+              <div class="rightbtmCont"><div class="rbtmtopCont">
+                  <div class="chngmodecont">
+                    <div class="chngmodebtn colored" id="quietModeBtn">
+                      <img src="./Quiet Zone.svg" alt="">
+                    </div>
+                    <span>Quiet</span>
+                  </div>
+                  <div class="chngmodecont">
+                    <div class="chngmodebtn" id="spiralModeBtn">
+                      <img src="./pie.svg" alt="">
+                    </div>
+                    <span>Spiral</span>
+                  </div>
+                  <div class="chngmodecont">
+                    <div class="chngmodebtn" id="chargingModeBtn">
+                      <img src="./charging.svg" alt="">
+                    </div>
+                    <span>Charging</span> 
+                  </div>
+                  <div class="chngmodecont">
+                    <div class="chngmodebtn" id="sideWallModeBtn">
+                      <img src="./sidewall.svg" alt="">
+                    </div>
+                    <span>Side Wall</span>
+                  </div>
+                </div>
+                
+              
+                <div class="rightbtmMiddleContent">
+                  <div class="timerImgAndText">
+                    <img src="./CountdownTimer.svg" alt="CountdownTimer">
+                    <p>Timer</p>
+                  </div>
+                  <div class="TimerContainer">
+                    <div class="timer">
+                      <input type="text" class="timer-box" id="minutes1" maxlength="2" value="0">
+                      <input type="text" class="timer-box" id="minutes2" maxlength="2" value="2">
+                      <span class="colon">:</span>
+                      <input type="text" class="timer-box" id="seconds1" maxlength="2" value="0">
+                      <input type="text" class="timer-box" id="seconds2" maxlength="2" value="2">
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="rbtmbtmCont" id="speedContent">
+                  <div class="Intensitylabel">
+                    <div class="intensitySvgAndText">
+                      <img src="./speed.svg" alt="speed" />
+                      <span id="intensitylabelname">Speed</span>
+                    </div>
+                    <span class="percentageValue" id="intensityCount">25%</span>
+                  </div>
+                  <div class="intensitymeterInputRange">
+                    <input
+                      type="range"
+                      min="1"
+                      max="100"
+                      value="25"
+                      class="slider"
+                      id="intensityRange"
+                    />
+                    <svg
+                      id="sliderSvg"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="390"
+                      height="16"
+                      viewBox="0 0 390 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M0 13.6328C0 12.3522 1.0184 11.3037 2.29847 11.2665L381.887 0.235756C386.329 0.106674 390 3.6724 390 8.11621C390 12.4703 386.47 16 382.116 16H2.36721C1.05983 16 0 14.9402 0 13.6328Z"
+                        fill="#B3B3B3"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

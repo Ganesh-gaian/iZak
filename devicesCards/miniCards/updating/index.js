@@ -1,32 +1,34 @@
 const devices = [
   {
-    id: "updateCarbonDevice1",
-    title: "Carbon Monoxide Detector",
-    location: "SONOFF • Master Bedroom",
-    isNew: true,
-    statusImg: "https://izak.aidtaas.com/svg/curtain.svg",
-    configureImg: "https://izak.aidtaas.com/svg/configure.svg",
-    // background: "linear-gradient(128deg, rgba(255, 255, 255, 0.10) -5.15%, rgba(22, 93, 196, 0.10) 47.41%, rgba(96, 121, 255, 0.10) 105.74%, rgba(12, 56, 120, 0.10) 105.74%)",
-    background: "#6a6969",
-
-    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-  },
-  {
-    id: "updateCameraDevice2",
+    id: "updateCameraDevice",
     title: "Camera",
     location: "TP Link • Outdoor Area",
     isNew: true,
-    statusImg: "./ppm.svg",
+    statusImg: "./camera-img.svg",
     configureImg: "https://izak.aidtaas.com/svg/configure.svg",
-    // background:
-    //   "linear-gradient(128deg, #00478e -5.15%, #0b82f970, #c975fcb8 105.74%)",
-        // background: "linear-gradient(128deg, rgba(255, 255, 255, 0.10) -5.15%, rgba(22, 93, 196, 0.10) 47.41%, rgba(96, 121, 255, 0.10) 105.74%, rgba(12, 56, 120, 0.10) 105.74%)",
-
     boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
     background: "#6a6969",
-
   },
-  // Add more devices as needed
+  {
+    id: "updateCarbonDevice",
+    title: "Carbon Monoxide Detector",
+    location: "SONOFF • Master Bedroom",
+    isNew: false,
+    statusImg: "./ppm.svg",
+    configureImg: "https://izak.aidtaas.com/svg/configure.svg",
+    background: "#6a6969",
+    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+  },
+  {
+    id: "updateVaccum",
+    title: "Vacuum",
+    location: "iRobot • Living Room",
+    isNew: false,
+    statusImg: "./wirelessVaccumCleaner.svg",
+    configureImg: "https://izak.aidtaas.com/svg/configure.svg",
+    background: "#6a6969",
+    boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+  }
 ];
 
 function createDeviceCard(device) {
@@ -48,10 +50,22 @@ function createDeviceCard(device) {
   newDiv.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                           <circle cx="6" cy="6" r="6" fill="#FF0606"/>
                         </svg><span>Live</span>`;
-  if (!device.isNew) newDiv.style.display = "none";
+
+  if (device.id === "updateCarbonDevice" || device.id === "updateVaccum") {
+    newDiv.style.visibility = "hidden";
+  } else if (!device.isNew) {
+    newDiv.style.display = "none";
+  }
 
   const statusCont = document.createElement("div");
   statusCont.className = "statusCont";
+
+  if (device.id === "updateCarbonDevice") {
+    const statusText = document.createElement("span");
+    statusText.className = "statusText";
+    statusText.textContent = "574 ppm";
+    statusCont.appendChild(statusText);
+  }
 
   const statusImg = document.createElement("img");
   statusImg.src = device.statusImg;
@@ -63,9 +77,6 @@ function createDeviceCard(device) {
   const innerud = document.createElement("div");
   innerud.className = "innerud";
 
-  // const configureImg = document.createElement('img');
-  // configureImg.src = device.configureImg;
-  // configureImg.alt = '';
   const configureDigit = document.createElement("span");
   configureDigit.textContent = "90%";
 
@@ -73,7 +84,6 @@ function createDeviceCard(device) {
   configureSpan.textContent = "Updating..";
 
   innerud.appendChild(configureSpan);
-  // innerud.appendChild(configureImg);
   innerud.appendChild(configureDigit);
 
   dbottomContndud.appendChild(innerud);
@@ -99,5 +109,4 @@ function displayDevice(deviceId) {
   }
 }
 
-// Example usage
-displayDevice("updateCameraDevice2");
+displayDevice("updateCarbonDevice");

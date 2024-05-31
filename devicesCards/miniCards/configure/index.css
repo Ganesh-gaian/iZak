@@ -1,6 +1,4 @@
 .deviceCont {
-  /* width: 23.58%;
-  height: max-content; */
   border-radius: 8px;
   padding: 15px;
   display: flex;
@@ -30,11 +28,10 @@
 .new {
   width: 22%;
   height: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
-  /* height: 30px; */
   position: relative;
   border-radius: 20px 8px 0px 20px;
   background: var(--Color, #fff);
-  top: -67px;
+  top: -69px;
   left: 84%;
   color: #1969e0;
   font-family: Lato;
@@ -48,21 +45,38 @@
 }
 
 .statusCont {
-  /* width: 40%;
-  height: clamp(0.4879335rem, 0rem + 7.7778vw, 48.79335rem); */
-  display: flex;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   width: 11.17vw;
   height: 21.94vh;
-  position: relative;
-  top: 36px;
+  top: 50px;
+  text-align: center; 
 }
 
 .statusCont > img {
-  height: 100%;
+  width: 100%;
+}
+
+.statusText {
+  position: absolute;
+  bottom: calc(100% + 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2px 5px;
+  border-radius: 4px;
+
+  overflow: hidden;
+  color: var(--Color, #fff);
+  text-align: center;
+  text-overflow: ellipsis;
+  font-family: Lato;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  white-space: nowrap;
 }
 
 .dbottomContnd {
@@ -96,6 +110,7 @@
   font-weight: 400;
   line-height: normal;
 }
+
 
 @media screen and (min-width: 700px) and (max-width: 750px) {
   .new {

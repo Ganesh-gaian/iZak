@@ -88,4 +88,4 @@ function displayDevice(deviceId) {
     }
 }
 
-displayDevice("resolveCarbonMono");
+displayDevice("updateCameraDevice");

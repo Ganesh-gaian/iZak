@@ -6,21 +6,29 @@ const devices = [
         isNew: true,
         statusImg: './camera-img.svg',  
         configureImg: 'https://izak.aidtaas.com/svg/configure.svg',
-        // background: 'linear-gradient(128deg, #00478e -5.15%, #0b82f970, #c975fcb8 105.74%)',
         background: "#6a6969",
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
     },
     {
-        id: 'configCarbonDevice1',
+        id: 'configCarbonDevice',
         title: 'Carbon Monoxide Detector',
         location: 'SONOFF • Master Bedroom',
         isNew: true,
         statusImg: "./ppm.svg",
         configureImg: 'https://izak.aidtaas.com/svg/configure.svg',
-        background: 'linear-gradient(128deg, #00478e -5.15%, #0b82f970, #c975fcb8 105.74%)',
+        background: "#6a6969",
+        boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
+    },
+    {
+        id: 'updateVaccum',
+        title: 'Vacuum',
+        location: 'iRobot • Living Room',
+        isNew: true,
+        statusImg: "./wirelessVaccumCleaner.svg",
+        configureImg: 'https://izak.aidtaas.com/svg/configure.svg',
+        background: "#6a6969",
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
     }
-
 ];
 
 function createDeviceCard(device) {
@@ -48,6 +56,13 @@ function createDeviceCard(device) {
     const statusImg = document.createElement('img');
     statusImg.src = device.statusImg;
     statusImg.alt = '';
+
+    if (device.id === 'configCarbonDevice') {
+        const statusText = document.createElement('span');
+        statusText.className = 'statusText';
+        statusText.textContent = '574 ppm';
+        statusCont.appendChild(statusText);
+    }
 
     const dbottomContnd = document.createElement('div');
     dbottomContnd.className = 'dbottomContnd';
@@ -88,4 +103,4 @@ function displayDevice(deviceId) {
     }
 }
 
-displayDevice('configCameraDevice'); // Change this to the desired  ID
+displayDevice('configCarbonDevice');
