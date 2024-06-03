@@ -6,7 +6,7 @@ const devices = [
         isNew: true,
         statusImg: './camera-img.svg',  
         configureImg: 'https://izak.aidtaas.com/svg/configure.svg',
-        background: "#6a6969",
+        background: "#5A616B",
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
     },
     {
@@ -16,17 +16,17 @@ const devices = [
         isNew: true,
         statusImg: "./ppm.svg",
         configureImg: 'https://izak.aidtaas.com/svg/configure.svg',
-        background: "#6a6969",
+        background: "#5A616B",
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
     },
     {
-        id: 'updateVaccum',
+        id: 'updatevacuum',
         title: 'Vacuum',
         location: 'iRobot • Living Room',
         isNew: true,
-        statusImg: "./wirelessVaccumCleaner.svg",
+        statusImg: "./wirelessvacuumCleaner.svg",
         configureImg: 'https://izak.aidtaas.com/svg/configure.svg',
-        background: "#6a6969",
+        background: "#5A616B",
         boxShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
     }
 ];
