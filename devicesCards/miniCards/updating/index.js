@@ -109,4 +109,4 @@ function displayDevice(deviceId) {
   }
 }
 
-displayDevice("updateCarbonDevice");
+displayDevice("updatevacuum");

@@ -1,6 +1,6 @@
 const devices = [
     {
-        id: "updateCameraDevice",
+        id: "resolveCameraDevice",
         title: "Camera",
         location: "TP Link • Outdoor Area",
         isNew: false,
@@ -52,11 +52,11 @@ function createDeviceCard(device) {
     statusImg.src = device.statusImg;
     statusImg.alt = "Camera Image";
 
+    statusCont.appendChild(statusImg);
+
     const dbottomCont = document.createElement("div");
     dbottomCont.className = "dbottomCont";
     dbottomCont.style.display = "none"; 
-
-    statusCont.appendChild(statusImg);
 
     const buttonContainer = document.createElement("div");
     buttonContainer.className = "buttonContainer";
@@ -65,7 +65,7 @@ function createDeviceCard(device) {
     resolveButton.className = "resolveButton";
     resolveButton.innerHTML = `<img src="./resolve.svg" alt="Small Image"><span>Resolve</span>`;
 
-    buttonContainer.appendChild(resolveButton); //here is my btn
+    buttonContainer.appendChild(resolveButton);
 
     deviceCont.appendChild(span85);
     deviceCont.appendChild(span95);
@@ -88,4 +88,4 @@ function displayDevice(deviceId) {
     }
 }
 
-displayDevice("updateCameraDevice");
+displayDevice("resolveCameraDevice");

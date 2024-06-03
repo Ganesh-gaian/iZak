@@ -423,6 +423,10 @@ body {
     width: 98%;
     height: 576px;
   }
+  .bottomCont {
+    margin-top: 15vh;
+  }
+
   .leftbtmCont {
     padding: 10px;
     width: 40%;

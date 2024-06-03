@@ -7,6 +7,7 @@
   overflow: hidden;
   cursor: pointer;
   width: 21.56vw;
+  height: max-content;
   /* height: 37.33vh; */
 }
 
@@ -147,16 +148,25 @@
   }
 }
 
-@media only screen and (max-width:2000px) and (min-width:1800px){
-  /* .statusCont {
-    width: 11.17vw;
-    height: 20vh;
-    top: 20px;
-    text-align: center; 
-  } */
-  /* .dbottomContndud {
-    bottom: -35px;
-    left: -7%;
-  } */
+@media only screen and (max-width:1080px) {
+  .deviceCont {
+    padding: 15px;
+    width: 28vw;
+    height: max-content;
+  }
+  .innerud {
+    width: 100%;
+  }
+
+  .statusCont {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 15vw;
+    height: 21.94vh;
+    top: 40px;
+    text-align: center;
+}
 }
 
