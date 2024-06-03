@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
+
+    <!-- <style>
+      #keypad {
+        display: none; /* Initially hidden */
+      }
+    </style> -->
   </head>
   <body>
     <div class="mainContainer">
@@ -43,9 +49,9 @@
           </div>
 
           <div class="bottomCont">
-            <div class="leftbtmCont">
-              <img src="./shutter-open.png" alt="shutter" class="shutter-img" />
-              <img src="./Padlock.png" alt="Padlock" class="padlock-img" />
+            <div class="leftbtmCont" id="leftbtmContNew">
+              <img src="./shutter-open.png" alt="shutter" class="shutter-img" id="shutterImg"/>
+              <img src="./Padlock.png" alt="Padlock" class="padlock-img" id="padlockImg" />
             </div>
 
             <div class="rightbtmCont">
@@ -85,7 +91,7 @@
                   </div>
 
                   <div class="Button" id="cherryFingerprint">
-                    <p>Cherry Fingerprint</p>
+                    <p>Cherry 🍒 Fingerprint</p>
                     <img src="./Ellipse.svg" alt="" class="circleSvg" />
                     <img src="./Check.svg" alt="" class="tickMark" />
                   </div>
@@ -131,6 +137,34 @@
                   </div>
                 </div>
               </div>
+
+              <div class="rbtmbtmCont" id="passCodeContent" style="display: none">
+                <input type="text" id="passcodeInput" placeholder="Enter Passcode" />
+                <div id="keypad" style="display: none">
+                  <button id="key1">1</button>
+                  <button id="key2">2</button>
+                  <button id="key3">3</button>
+                  <button id="key-">-</button>
+                  <button id="key4">4</button>
+                  <button id="key5">5</button>
+                  <button id="key6">6</button>
+                  <button id="keySpace_bar">
+                    <img src="./space_bar_24px.svg" alt="space">
+                  </button>
+                  <button id="key7">7</button>
+                  <button id="key8">8</button>
+                  <button id="key9">9</button>
+                  <button id="keyDelete">⌫</button>
+                  <button id="key.">.</button>
+                  <button id="key0">0</button>
+                  <button id="key,">,</button>
+                  <button id="keyEnter">
+                    <img class="bgBlue" src="./bgBlue.svg" alt="bgBlue">
+                    <img class="passcodeArrow" src="./passcodeArrow.svg" alt="passcodeArrow">
+                  </button>
+                </div>
+              </div>
+              
 
               <div
                 class="rbtmbtmCont" id="GuestIdContent" style="display: none">

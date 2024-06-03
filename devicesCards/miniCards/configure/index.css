@@ -5,9 +5,9 @@
   flex-direction: column;
   overflow: hidden;
   margin: 10px;
-
   width: 21.56vw;
-  height: 37.33vh;
+  height: max-content;
+  /* height: 37.33vh; */
 }
 
 #span8,
@@ -31,7 +31,7 @@
   position: relative;
   border-radius: 20px 8px 0px 20px;
   background: var(--Color, #fff);
-  top: -69px;
+  top: -70px;
   left: 84%;
   color: #1969e0;
   font-family: Lato;
@@ -111,11 +111,10 @@
   line-height: normal;
 }
 
-
-@media screen and (min-width: 700px) and (max-width: 750px) {
+@media screen and (min-width: 1900px) and (max-width: 1950px) {
   .new {
-    top: -38px;
-    left: 90%;
+    top: -95px;
+    left: 82%;
   }
 }
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
@@ -123,9 +122,30 @@
     top: -68px;
   }
 }
-@media screen and (min-width: 1900px) and (max-width: 1950px) {
-  .new {
-    top: -91px;
-    left: 82%;
+
+@media only screen and (max-width:1080px) {
+  .deviceCont {
+    padding: 15px;
+    width: 28vw;
+    height: max-content;
   }
+  .inner {
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .inner img{
+    width: 8%;
+  }
+  .new {
+    top: -45px;
+    left: 90%;
+    height: 20px;
+  }
+
+  .statusCont {
+    width: 15vw;
+    height: 21.94vh;
+    top: 45px;}
 }

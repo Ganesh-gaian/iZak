@@ -1,14 +1,14 @@
 .deviceCont {
   border-radius: 8px;
-  /* background: #AEAEAE; */
-  /* background: #6a6969; */
   backdrop-filter: blur(32px);
   padding: 15px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  width: 21.56vw;
-  height: 37.33vh;
+  /* width: 21.56vw; */
+  width: 276px;
+  height: 276px;
+  /* height: max-content; */
 }
 
 #span85,
@@ -19,7 +19,6 @@
 #span80,
 #span811,
 #span822 {
-  /* color: var(--Color, #fff); */
   color: #a4a2a2;
   font-family: Lato;
   font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
@@ -38,7 +37,6 @@
 #span911,
 #span922 {
   overflow: hidden;
-  /* color: var(--Color, #fff); */
   color: #a4a2a2;
   text-overflow: ellipsis;
   font-family: Lato;
@@ -195,7 +193,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 2px;
 }
 
 .resolveButton {
@@ -225,4 +223,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+@media only screen and (max-width: 1080px) {
+  .deviceCont {
+    padding: 15px;
+    width: 28vw;
+    height: max-content;
+  }
 }

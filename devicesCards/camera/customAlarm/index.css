@@ -321,6 +321,27 @@ body {
   background: #00aaff;
 }
 
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+  .alarm-clock {
+    height: 57vh;
+  }
+  .startEnd {
+    height: 8vh;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .alarm-clock {
+    height: 60vh;
+  }
+  .time-selector {
+    height: 30vh;
+  }
+  .startEnd {
+    height: 8vh;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .cameraContainer {
     width: 98%;
@@ -345,21 +366,8 @@ body {
     width: 60%;
   }
   .alarm-clock {
-    height: 75vh;
+    height: 75vh !important;
   }
 }
 
-@media screen and (min-width: 1500px) and (max-width: 1800px) {
-  .alarm-clock {
-    height: 57vh;
-  }
-}
 
-@media screen and (max-width: 1500px) {
-  .alarm-clock {
-    height: 60vh;
-  }
-  .time-selector {
-    height: 30vh;
-  }
-}

@@ -149,24 +149,23 @@ body {
   justify-content: center;
   width: 50%;
   position: relative;
+  height: 362px;
 }
 
 .shutter-img {
   width: 100%;
+  height: 100%;
 }
 
 .padlock-img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  bottom: 100px;
-  right: 115px;
+  /* bottom: 88px; */
+  bottom: 12vh;
+  right: 120px;
 }
-.padlock-img{
-  /* width: 100%;
-  height: 100%; */
 
-}
 
 .rightbtmCont {
   padding: 10px 0;
@@ -297,7 +296,6 @@ body {
 
 .Guestbtns {
   height: auto;
-  overflow-y: scroll;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,34 +323,151 @@ body {
   width: 24px;
   height: 24px;
 }
-.guestImg img{
+.guestImg img {
   width: 90%;
 }
 
-.guestTexts{
+.guestTexts {
   display: flex;
   flex-direction: column;
 }
-.guestTexts p{
-  color: var(--Color, #FFF);
-font-family: Lato;
-font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.096px;
-margin-bottom: 1vh;
+.guestTexts p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.096px;
+  margin-bottom: 1vh;
 }
-.guestTexts span{
-  color: #A9A9A9;
-font-family: Lato;
-/* font-size: 14px; */
-font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.096px;
+.guestTexts span {
+  color: #a9a9a9;
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.096px;
 }
+
+    /* Your CSS */
+    #passCodeContent {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    #passcodeInput {
+      color: var(--Color, #fff);
+      font-family: Lato;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.096px;
+
+      width: 29vw;
+      padding: 10px;
+      text-align: left;
+      color: white;
+      border-radius: 8px;
+      border: 1px solid #fff;
+      background: #2f3134;
+      backdrop-filter: blur(6.87976598739624px);
+      outline: none;
+    }
+
+    #keypad {
+      position: absolute;
+      top: 14vh;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      border-radius: 8px 8px 0px 0px;
+      background: #131314;
+      box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.3);
+      padding: 20px 15px 10px 15px;
+    }
+
+    button[id^="key"] {
+      width: 70px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #c7c7c7;
+      text-align: center;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: Roboto;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 32px;
+    }
+
+    button[id^="key"]:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    #keySpace_bar img {
+      width: 24px;
+      height: 24px;
+    }
+
+    #keyEnter {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #keyEnter img.bgBlue {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    #keyEnter img.passcodeArrow {
+      position: absolute;
+      z-index: 2;
+      width: 24px;
+      height: 24px;
+    }
+
+    button[id^="key"]:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    #keyEnter img.bgBlue {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      border-radius: 10px;
+    }
+
+    #keyEnter img.passcodeArrow {
+      position: relative;
+      z-index: 2;
+      width: 24px;
+      height: 24px;
+    }
 
 .rightDivEclipse:hover {
   border-radius: 80px;
@@ -361,24 +476,60 @@ letter-spacing: -0.096px;
   box-shadow: 0px 0px 21px 0px rgba(255, 255, 255, 0.2);
 }
 
-@media only screen and (min-width: 1400px) and (max-width: 1600px) {
-  .Button {
-    width: 25vw;
-    height: 7vh;
-    padding: 12px 16px;
-  }
-}
 @media only screen and (min-width: 1800px) and (max-width: 2000px) {
   .Button {
-    width: 22vw;
+    width: 21vw;
     height: 5vh;
     padding: 12px 16px;
   }
 
   .guestButton {
     width: 22vw;
-    height: 6vh;
+    height: 8vh;
     margin-bottom: 1vh;
+  }
+  #passcodeInput {
+    width: 22vw;
+    padding: 11px;
+  }
+
+  .padlock-img {
+    bottom: 8vh;
+    right: 128px;
+  }
+
+  #keypad {
+    position: absolute;
+    top: 12vh;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .Button {
+    width: 25vw;
+    height: 7vh;
+    padding: 12px 16px;
+  }
+  .guestButton {
+    width: 25vw;
+    height: 9vh;
+    margin-bottom: 1.5vh;
+    padding: 1.5vh 1.8vw;
+    gap: 1vw;
+  }
+  #passcodeInput {
+    width: 26vw;
+    padding: 10px;
+  }
+
+  #leftbtmContNew {
+  }
+  #shutterImg {
+    bottom: 35px;
+  }
+
+  #padlockImg {
+    bottom: 11vh;
   }
 }
 
@@ -414,17 +565,12 @@ letter-spacing: -0.096px;
     width: 98%;
     height: 576px;
   }
-  /* .leftbtmCont {
-    padding: 10px;
-    width: 40%;
-  } */
-  /* .leftbtmCont > img {
-    width: 50%;
-  } */
-  /* .rightbtmCont {
-    width: 40%;
-    padding: 10px;
-  } */
+
+  .rightbtmCont {
+    padding: 10px 0;
+    gap: 40px;
+    width: 45%;
+  }
 
   .rbtmtopCont span {
     font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
@@ -448,11 +594,11 @@ letter-spacing: -0.096px;
   }
   .rbtmtopCont {
     justify-content: flex-start;
-    gap: 1vw;
+    gap: 2.5vw;
   }
   .rbtmbtmCont {
     justify-content: flex-start;
-    width: 80%;
+    width: 98%;
   }
   .chngmodebtn {
     width: 60px;
@@ -474,16 +620,44 @@ letter-spacing: -0.096px;
   }
 
   .Button {
-    width: 37vw;
-    height: 5vh;
+    width: 40vw;
+    height: 7vh;
     padding: 12px 16px;
   }
 
   .guestButton {
     width: 37vw;
-    height: 6vh;
-    margin-bottom: 1vh;
+    height: 9vh;
+    margin-bottom: 3vh;
+  }
+  .padlock-img {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 16vh;
+    right: 105px;
+  }
+
+  #passcodeInput {
+    width: 40vw;
+    padding: 10px;
+  }
+
+  #keypad {
+    position: absolute;
+    top: 16vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 10px;
+    column-gap: 6px;
+    border-radius: 8px 8px 0px 0px;
+    background: #131314;
+    box-shadow: 0px -12px 36px 0px rgba(0, 0, 0, 0.3);
+    padding: 20px 10px 10px 10px;
+  }
+  button[id^="key"] {
+    width: 55px;
+    height: 40px;
+    border-radius: 10px;
   }
 }
-
-
