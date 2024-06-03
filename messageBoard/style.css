@@ -349,14 +349,14 @@ p {
 @media screen and (max-width: 1280px) {
   .rectangle {
     width: 70%;
-    height: 20vh;
+    height: 25vh;
     margin-top: 1vh;
   }
 }
 @media screen and (max-width: 1500px) {
   .rectangle {
     width: 70%;
-    height: 20vh;
+    height: 30vh;
     margin-top: 1vh;
   }
 }
@@ -456,7 +456,7 @@ line-height: 24px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.25px;
-  margin-top: 32px;
+  margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
   border: none;
 }
 
@@ -487,6 +487,6 @@ line-height: 24px;
 @media screen and (max-width: 1500px) {
   #cctvButton {
     padding: 4px clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
-    margin-top: 54px;
+    margin-top: clamp(0.23438125rem, 0rem + 3.75vw, 23.437625rem);
   }
 }
