@@ -180,18 +180,6 @@
   gap: 6vh;
 }
 
-.iconStyle {
-  width: 32px;
-  height: 32px;
-  font-size: 22px;
-  padding-left: 1%;
-  padding-right: 1%;
-  cursor: pointer;
-}
-.iconStyle svg {
-  width: 90%;
-}
-
 @media only screen and (max-width: 1080px) {
   .sideNavContent {
     width: 6%;

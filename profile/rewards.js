@@ -2,10 +2,10 @@ function selectOption(option) {
   var options = document.querySelectorAll(".option");
   options.forEach(function(opt) {
       opt.classList.remove("selected");
-      opt.style.borderRadius = ''; // Clear border-radius
-      opt.style.background = ''; // Clear background
-      opt.style.backdropFilter = ''; // Clear backdrop-filter
-      opt.style.color = ''; // Clear color
+      opt.style.borderRadius = ''; 
+      opt.style.background = ''; 
+      opt.style.backdropFilter = ''; 
+      opt.style.color = ''; 
   });
 
   var selectedOption = document.querySelector("." + option);
@@ -45,4 +45,3 @@ redirect("select3D", "select3D.html");
 redirect("selectFaqs", "selectFaqs.html"); 
 
 
-//for rewards
