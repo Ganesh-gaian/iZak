@@ -159,16 +159,6 @@
   gap: 6vh;
 }
 
-.iconStyle {
-  width: 32px;
-  height: 32px;
-  font-size: 22px;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-.iconStyle svg {
-  width: 90%;
-}
 
 @media screen and (max-width: 800px) {
   .sideNavContent {
@@ -189,7 +179,6 @@
   justify-content: space-between;
   align-items: center;
   margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
-  /* margin-left: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem); */
   margin-right: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
   margin-bottom: 20px;
 }
@@ -201,6 +190,7 @@
   font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-weight: 600;
   font-family: Lato;
+  color: #fff;
 }
 .back-arrow {
   height: 4vh;
@@ -226,7 +216,6 @@ a {
 .option {
   width: 100%;
   height: 9vh !important;
-  /* gap: 1vw; */
   display: flex;
   padding: 0 16px;
   align-items: center;
@@ -256,28 +245,7 @@ a {
   color: white;
 }
 
-/* .arrowMark {
-  height: 5vh;
-  padding: 3vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
-  color: white;
-}
-.arrow{
-  display: none;
-}
-.arrowMark.selected .arrow {
-  display: inline-block;
-  position: absolute;
-  left: 14vw;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  } */
+
 
 .trigger-icon {
   position: relative;
