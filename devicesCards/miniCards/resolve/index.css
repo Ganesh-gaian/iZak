@@ -1,14 +1,13 @@
 .deviceCont {
+  position: relative;
   border-radius: 8px;
   backdrop-filter: blur(32px);
   padding: 15px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  /* width: 21.56vw; */
   width: 276px;
   height: 276px;
-  /* height: max-content; */
 }
 
 #span85,
@@ -224,6 +223,15 @@
   font-weight: 500;
   line-height: normal;
 }
+@media only screen and (min-width: 1800px) and (max-width:2000px){
+  .popup {
+    position: absolute;
+    z-index: 999;
+    padding: 5px !important;
+  }
+  
+}
+
 
 @media only screen and (max-width: 1080px) {
   .deviceCont {
@@ -231,4 +239,33 @@
     width: 28vw;
     height: max-content;
   }
+}
+
+.popup {
+  position: absolute;
+  z-index: 999;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.statusCont.popup {
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.buttonContainer.popup {
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 998;
 }

@@ -80,6 +80,7 @@ body {
 .topLeftDivdevicecont {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 .topLeftDivdevicecont > img {
@@ -171,7 +172,7 @@ body {
   height: 35vh;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 2px 0;
 }
 
 .time-box {
@@ -368,6 +369,11 @@ body {
   .alarm-clock {
     height: 75vh !important;
   }
+  .time-picker {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+  }
 }
-
-
