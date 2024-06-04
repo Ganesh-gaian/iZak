@@ -33,7 +33,7 @@ body.blurred {
   display: flex;
 }
 
-.sideNavContent {
+.sideContent {
   visibility: hidden;
   width: 5%;
   height: inherit;
@@ -45,19 +45,8 @@ body.blurred {
   gap: 6vh;
 }
 
-/* .iconStyle {
-  width: 32px;
-  height: 32px;
-  font-size: 22px;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-.iconStyle svg {
-  width: 90%;
-} */
-
 @media screen and (max-width: 800px) {
-  .sideNavContent {
+  .sideContent {
     width: 6%;
   }
 }

@@ -29,7 +29,6 @@ function createDeviceCard(device) {
     deviceCont.style.background = device.background || "linear-gradient(129deg, rgba(255, 255, 255, 0.2) 1.17%, rgba(155, 155, 155, 0.2) 97.17%)";
     deviceCont.style.boxShadow = device.boxShadow || "0px 4px 4px 0px rgba(0, 0, 0, 0.25)";
 
-
     const span85 = document.createElement("span");
     span85.id = "span85";
     span85.textContent = device.title;
@@ -46,12 +45,10 @@ function createDeviceCard(device) {
     if (!device.isNew) newDiv.style.display = "none";
 
     const statusCont = document.createElement("div");
-    statusCont.className = "statusCont";
-
+    statusCont.className = "statusCont popup";
     const statusImg = document.createElement("img");
     statusImg.src = device.statusImg;
     statusImg.alt = "Camera Image";
-
     statusCont.appendChild(statusImg);
 
     const dbottomCont = document.createElement("div");
@@ -59,20 +56,22 @@ function createDeviceCard(device) {
     dbottomCont.style.display = "none"; 
 
     const buttonContainer = document.createElement("div");
-    buttonContainer.className = "buttonContainer";
-
+    buttonContainer.className = "buttonContainer popup";
     const resolveButton = document.createElement("button");
     resolveButton.className = "resolveButton";
     resolveButton.innerHTML = `<img src="./resolve.svg" alt="Small Image"><span>Resolve</span>`;
-
     buttonContainer.appendChild(resolveButton);
+
+    const overlay = document.createElement("div");
+    overlay.className = "overlay";
 
     deviceCont.appendChild(span85);
     deviceCont.appendChild(span95);
     deviceCont.appendChild(newDiv);
-    deviceCont.appendChild(statusCont);
-    deviceCont.appendChild(dbottomCont); 
-    deviceCont.appendChild(buttonContainer); 
+    deviceCont.appendChild(statusCont); 
+    deviceCont.appendChild(dbottomCont);
+    deviceCont.appendChild(buttonContainer);
+    deviceCont.appendChild(overlay);
 
     return deviceCont;
 }
@@ -88,4 +87,5 @@ function displayDevice(deviceId) {
     }
 }
 
-displayDevice("resolveCameraDevice");
+displayDevice("resolveCarbonMono");
+
