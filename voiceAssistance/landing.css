@@ -1,365 +1,483 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .container {
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://izak.aidtaas.com/svg/background.svg');
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    overflow-y: hidden;
-  }
-  
-  .topNav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    height: 5.13vh;
-    position: fixed;
-    /* top: 24px; */
-    top: 3.66vh !important;
-  }
-  
-  .navContent {
-    width: 96.25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .iZAKLogo {
-    width: 150px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .iZAKLogo svg {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .dateTimeTemp {
-    width: 250px;
-    color: var(--Color, #fff);
-    font-family: Lato;
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .userProfile {
-    width: 310px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 6px;
-  }
-  
-  .signalGif img {
-    width: 50px;
-    height: 40px;
-  }
-  
-  .line {
-    width: 1px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05);
-  }
-  
-  .NetworkSignal {
-    display: flex;
-    align-items: center;
-  }
-  .NetworkSignal svg {
-    width: 28px;
-    height: 28px;
-  }
-  .NetworkSignal .signalTextContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .NetworkSignal .signalText {
-    color: white;
-    width: 62px;
-    height: 17px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .NetworkSignal .signalText p {
-    color: var(--Color, #fff);
-    text-align: center;
-    font-family: Lato;
-    /* font-size: 14px; */
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-right: 2px;
-  }
-  
-  .NetworkSignal .signalText span {
-    color: var(--Color, #fff);
-    font-family: Lato;
-    /* font-size: 14px; */
-    font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  
-  .bellNotification svg {
-    width: 40px;
-    height: 37px;
-  }
-  
-  .profileLogo {
-    width: 37px;
-    height: 37px;
-    background-color: rgb(219, 183, 253);
-    border-radius: 50%;
-  }
-  
-  .contentContainer {
-    display: flex;
-    width: 100%;
-    /* height: calc(100vh - 5.13vh);  */
-    /* height of total height - navbar + top height */
-    height: calc(100vh - 8vh);
-    margin-top: 8vh;
-    overflow-y: hidden;
-  }
-  
-  .wrapper {
-    width: 100%;
-    height: inherit;
-    display: flex;
-  }
-  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://izak.aidtaas.com/svg/background.svg");
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  overflow-y: hidden;
+}
+
+.topNav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 5.13vh;
+  position: fixed;
+  top: 3.66vh !important;
+}
+
+.navContent {
+  width: 96.25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iZAKLogo {
+  width: 150px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.iZAKLogo svg {
+  width: 32px;
+  height: 32px;
+}
+
+.dateTimeTemp {
+  width: 250px;
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.userProfile {
+  width: 310px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 6px;
+}
+
+.signalGif img {
+  width: 50px;
+  height: 40px;
+}
+
+.line {
+  width: 1px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.NetworkSignal {
+  display: flex;
+  align-items: center;
+}
+.NetworkSignal svg {
+  width: 28px;
+  height: 28px;
+}
+.NetworkSignal .signalTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.NetworkSignal .signalText {
+  color: white;
+  width: 62px;
+  height: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.NetworkSignal .signalText p {
+  color: var(--Color, #fff);
+  text-align: center;
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-right: 2px;
+}
+
+.NetworkSignal .signalText span {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.bellNotification svg {
+  width: 40px;
+  height: 37px;
+}
+
+.profileLogo {
+  width: 37px;
+  height: 37px;
+  background-color: rgb(219, 183, 253);
+  border-radius: 50%;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 8vh);
+  margin-top: 8vh;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+
+.sideContent {
+  width: 5%;
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+@media screen and (max-width: 800px) {
   .sideContent {
-    width: 5%;
-    height: inherit;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6vh;
+    width: 6%;
   }
-  
-  .iconStyle {
-    width: 32px;
-    height: 32px;
-    font-size: 22px;
-    padding-left: 1%;
-    padding-right: 1%;
-  }
-  .iconStyle svg {
-    width: 90%;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .sideNavContent {
-      width: 6%;
-    }
-  }
-  .mainContainer {
-        height: inherit;
-        width: 100%;
-        display: flex;
-        align-items: center;  
-    }
-  
-  p {
-    font-size: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
-    color: white;
+}
+
+.mainContainer {
+  height: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  font-size: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
+  color: white;
+}
+
+.landingcontainer {
+  width: 100%;
+  height: 88.21vh;
+}
+.landing-top {
+  width: 95%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
+}
+
+.data {
+  width: 100%;
+}
+.data h1 {
+  width: 28%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
+  color: #ffff;
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.data p {
+  font-family: Lato;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
+}
+
+.para {
+  color: #ffff;
+  font-family: Lato;
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  margin-bottom: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+}
+.data img {
+  margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+}
+.pauseImageMain {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.pause-image {
+  position: relative;
+  width: 9%;
+  height: 15vh;
+  cursor: pointer;
+}
+
+.siriNotification {
+  position: absolute;
+  right: 50px;
+  width: 32vw;
+  height: 34px;
+  border-radius: 8px;
+  border-left: 3px solid #ffc700;
+  background: #2a3139;
+  box-shadow: 0px 0px 23px 10px rgba(0, 0, 0, 0.4);
+  padding: 22px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siriNotificationInner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.siriNotificationInner img {
+  width: 34.42px;
+  height: 34px;
+}
+.siriNotificationInner p {
+  color: #d9d9d9;
+  font-family: Lato;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.list {
+  display: flex;
+  color: #ffff;
+  margin-top: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: clamp(0.121525rem, 0rem + 1.9444vw, 12.1528125rem);
+  opacity: 0.5;
+}
+.list ul {
+  margin-right: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+}
+
+.circleImage1 {
+  position: absolute;
+  left: -1vh;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+}
+
+.pause-image svg {
+  position: absolute;
+  left: 4px;
+}
+.pause {
+  display: none;
+  width: 23%;
+  height: 40%;
+}
+.play {
+  width: 23%;
+  height: 40%;
+}
+.landing-bottom p {
+  margin-top: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
+  font-family: Lato;
+  font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
+  font-weight: 400;
+}
+.lowerContentSlider {
+  border: 2px solid white;
+  display: flex;
+  width: 60%;
+  height: 80px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem);
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1800px) {
+  .siriNotification {
+    position: absolute;
+    right: 42px;
+    width: 30vw;
+    height: 34px;
+    padding: 26px 2px;
   }
 
-  .playbookcontainer{
-    width: 96%;
-    height: auto;
-    display: flex;
-    flex-direction: column;  
+  .siriNotificationInner img {
+    width: 34.42px;
+    height: 34px;
   }
-  .playbook-top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height:5.5vh;
-    margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
-    margin-bottom: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
-    /* background: #000000; */
-  }
-  .playbook-top p{
-   color: #ffff;
-   font-family:Lato; 
-   font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
-   font-weight: 600;
-  }
-  .Icons{
-   display: flex;
-   /* justify-content: space-around; */
-   gap:6vh;
-   width: 10%;
-   height:60%;
-  }
-  .Icons svg{
-      display: flex;
-      /* justify-content: space-around; */
-      gap:6vh;
-      width: 10%;
-      height:60%;
-  }
+}
 
-  .playbook-middle{
-    width:87%;
-    height:76.95vh;
-    font-family:Lato; 
-    background-size: cover;
-    border: 1px solid red;
-    cursor: pointer;
-  }
-  
-  /* //---- */
-  .landingcontainer {
-    width: 100%;
-    height: 88.21vh;
-  }
-  .landing-top {
-    width: 95%;
-    height: 5vh;
-    display: flex;
-    justify-content: space-between;
-    margin-top: clamp(0.14756875rem, 0rem + 2.3611vw, 14.757rem);
-  }
-  
-  /* .edit-image {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin-left: 30px;
-    cursor: pointer;
-  } */
-  .circleImage {
+@media screen and (max-width: 1080px) {
+  .siriNotification {
     position: absolute;
-    left: 50px;
-    width: 40%;
-    height: 40%;
-    border-radius: 50%;
-    background-color: #ffffff1a;
+    right: 50px;
+    width: 34vw;
+    height: 30px;
+    padding: 16px 2px;
   }
-  /* .edit-image > img {
-    width: 23%;
-    height: 40%;
-    margin-left: 58px;
-  } */
-  .data {
-    width: 100%;
-  }
-  .data h1 {
-    width: 28%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
-    color: #ffff;
-    font-family: Lato;
-    font-weight: 700;
-    font-size: 36px;
-  }
-  .list {
-    display: flex;
-    color: #ffff;
-    margin-top: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
-    font-family: Lato;
-    font-weight: 400;
-    font-size: clamp(0.121525rem, 0rem + 1.9444vw, 12.1528125rem);
-    opacity: 0.5;
-  }
-  .list ul {
-    margin-right: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
-  }
-  .data p {
-    font-family: Lato;
-    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
-    font-weight: 400;
-    opacity: 0.5;
-    margin-top: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
-  }
-  .para {
-    color: #ffff;
-    font-family: Lato;
-    font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
-    font-weight: 400;
-    opacity: 0.5;
-    margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
-    margin-bottom: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
-  }
-  .data img {
-    margin-top: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
-  }
-  .pauseImageMain {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .pause-image {
-    position: relative;
-    width: 9%;
-    height: 15vh;
-    cursor: pointer;
-  }
-  .circleImage1 {
-    position: absolute;
-    left: -1vh;
-    width: 40%;
-    height: 40%;
-    border-radius: 50%;
-    background-color: #ffffff1a;
-  }
-  
-  .pause-image svg {
-    position: absolute;
-    left: 4px;
-  }
-  .pause {
-    display: none;
-    width: 23%;
-    height: 40%;
-  }
-  .play {
-    width: 23%;
-    height: 40%;
-  }
-  .landing-bottom p {
-    margin-top: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
-  
-    font-family: Lato;
-    font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
-    font-weight: 400;
-  }
-  .lowerContentSlider {
-    border: 2px solid white;
-    display: flex;
-    width: 60%;
-    height: 80px;
-    gap: 20px;
+  .siriNotificationInner {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    margin-top: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem);
+    gap: 12px;
   }
-  
+  .siriNotificationInner img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 80vh;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 75vw;
+  height: 27vh;
+  border-radius: 16px;
+  background: linear-gradient(166deg, #004165 6.52%, #010a10 93.33%);
+  padding: 24px;
+  justify-content: center;
+}
+
+.popup-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.popUpSiriImg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.popUpSiri img {
+  width: 48px;
+  height: 48px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/*  -----Another Popup  for Action */
+#playPopup {
+  display: none;  
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 80vh;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  width: 75vw;
+  height: 22vh;
+  border-radius: 16px;
+  /* background: lightcoral; */
+  background: linear-gradient(166deg, #004165 6.52%, #010a10 93.33%);
+  padding: 24px;
+  justify-content: center;
+}
+
+.playPopup-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 35px;
+}
+.playinnerPopup {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.headAndPara {
+  display: flex;
+  flex-direction: column;
+}
+.headAndPara h2 {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.headAndPara p {
+  color: #c9c9c9;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.playPopup-content h1 {
+  color: var(--TV-Compose-sys-dark-on-surface, #E3E3E3);
+font-family: Lato;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 112.5% */
+}
+
+
+#playinnerPopup  img {
+  width: 48px;
+  height: 48px;
+}
+
+#playPopup .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}

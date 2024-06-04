@@ -48,11 +48,6 @@ function redirect(buttonId, destination) {
   });
 }
 
-// Add click event listeners to each button to redirect
-// redirect("switchAccount", "switchaccount.html");
-// redirect("manageAccountSettings", "manageaccount.html");
-// redirect("viewSubscription", "viewSubscription.html");
-// redirect("changePassword", "changePassword.html");
 
 // for settings navigation
 redirect("selectLanguage", "selectLanguage.html");
