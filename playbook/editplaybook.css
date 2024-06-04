@@ -159,16 +159,6 @@
   gap: 6vh;
 }
 
-.iconStyle {
-  width: 32px;
-  height: 32px;
-  font-size: 22px;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-.iconStyle svg {
-  width: 90%;
-}
 
 @media screen and (max-width: 800px) {
   .sideNavContent {
@@ -195,7 +185,6 @@
 }
 .edit-playbook {
   margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
-  /* margin-left: 38px; */
   margin-right: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
 }
 .back-arrow {
@@ -216,7 +205,6 @@
   width: 40%;
   height: auto;
   margin-top: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
-  /* margin-right: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem); */
 }
 .delete-image img {
   width: 100%;
@@ -282,21 +270,7 @@
   font-family: Lato;
   margin-bottom: 10px;
 }
-/* .add-triggers img {
-  margin-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
-}
-.add-triggers {
-  display: flex;
-  gap: 2vh;
-}
-.add-triggers p {
-  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
-  color: var(--Color, #fff);
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-} */
+
 .add-triggers svg {
   margin-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
 }
