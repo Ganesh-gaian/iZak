@@ -1,6 +1,5 @@
-//for pause button
+// Play and Pause functionality
 const playIcon = document.getElementsByClassName("play")[0];
-console.log(playIcon);
 const pauseIcon = document.getElementsByClassName("pause")[0];
 playIcon.addEventListener("click", function () {
   playIcon.style.display = "none";
@@ -11,51 +10,43 @@ pauseIcon.addEventListener("click", function () {
   pauseIcon.style.display = "none";
 });
 
-//Listening POPUP:
+// POPUP:
 const popup = document.getElementById("popup");
-const closeButton = document.querySelector(".close-btn");
-
-document.body.addEventListener("click", () => {
-  popup.style.display = "flex";
-});
-
-closeButton.addEventListener("click", (e) => {
-  e.stopPropagation();
-  popup.style.display = "none";
-});
-
-//-------Another Popup  for Action
-const playButton = document.querySelector(".pause-image .play");
 const playPopup = document.getElementById("playPopup");
-const closeBtn = playPopup.querySelector(".close-btn");
+const overlay = document.querySelector(".overlay");
 
-if (playButton) {
-  playButton.addEventListener("click", (e) => {
-    e.stopPropagation();
+function showModals() {
+  overlay.style.display = "block";
+  popup.style.display = "flex";
+
+  setTimeout(() => {
+    popup.style.display = "none";
     playPopup.style.display = "flex";
-  });
+  }, 3000);
 }
 
-closeBtn.addEventListener("click", (e) => {
-  e.stopPropagation();
-  playPopup.style.display = "none";
-});
+document.body.addEventListener("click", showModals);
+
+const closeButton = document.querySelector("#popup .close-btn");
+const playCloseBtn = playPopup.querySelector(".close-btn");
+
+if (closeButton) {
+  closeButton.addEventListener("click", (e) => {
+    e.stopPropagation();
+    popup.style.display = "none";
+    overlay.style.display = "none";
+  });
+}
+if (playCloseBtn) {
+  playCloseBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    playPopup.style.display = "none";
+    overlay.style.display = "none";
+  });
+}
 
 window.addEventListener("click", (event) => {
   if (event.target === playPopup) {
     playPopup.style.display = "none";
   }
 });
-
-// const playPopup = document.getElementById("playPopup");
-// const closeBtn = document.querySelector(".close-btn");
-
-// document.body.addEventListener("click", () => {
-//   playPopup.style.display = "flex";
-// });
-
-// closeBtn.addEventListener("click", (e) => {
-//   e.stopPropagation();
-//   playPopup.style.display = "none";
-// });
-
