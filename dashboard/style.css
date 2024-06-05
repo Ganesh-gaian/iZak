@@ -150,31 +150,100 @@
 }
 
 .sideNavContent {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 5%;
-  height: inherit;
+  height: 100%;
   background-color: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 6vh;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  overflow: hidden;
+  padding-left: 1.4%;
+}
+
+.sideNavContent:hover {
+  width: 300px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  /* background: linear-gradient(90deg, #1C1C1C 0.11%, #202020 5.63%, rgba(32, 32, 32, 0.92) 21.86%, rgba(32, 32, 32, 0.47) 29.04%, rgba(32, 32, 32, 0.00) 99.89%); */
 }
 
 .iconStyle {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.iconStyle img {
   width: 32px;
   height: 32px;
-  font-size: 22px;
   padding-left: 1%;
   padding-right: 1%;
   cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
-.iconStyle svg {
-  width: 90%;
+
+.iconStyle:hover img {
+  background-color: #777;
+}
+
+.icon-text {
+  margin-left: 20px;
+  color: gray;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.sideNavContent:hover .icon-text {
+  opacity: 1;
+}
+
+.iconStyle:hover .icon-text {
+  color: white;
+}
+
+.iconStyle.selected img {
+  box-shadow: 0 0 10px white;
+}
+
+.iconStyle.selected ~ .icon-text {
+  color: white;
+}
+
+.sideNavContent .white-line {
+  width: 40px;
+  height: 6px;
+  border-radius: 4px 4px 0px 0px;
+  background: var(--Color, #fff);
+  position: absolute;
+  left: -36px;
+  top: 46%;
+  transform: translateY(-50%);
+  transform: rotate(90deg);
+  display: none;
+}
+
+.iconStyle.selected .white-line {
+  display: block;
 }
 
 @media only screen and (max-width: 1080px) {
   .sideNavContent {
     width: 6%;
+    padding-left: 1%;
+  }
+  .iconStyle img {
+    width: 22px;
+    height: 22px;
+    padding-right: 1%;
   }
 
   .userProfile {
@@ -210,6 +279,18 @@
   }
 }
 
+@media only screen and (max-width: 2000px) and (min-width: 1800px) {
+  .sideNavContent .white-line {
+    width: 45px;
+    height: 6px;
+    border-radius: 4px 4px 0px 0px;
+    background: var(--Color, #fff);
+    position: absolute;
+    left: -43px;
+    top: 46%;
+  }
+}
+
 .mainContainer {
   height: inherit;
   width: 94.5%;
@@ -217,6 +298,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 1vh;
+  margin-left: 5%;
 }
 
 .upperContent {
@@ -240,7 +322,7 @@
   border: 0.5px solid white;
   width: 50%;
   height: 16.55vh;
-  font-size: 14px;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,7 +332,7 @@
   border: 0.5px solid white;
   width: 50%;
   height: 16.55vh;
-  font-size: 14px;
+  font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   display: flex;
   justify-content: center;
   align-items: center;
