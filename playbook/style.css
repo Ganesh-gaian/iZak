@@ -124,12 +124,12 @@
   height: 37px;
 }
 
-.profileLogo {
-  width: 37px;
+.profileLogo {                                                                                                
+  width: 37px;                             
   height: 37px;
-  background-color: rgb(219, 183, 253);
-  border-radius: 50%;
-}
+  background-color: rgb(219, 183, 253);                                
+  border-radius: 50%;                                                          
+}                                                                          
 
 .contentContainer {
   display: flex;
