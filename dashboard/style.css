@@ -246,6 +246,13 @@
     padding-right: 1%;
   }
 
+  .sideNavContent .white-line {
+    width: 22px;
+    height: 4px;
+    left: -22px;
+    top: 46%;
+  }
+
   .userProfile {
     width: 290px;
     gap: 2px;
@@ -276,6 +283,12 @@
   .NetworkSignal .signalText {
     width: 52px;
     height: 12px;
+  }
+  .mainContainer {
+    height: inherit;
+    width: 94.5%;
+    margin-top: 1vh;
+    margin-left: 6%;
   }
 }
 

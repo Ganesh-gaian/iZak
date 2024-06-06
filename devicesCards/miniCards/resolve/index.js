@@ -1,91 +1,172 @@
-const devices = [
+const cards = [
+
     {
-        id: "resolveCameraDevice",
+        id: 1,
         title: "Camera",
-        location: "TP Link • Outdoor Area",
-        isNew: false,
+        subtitle: "TP Link • Outdoor Area",
+        imgSrc: "./camera-img.svg",
         statusImg: "./Wifi Disabled.svg",
-        background: '#AEAEAE',
-        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-        lastUsed: false,
-        nextScheduled: false,
+        status: "in use",
+        action: "Manual Trigger",
+        time: "12:00 AM",
+        iconBase: false,
+        iconOverlay: false,
+        mode: false
+      },
+    {
+      id: 2,
+      title: "Vacuum",
+      subtitle: "iRobot • Living Room",
+      imgSrc: "./wirelessVacuumCleaner.svg",
+      statusImg: "./Wifi Disabled.svg",
+      status: "in use",
+      action: "Manual Trigger",
+      time: "12:00 AM",
+      iconBase: "./Ellipse (2).svg",
+      iconOverlay: "./Quiet Zone.svg",
+      mode: "Quiet Mode"
     },
     {
-        id: "resolveCarbonMono",
-        title: "Carbon Monoxide Detector",
-        location: "SONOFF • Master Bedroom",
-        isNew: false,
-        statusImg: "./Wifi Disabled.svg",
-        background: '#AEAEAE',
-        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-        lastUsed: false,
-        nextScheduled: false,
+      id: 3,
+      title: "Carbon Monoxide Detector",
+      subtitle: "SONOFF • Master Bedroom",
+      imgSrc: "./ppm.svg",
+      statusImg: "./Wifi Disabled.svg",
+      status: "in use",
+      action: "Manual Trigger",
+      time: "12:00 AM",
+      iconBase: false,
+      iconOverlay: false,
+      mode: false
     }
-];
-
-function createDeviceCard(device) {
-    const deviceCont = document.createElement("div");
-    deviceCont.className = "deviceCont";
-    deviceCont.style.background = device.background || "linear-gradient(129deg, rgba(255, 255, 255, 0.2) 1.17%, rgba(155, 155, 155, 0.2) 97.17%)";
-    deviceCont.style.boxShadow = device.boxShadow || "0px 4px 4px 0px rgba(0, 0, 0, 0.25)";
-
-    const span85 = document.createElement("span");
-    span85.id = "span85";
-    span85.textContent = device.title;
-
-    const span95 = document.createElement("span");
-    span95.id = "span95";
-    span95.textContent = device.location;
-
-    const newDiv = document.createElement("div");
-    newDiv.className = "newud";
-    newDiv.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <circle cx="6" cy="6" r="6" fill="#FF0606"/>
-                        </svg><span>Live</span>`;
-    if (!device.isNew) newDiv.style.display = "none";
-
-    const statusCont = document.createElement("div");
-    statusCont.className = "statusCont popup";
-    const statusImg = document.createElement("img");
-    statusImg.src = device.statusImg;
+  ];
+  
+  function createCard(card) {
+    const contentContainer = document.createElement('div');
+    contentContainer.className = 'contentContainer';
+  
+    const topTextContents = document.createElement('div');
+    topTextContents.className = 'topTextContents';
+  
+    const h2 = document.createElement('h2');
+    h2.textContent = card.title;
+  
+    const p = document.createElement('p');
+    p.textContent = card.subtitle;
+  
+    topTextContents.appendChild(h2);
+    topTextContents.appendChild(p);
+  
+    const midContents = document.createElement('div');
+    midContents.className = 'midContents';
+  
+    const midImgContents = document.createElement('div');
+    midImgContents.className = 'midImgContents';
+  
+    const img = document.createElement('img');
+    img.src = card.imgSrc;
+    img.alt = "image";
+  
+    midImgContents.appendChild(img);
+    midContents.appendChild(midImgContents);
+  
+    const lowerContents = document.createElement('div');
+    lowerContents.className = 'lowerContents';
+  
+    const lowerLeft = document.createElement('div');
+    lowerLeft.className = 'lowerLeft';
+  
+    const statusP = document.createElement('p');
+    statusP.textContent = card.status;
+  
+    const actionH3 = document.createElement('h3');
+    actionH3.textContent = card.action;
+  
+    const timeSpan = document.createElement('span');
+    timeSpan.textContent = card.time;
+  
+    lowerLeft.appendChild(statusP);
+    lowerLeft.appendChild(actionH3);
+    lowerLeft.appendChild(timeSpan);
+  
+    lowerContents.appendChild(lowerLeft);
+  
+    // Conditionally add the lowerRight div
+    if (card.iconBase && card.iconOverlay && card.mode) {
+      const lowerRight = document.createElement('div');
+      lowerRight.className = 'lowerRight';
+  
+      const lowerRightImgCont = document.createElement('div');
+      lowerRightImgCont.className = 'lowerRightImgCont';
+  
+      const baseImage = document.createElement('img');
+      baseImage.src = card.iconBase;
+      baseImage.alt = "icon";
+      baseImage.className = 'base-image';
+  
+      const overlayImage = document.createElement('img');
+      overlayImage.src = card.iconOverlay;
+      overlayImage.alt = "overlay icon";
+      overlayImage.className = 'overlay-image';
+  
+      lowerRightImgCont.appendChild(baseImage);
+      lowerRightImgCont.appendChild(overlayImage);
+  
+      const modeP = document.createElement('p');
+      modeP.textContent = card.mode;
+  
+      lowerRight.appendChild(lowerRightImgCont);
+      lowerRight.appendChild(modeP);
+  
+      lowerContents.appendChild(lowerRight);
+    }
+  
+    // Create overlay
+    const overlayContainer = document.createElement('div');
+    overlayContainer.className = 'overlayContainer';
+  
+    const statusCont = document.createElement('div');
+    statusCont.className = 'statusCont';
+  
+    const statusImg = document.createElement('img');
+    statusImg.src = card.statusImg;
     statusImg.alt = "Camera Image";
+    statusImg.className = 'statusImg';  
+  
     statusCont.appendChild(statusImg);
-
-    const dbottomCont = document.createElement("div");
-    dbottomCont.className = "dbottomCont";
-    dbottomCont.style.display = "none"; 
-
-    const buttonContainer = document.createElement("div");
-    buttonContainer.className = "buttonContainer popup";
-    const resolveButton = document.createElement("button");
-    resolveButton.className = "resolveButton";
-    resolveButton.innerHTML = `<img src="./resolve.svg" alt="Small Image"><span>Resolve</span>`;
+  
+    const buttonContainer = document.createElement('div');
+    buttonContainer.className = 'buttonContainer';
+  
+    const resolveButton = document.createElement('button');
+    resolveButton.className = 'resolveButton';
+    resolveButton.innerHTML = `<img src="./resolve.svg" alt="Small Image" class="resolveImg"><span>Resolve</span>`;  // Unique class name for img
+  
     buttonContainer.appendChild(resolveButton);
-
-    const overlay = document.createElement("div");
-    overlay.className = "overlay";
-
-    deviceCont.appendChild(span85);
-    deviceCont.appendChild(span95);
-    deviceCont.appendChild(newDiv);
-    deviceCont.appendChild(statusCont); 
-    deviceCont.appendChild(dbottomCont);
-    deviceCont.appendChild(buttonContainer);
-    deviceCont.appendChild(overlay);
-
-    return deviceCont;
-}
-
-function displayDevice(deviceId) {
-    const contentContainer = document.getElementById("contentContainer");
-    contentContainer.innerHTML = "";
-
-    const device = devices.find((d) => d.id === deviceId);
-    if (device) {
-        const deviceCard = createDeviceCard(device);
-        contentContainer.appendChild(deviceCard);
+    statusCont.appendChild(buttonContainer);
+    overlayContainer.appendChild(statusCont);
+  
+    contentContainer.appendChild(topTextContents);
+    contentContainer.appendChild(midContents);
+    contentContainer.appendChild(lowerContents);
+    contentContainer.appendChild(overlayContainer);
+  
+    return contentContainer;
+  }
+  
+  function displayCardById(cardId) {
+    const container = document.querySelector('.container');
+    container.innerHTML = ''; 
+    const card = cards.find(card => card.id === cardId);
+    if (card) {
+      const cardElement = createCard(card);
+      container.appendChild(cardElement);
+    } else {
+      container.innerHTML = '<p>Card not found</p>'; 
     }
-}
-
-displayDevice("resolveCarbonMono");
-
+  }
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    displayCardById(3); 
+  });
+  
