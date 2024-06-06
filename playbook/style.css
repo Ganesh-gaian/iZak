@@ -214,9 +214,14 @@
     width:87%;
     height:76.95vh;
     font-family:Lato; 
-    background-image: url('Images/morningmeditation.png');
+    background-image: url('https://izak.aidtaas.com/svg/background.svg');
     background-size: cover;
     border: 1px solid red;
     cursor: pointer;
   }
-  
+  @media only screen and (max-width: 720px) {
+  .playbook-top p{
+   /* font-size: 24px; */
+   font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
+   }
+  }

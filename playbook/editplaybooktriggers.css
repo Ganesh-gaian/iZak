@@ -6,7 +6,7 @@
 .container {
   width: 100%;
   height: 100vh;
-  background:url("https://izak.aidtaas.com/image/background.png");
+  background: url("https://izak.aidtaas.com/image/background.png");
   background-size: cover;
   position: fixed;
   top: 0;
@@ -159,7 +159,6 @@
   gap: 6vh;
 }
 
-
 @media screen and (max-width: 800px) {
   .sideNavContent {
     width: 6%;
@@ -180,7 +179,7 @@
   align-items: center;
   margin-top: clamp(0.1388875rem, 0rem + 2.2222vw, 13.8889375rem);
   margin-right: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
-  margin-bottom: 20px;
+  margin-bottom: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
 }
 .top-heading {
   display: flex;
@@ -213,9 +212,13 @@ a {
   flex-direction: column;
   gap: 1vh;
 }
+.icon1 {
+  width: 40%;
+  height: 10vh;
+}
 .option {
   width: 100%;
-  height: 9vh !important;
+  /* height: 9vh !important; */
   display: flex;
   padding: 0 16px;
   align-items: center;
@@ -231,38 +234,40 @@ a {
   color: rgba(255, 255, 255, 0.6);
   margin-top: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
 }
-.option:hover{
+.option:hover {
   cursor: pointer;
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(88, 88, 88, 0.5);
-  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2); 
+  box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2);
 }
 .option.selected {
+  width: 100%;
+  height: 8vh;
   visibility: visible;
   border-radius: 8px;
   background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
   backdrop-filter: blur(6.87976598739624px);
 }
 
-.option.selected .icon1 circle{
+.option.selected .icon1 circle {
   fill: #fff;
 }
-.option.selected .icon path{
+.option.selected .icon path {
   stroke: #00478e;
 }
-.option.selected p{
+.option.selected p {
   color: #fff;
 }
-#selectedText p{
-  color: var(--Color, #FFF);
-font-family: Lato;
-/* font-size: 18px; */
-font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: -0.096px;
+#selectedText p {
+  color: var(--Color, #fff);
+  font-family: Lato;
+  /* font-size: 18px; */
+  font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.096px;
 }
 .trigger-icon {
   position: relative;
@@ -281,15 +286,17 @@ letter-spacing: -0.096px;
   justify-content: center;
   align-items: center;
 }
-.icon{
-  width: 20%; 
+.icon {
+  width: 20%;
   height: 33%;
 }
-.arrow{
-visibility: hidden;
-color: #fff;
+.arrow {
+  width: 8%;
+  height: 10vh;
+  visibility: hidden;
+  color: #fff;
 }
-.arrowMark{
+.arrowMark {
   margin-right: 0px;
   flex-grow: 2;
   display: flex;
@@ -306,7 +313,8 @@ color: #fff;
 }
 #fname {
   width: 100%;
-  padding: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem) clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  padding: clamp(0.05208125rem, 0rem + 0.8333vw, 5.2083125rem)
+    clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   margin: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem) 0;
   box-sizing: border-box;
   border: 1px solid #ccc;
@@ -328,14 +336,14 @@ color: #fff;
   right: 12px;
   top: 18px;
 }
-.details p{
+.details p {
   width: 100%;
   height: 3vh;
   margin-top: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
   font-family: Lato;
   font-size: clamp(0.09548125rem, 0rem + 1.5278vw, 9.548625rem);
   font-weight: 400;
-  color:  rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .details {
@@ -364,7 +372,7 @@ color: #fff;
 
 .Button {
   width: 100%;
-  height: 5vh;
+  height: 7vh;
   padding: 3vh;
   display: flex;
   justify-content: space-between;
@@ -377,7 +385,7 @@ color: #fff;
   color: white;
 }
 
-.Button:hover{
+.Button:hover {
   border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
   border: 1px solid rgba(255, 255, 255, 0.3);
   background: rgba(88, 88, 88, 0.5);
@@ -385,17 +393,19 @@ color: #fff;
 }
 
 .Button.selected {
+  width: 100%;
+  height: 5vh;
   border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
   background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
   backdrop-filter: blur(6.87976598739624px);
   color: white;
 }
-.Button.selected p{
+.Button.selected p {
   color: #fff;
 }
 
 .Button p {
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Lato;
   /* font-size: 20px; */
   font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
@@ -407,38 +417,66 @@ color: #fff;
   margin-bottom: 4vh;
 }
 
-
 .circleSvg,
 .tickMark {
-display: none;
+  display: none;
 }
 .Button.selected .circleSvg {
-display: inline-block;
-position: absolute;
-right: 8px;
-z-index: 1;
-width: 20px;
-height: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 8px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
 }
 .Button.selected .tickMark {
-display: inline-block;
-position: absolute;
-right: 12px;
-z-index: 1;
-width: 12px;
-height: 12px;
+  display: inline-block;
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  width: 12px;
+  height: 12px;
 }
 
+@media only screen and (max-width: 720px) {
+  .top-heading p {
+    margin-top: 1vh;
+  }
+  .playbook-triggers {
+    gap: 0vh;
+  }
+  .pencilMark {
+    position: absolute;
+    right: -5vw;
+    top: -2.3vh;
+  }
+  .pencilMark img {
+    width: 20%;
+    height: 10vh;
+  }
+  .icon1 {
+    width: 50%;
+    height: 10vh;
+  }
+  .option.selected {
+    width: 100%;
+    height: 6vh;
+  }
+  .arrow {
+    height: 10vh;
+  }
 
-@media only screen and (max-width: 800px) {
-.Button.selected .circleSvg {
-  right: 22px;
-  width: 22px;
-  height: 22px;
-}
-.Button.selected .tickMark {
-  right: 25px;
-  width: 16px;
-  height: 16px;
-}
+  .Button.selected .circleSvg {
+    width: 16px;
+    height: 16px;
+    margin-top: 0.5vh;
+  }
+  .Button.selected .tickMark {
+    width: 8px;
+    height: 8px;
+    margin-top: 0.5vh;
+  }
+  .Button p {
+    margin-bottom: 2vh;
+  }
 }

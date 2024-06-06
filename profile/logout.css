@@ -22,29 +22,6 @@
     overflow-y: hidden;
   }
   
-  .wrapper {
-    width: 100%;
-    height: inherit;
-    display: flex;
-  }
-  
-  .sideNavContent {
-    visibility: hidden;
-    width: 5%;
-    height: inherit;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 6vh;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .sideNavContent {
-      width: 6%;
-    }
-  }
   .mainContainer {
     height: inherit;
     width: 100%;
@@ -61,6 +38,7 @@
       justify-content: flex-start;
       align-items: center;
       margin-top: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem);
+      margin-left: clamp(0.260425rem, 0rem + 4.1667vw, 26.0418125rem);
     }
     .chooseAccount p {
       color: var(--Fitness-sys-dark-on-surface, #c4c7c4);
@@ -146,12 +124,19 @@
     @media only screen and (max-width: 800px) {
       .Button.selected .circleSvg {
         right: 22px;
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
       }
       .Button.selected .tickMark {
-        right: 25px;
-        width: 16px;
-        height: 16px;
+        right: 24px;
+        width: 14px;
+        height: 14px;
+      }
+      .Button {
+        height: 6vh;
+        margin-bottom: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+      }
+      .logoutButtons{
+        margin-top: 6vh;
       }
     }

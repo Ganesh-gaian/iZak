@@ -157,8 +157,6 @@
   gap: 6vh;
 }
 
-
-
 @media screen and (max-width: 800px) {
   .sideNavContent {
     width: 6%;
@@ -190,7 +188,7 @@ p {
   position: relative;
   width: 100px;
   height: 100px;
-  margin-left: 30px;
+  margin-left: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
   cursor: pointer;
 }
 .circleImage {
@@ -204,7 +202,7 @@ p {
 .edit-image > img {
   width: 23%;
   height: 40%;
-  margin-left: 58px;
+  margin-left: clamp(0.25174375rem, 0rem + 4.0278vw, 25.17375rem);
 }
 .data {
   width: 100%;
@@ -218,7 +216,7 @@ p {
   color: #ffff;
   font-family: Lato;
   font-weight: 700;
-  font-size: 36px;
+  font-size: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
 }
 .list {
   display: flex;
@@ -286,7 +284,6 @@ p {
 }
 .landing-bottom p {
   margin-top: clamp(0.30383125rem, 0rem + 4.8611vw, 30.382125rem);
-
   font-family: Lato;
   font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   font-weight: 400;
@@ -302,4 +299,31 @@ p {
   align-items: center;
   color: white;
   margin-top: clamp(0.21701875rem, 0rem + 3.4722vw, 21.7015rem);
+}
+@media screen and (max-width: 720px) {
+  .data h1{
+    /* font-size: 26px; */
+    font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
+  }
+  .landing-top img{
+    width: 5%;
+  }
+  .circleImage1{
+    width: 50%;
+  }
+  .circleImage{
+    width: 30%;
+    height: 30%;
+  }
+  .edit-image > img{
+    width:17%;
+    height: 30%;
+    margin-left: 58px;
+    /* margin-left: clamp(0.2777875rem, 0rem + 4.4444vw, 27.7779375rem); */
+  }
+}
+@media screen and (max-width: 1920px) and (min-width: 1200px){
+  .edit-image > img{
+    margin-left: 58px;
+  }
 }
