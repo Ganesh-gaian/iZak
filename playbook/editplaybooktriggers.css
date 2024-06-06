@@ -239,14 +239,31 @@ a {
   box-shadow: 0px 0px 18px 0px rgba(255, 255, 255, 0.2); 
 }
 .option.selected {
+  visibility: visible;
   border-radius: 8px;
   background: linear-gradient(96deg, #0b82f9 0.58%, #00478e 100%);
   backdrop-filter: blur(6.87976598739624px);
-  color: white;
 }
 
-
-
+.option.selected .icon1 circle{
+  fill: #fff;
+}
+.option.selected .icon path{
+  stroke: #00478e;
+}
+.option.selected p{
+  color: #fff;
+}
+#selectedText p{
+  color: var(--Color, #FFF);
+font-family: Lato;
+/* font-size: 18px; */
+font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.096px;
+}
 .trigger-icon {
   position: relative;
   width: 20%;
@@ -267,8 +284,16 @@ a {
 .icon{
   width: 20%; 
   height: 33%;
-  /* margin-left:5px; */
-  /* top:5px; */
+}
+.arrow{
+visibility: hidden;
+color: #fff;
+}
+.arrowMark{
+  margin-right: 0px;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .empty-space {
   width: 30%;
@@ -323,8 +348,6 @@ a {
   height: inherit;
   overflow-y: scroll;
   display: none;
-  /* justify-content: center;
-  align-items: center; */
   flex-direction: column;
   /* margin-top: 10vh; */
 }
@@ -367,6 +390,9 @@ a {
   backdrop-filter: blur(6.87976598739624px);
   color: white;
 }
+.Button.selected p{
+  color: #fff;
+}
 
 .Button p {
   color: rgba(255, 255, 255, 0.60);
@@ -391,20 +417,20 @@ display: inline-block;
 position: absolute;
 right: 8px;
 z-index: 1;
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 }
 .Button.selected .tickMark {
 display: inline-block;
 position: absolute;
 right: 12px;
 z-index: 1;
-width: 20px;
-height: 20px;
+width: 12px;
+height: 12px;
 }
 
 
-/* @media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
 .Button.selected .circleSvg {
   right: 22px;
   width: 22px;
@@ -415,4 +441,4 @@ height: 20px;
   width: 16px;
   height: 16px;
 }
-} */
+}
