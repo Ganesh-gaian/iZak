@@ -147,10 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//-------------------
-
-
-/*fix code */
+/*dropdown contents---*/
 document.querySelector('[data-target="alarmTypeContent"]').addEventListener('click', function () {
   var targetContent = document.getElementById('alarmTypeContent');
   var downArrow = this.querySelector('.downArrow');

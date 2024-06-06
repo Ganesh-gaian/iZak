@@ -186,4 +186,4 @@ function displayDevice(deviceId) {
   }
 }
 
-displayDevice("updateCarbonMono");
+displayDevice("updatevacuum");
