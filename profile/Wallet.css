@@ -58,9 +58,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  /* align-items: flex-start; */
   margin-top: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
-  /* top: 0; */
 }
 .walletContainer p {
   color: var(--Color, #fff);
@@ -90,7 +88,7 @@
   font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; 
+  line-height: 22px;
 }
 .Balance span {
   color: var(--Color, #fff);
@@ -111,7 +109,7 @@
   font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 32px; 
+  line-height: 32px;
 }
 .Points {
   width: 90%;
@@ -125,7 +123,7 @@
   font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; 
+  line-height: 22px;
   margin-top: 0.4vh;
 }
 .Points a {
@@ -134,7 +132,7 @@
   font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; 
+  line-height: 22px;
   text-decoration: none;
 }
 .Cards {
@@ -150,8 +148,8 @@
   font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; 
-  margin-bottom: 24px;
+  line-height: 24px;
+  margin-bottom: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
 }
 .cardImages {
   width: 100%;
@@ -180,7 +178,7 @@
   font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   font-style: normal;
   font-weight: 300;
-  line-height: 16px; 
+  line-height: 16px;
   letter-spacing: 2px;
   padding-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
 }
@@ -195,7 +193,7 @@
   font-size: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 16px; /* 114.286% */
+  line-height: 16px;
   letter-spacing: 2px;
   column-gap: 30px;
   display: flex;
@@ -206,7 +204,6 @@
   height: 5vh;
   display: flex;
   justify-content: space-between;
-  /* gap: 26vh; */
 }
 
 .cardHolder {
@@ -215,8 +212,8 @@
   display: flex;
   justify-content: space-between;
 }
-.holderName { 
-    margin-top: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
+.holderName {
+  margin-top: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
   display: flex;
   gap: 2vh;
 }
@@ -233,7 +230,6 @@
 }
 .cardType img {
   padding-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
-  /* margin-right: 8vh; */
 }
 
 .card2 {
@@ -248,6 +244,7 @@
   height: 33vh;
   background: url("profileimages/Card\ Rectangle.png");
   background-size: cover;
+  padding-left: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
   padding-right: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
   display: flex;
   flex-direction: column;
@@ -257,7 +254,6 @@
 .addCard {
   display: inline-flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   gap: 24px;
 }
@@ -273,9 +269,9 @@
   font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-style: normal;
   font-weight: 400;
-  line-height: 16px; 
+  line-height: 16px;
 }
-.accounts{
+.accounts {
   width: 100%;
   height: 20vh;
 }
@@ -303,12 +299,11 @@
   margin-right: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 
-
-.radio-group1{
+.radio-group1 {
   display: flex;
   gap: 5vh;
 }
-.radio-group2{
+.radio-group2 {
   display: flex;
   gap: 7vh;
 }
@@ -324,13 +319,11 @@ input[type="radio"] {
   cursor: pointer;
 }
 
-/* Color for checked radio button */
 input[type="radio"]:checked {
   background-color: white;
   box-shadow: inset 0 0 0 3px black;
-  
 }
-.radio-group3{
+.radio-group3 {
   display: flex;
   gap: 9vh;
 }
@@ -342,22 +335,75 @@ input[type="radio"]:checked {
   font-weight: 500;
   line-height: normal;
 }
-.radio-group3 a{
+.radio-group3 a {
   color: #0b82f9;
   font-family: Roboto;
   font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
   font-style: normal;
   font-weight: 500;
-  line-height: 22px; 
+  line-height: 22px;
   text-decoration: none;
   margin-top: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 
-
-/* @media only screen and (min-width: 2000px) and (min-width:1900px) {
-  .cardType img {
-    padding-top: 20px;
-    margin-right: 2vh;
+@media only screen and (max-width: 750px) {
+  .card1 {
+    width: 30%;
+    height: 28vh;
+    background: url("profileimages/Card\ Rectangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+  }
+  .card2 {
+    width: 30%;
+    height: 28vh;
+    background: url("profileimages/Card\ Rectangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+  }
+  .card3 {
+    width: 30%;
+    height: 28vh;
+    background: url("profileimages/Card\ Rectangle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
   }
 
-} */
+  .cardImages {
+    gap: 3vw;
+  }
+  .masked-card-number {
+    column-gap: 20px;
+  }
+
+  .money svg {
+    width: 30%;
+    height: 5vh;
+  }
+  .Points a {
+    margin-top: 0.5vh;
+  }
+  input[type="radio"] {
+    width: 15px;
+    height: 15px;
+  }
+  .radio-group label {
+    margin-top: 0.5vh;
+  }
+  .amazon img {
+    width: 60%;
+    margin-top: 1px;
+  }
+  .apple svg {
+    width: 60%;
+  }
+  .paypal img {
+    width: 60%;
+  }
+  .radio-group svg {
+    width: 10%;
+  }
+}

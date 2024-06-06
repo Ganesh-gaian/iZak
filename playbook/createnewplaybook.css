@@ -197,6 +197,7 @@
   font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-weight: 600;
   font-family: Lato;
+  color: #fff;
 }
 .image-container {
   width: 100%;
@@ -244,7 +245,7 @@
   gap: 2vh;
   font-size: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
   font-family: Lato;
-  margin-bottom: 10px;
+  margin-bottom: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 .playbook1 {
   height: 2vh;
@@ -254,7 +255,7 @@
   gap: 2vh;
   font-size: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
   font-family: Lato;
-  margin-bottom: 10px;
+  margin-bottom: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 .add-triggers svg {
   margin-top: clamp(0.01725rem, 0rem + 0.2778vw, 1.725rem);
@@ -264,12 +265,14 @@
   gap: 2vh;
 }
 .add-triggers p {
-  font-size: 24px;
+  /* font-size: 24px; */
+  font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   color: var(--Color, #fff);
   font-family: Lato;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-top: -1vh;
 }
 .icon1 {
   display: flex;
@@ -289,6 +292,7 @@
 }
 .icon1 p {
   font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  color: #fff;
 }
 .icon2 {
   display: flex;
@@ -308,6 +312,7 @@
 }
 .icon2 p {
   font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  color: #fff;
 }
 .icon3 {
   display: flex;
@@ -327,5 +332,26 @@
 }
 .icon3 p {
   font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+  color: #fff;
 }
+@media screen and (max-width: 720px) {
+  .heading p{
+    margin-top: 0.5vh;
+  }
+  .add-triggers p{
+    /* font-size: 17px; */
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    margin-top: 0.3vh;
+  }
+  .icon1{
+    height: 10vh;
+  }
+  .icon2{
+    height: 10vh;
+  }
+  .icon3{
+    height: 10vh;
+  }
+}
+
 

@@ -10,10 +10,6 @@ function selectOption(option) {
   if (selectedOption) {
     selectedOption.classList.add("selected");
   }
- 
-  
- 
-
 
   if (option === "option3") {
     window.location.href = "rewards.html";
@@ -24,42 +20,19 @@ function selectOption(option) {
   }
 
   if (option === "option5") {
-    window.location.href = "settings.html"
+    window.location.href = "settings.html";
   }
 
   if (option === "option6") {
-    window.location.href = "helpAndSupport.html"
+    window.location.href = "helpAndSupport.html";
   }
 
   if (option === "option7") {
     window.location.href = "logout.html";
   }
 
-
-  if (option === "option3") {
-    window.location.href = "rewards.html";
-  }
-
-  if (option === "option4") {
-    window.location.href = "Wallet.html";
-  }
-
-  if (option === "option5") {
-    window.location.href = "settings.html"
-  }
-
-  if (option === "option6") {
-    window.location.href = "helpAndSupport.html"
-  }
-
-  if (option === "option7") {
-    window.location.href = "logout.html";
-  }
-
- 
   var detailsDiv = document.getElementById("details-" + option);
   if (detailsDiv) {
-
     var details = document.querySelectorAll(".details");
     details.forEach(function (div) {
       div.style.display = "none";
@@ -84,9 +57,6 @@ redirect("changePassword", "changePassword.html");
 redirect("helpAndSupport", "helpAndSupport.html");
 redirect("settings", "settings.html");
 redirect("rewards", "rewards.html");
-
-
-
 
 // function Logout() {
 //   window.location.href = "logout.html";

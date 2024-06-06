@@ -197,6 +197,7 @@
   font-size: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   font-weight: 600;
   font-family: Lato;
+  color: #fff;
 }
 .image-container {
   width: 100%;
@@ -418,4 +419,29 @@
   border-radius: clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
   font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   background: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width: 720px) {
+  .heading p {
+   margin-top: 0.5vh;
+  }
+  .input1 > img {
+    left: -12%;
+  }
+  .input2 > img {
+    left: -12%;
+    top: 2vh;
+  }
+  #characters {
+    left: 60%;
+  }
+  #words {
+    top: 1%;
+    left: 41%;
+  }
+  .nextButton{
+    margin-bottom: clamp(0.15625rem, 0rem + 2.5vw, 15.6250625rem);
+    width: 93%;
+    height: 4vh;
+  }
 }
