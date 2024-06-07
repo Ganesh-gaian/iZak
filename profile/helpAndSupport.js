@@ -6,6 +6,12 @@ function selectButton(button) {
 
   button.classList.add("selected");
 
+  setTimeout(function () {
+    var option = button.id; 
+    if (option === "selectFaqs") {
+      window.location.href = "selectFaqs.html";
+    }
+  }, 100); 
 }
 
 function selectOption(option) {
@@ -19,6 +25,33 @@ function selectOption(option) {
     selectedOption.classList.add("selected");
   }
 
+  if (option === "option1") {
+    window.location.href = "index.html";
+  }
+  if (option === "option2") {
+    window.location.href = "index.html";
+  }
+
+  if (option === "option3") {
+    window.location.href = "rewards.html";
+  }
+
+  if (option === "option4") {
+    window.location.href = "Wallet.html";
+  }
+
+  if (option === "option5") {
+    window.location.href = "settings.html";
+  }
+
+  if (option === "option6") {
+    window.location.href = "helpAndSupport.html";
+  }
+
+  if (option === "option7") {
+    window.location.href = "logout.html";
+  }
+
   var detailsDiv = document.getElementById("details-" + option);
   if (detailsDiv) {
     var details = document.querySelectorAll(".details");
@@ -30,13 +63,8 @@ function selectOption(option) {
   }
 }
 
-function redirect(buttonId, destination) {
-  document.getElementById(buttonId).addEventListener("click", function () {
-    window.location.href = destination;
-  });
-}
 
-// popup for privacy policy and contact
+// Modal for privacy policy and contact
 const privacyButton = document.getElementById("selectPrivacyPolicy");
 const privacyPopup = document.getElementById("privacyPopup");
 const contactButton = document.getElementById("selectContactUs");
@@ -92,8 +120,15 @@ document.addEventListener("click", function (event) {
 
 
 
-
-
 // for help and support navigation
 redirect("selectFaqs", "selectFaqs.html");
+
+// routing for different screens
+redirect("option", "index.html");
+redirect("option2", "index.html");
+redirect("option", "rewards.html");
+redirect("option", "wallet.html");
+redirect("option", "settings.html");
+redirect("option", "helpAndSupport.html");
+
 

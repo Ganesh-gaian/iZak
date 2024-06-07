@@ -1,15 +1,17 @@
 function selectOption(option) {
-  // Remove 'selected' class from all options
   var options = document.querySelectorAll(".option");
   options.forEach(function (opt) {
     opt.classList.remove("selected");
   });
 
-  // Add 'selected' class to the clicked option
   var selectedOption = document.querySelector("." + option);
   if (selectedOption) {
     selectedOption.classList.add("selected");
   }
+
+  // if (option === "option2") {
+  //   window.location.href = "history.html";
+  // }
 
   if (option === "option3") {
     window.location.href = "rewards.html";
@@ -54,10 +56,10 @@ redirect("manageAccountSettings", "manageaccount.html");
 redirect("viewSubscription", "viewSubscription.html");
 redirect("changePassword", "changePassword.html");
 
-redirect("helpAndSupport", "helpAndSupport.html");
-redirect("settings", "settings.html");
-redirect("rewards", "rewards.html");
-
-// function Logout() {
-//   window.location.href = "logout.html";
-// }
+// routing for different screens from index.html
+// redirect("option", "index.html");
+// redirect("option", "history.html");
+redirect("option", "rewards.html");
+redirect("option", "wallet.html");
+redirect("option", "settings.html");
+redirect("option", "helpAndSupport.html");
