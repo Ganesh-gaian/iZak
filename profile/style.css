@@ -68,7 +68,7 @@
   height: 5vh;
   display: flex;
   gap: 2vh;
-  margin-bottom: 30px;
+  margin-bottom: clamp(0.13020625rem, 0rem + 2.0833vw, 13.020875rem);
 }
 .heading p {
   color: var(--Color, #fff);
@@ -96,7 +96,7 @@
   gap: 3vh;
   display: flex;
   height: 56px;
-  padding: 0 16px;
+  padding: 0 clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   align-items: center;
 }
 .option p {
@@ -107,7 +107,7 @@
   font-weight: 500;
 }
 .option svg {
-  margin-top: 4px;
+  margin-top: clamp(0.0115rem, 0rem + 0.1852vw, 1.15rem);
 }
 .option {
   cursor: pointer;
@@ -129,7 +129,7 @@
   width: 100%;
   height: inherit;
   display: none;
-  margin-top: 20px;
+  margin-top: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
 }
 
 .logoutButton {
@@ -137,7 +137,7 @@
   height: 5vh;
   display: flex;
   gap: 3vh;
-  margin-left: 20px;
+  margin-left: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
 }
 .logoutButton p {
   color: var(--Color, #fff);
@@ -172,7 +172,7 @@
   height: 50vh;
   display: flex;
   gap: 5vh;
-  margin-bottom: 25px;
+  margin-bottom: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   /* flex-direction: column; */
 }
 .profilepic {
@@ -341,10 +341,10 @@
   background: #1e2023;
   backdrop-filter: blur(10px);
   display: flex;
-  padding: 16px 24px;
+  padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem) clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
 }
 .Button {
   width: 100%;
@@ -378,12 +378,9 @@
   display: flex;
   /* justify-content: space-between; */
   gap: 3vh;
-  margin-top: 24px;
+  margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
 }
-.data1{
-  width: 20%;
-  height: 15vh;
-}
+
 .data1 p {
   color: #ebeaea;
   font-family: Lato;
@@ -392,7 +389,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
-  margin-bottom: 10px;
+  margin-bottom: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 
 .data2 p {
@@ -403,11 +400,12 @@
   font-style: normal;
   font-weight: 500;
   line-height: 25px;
-  margin-bottom: 10px;
+  margin-bottom: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 .data3{
   width: 100%;
   height: 15vh;
+  margin-top: 2vh;
 }
 .data3 p {
   color: var(--Grey-200, #d3d3d3);
@@ -427,18 +425,19 @@
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
-  padding-left: 20px;
-  margin-top: 15px;
+  padding-left: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  margin-top: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
 }
 .bullet-points li{
-  margin-bottom: 10px;
+  margin-bottom: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
 }
 .data4{
   width: 100%;
   height: 30vh;
+  margin-top: 3vh;
 }
 .data4 p {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   color: var(--Grey-200, #d3d3d3);
   font-family: Lato;
   /* font-size: 16px; */
@@ -449,14 +448,14 @@
 }
 .deliveryDetails {
   display: flex;
-  margin-top: 24px;
+  margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
   width: 100%;
   height: 25vh;
   border-radius: var(--Radius-m, 8px);
   background: rgba(255, 255, 255, 0.44);
   background-blend-mode: overlay;
   backdrop-filter: blur(40px);
-  padding: 16px;
+  padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   background: url("profileimages/background\ \(1\).png");
   background-size: cover;
 }
@@ -475,7 +474,7 @@
 .deliveryEst {
   display: flex;
   gap: 1vh;
-  padding: 0 16px;
+  padding: 0 clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
 }
 .delivered p {
   color: var(--Color, #fff);
@@ -508,7 +507,7 @@
   line-height: normal;
 }
 .productName {
-  padding: 0 16px;
+  padding: 0 clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
 }
 .ratingChat {
   display: flex;
@@ -517,7 +516,7 @@
 }
 .rating {
   display: flex;
-  padding: 16px;
+  padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   gap: 1vh;
 }
 .rating p {
@@ -525,7 +524,7 @@
 }
 .mailChat {
   display: flex;
-  padding: 16px;
+  padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   gap: 1vh;
 }
 .mailChat p {
@@ -545,7 +544,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 16px;
+  padding: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   margin-top: 0;
 }
 .dollarRate p {
@@ -564,6 +563,61 @@
   width: 100%;
   height: 6vh;
  }
+ .data1 p {
+  margin-bottom: 0px;
+}
 
+.data2 p {
+  margin-bottom: 0px;
+}
+.deliveryDetails{
+  height: 18vh;
+}
+.productImage{
+  height: 14vh;
+}
+.data3{
+  margin-top: 4vh;
+}
+.data4{
+  margin-top: 8vh;
+}
+.heading svg{
+  width: 10%;
+  height: 5vh;
+}
+.heading p{
+  margin-top: 1vh;
+}
+.profileName{
+  margin-bottom: 20px;
+}
+.profilepic{
+  height: 46vh;
+}
+.profileData{
+  padding:10px 0px 0px 5px;
+}
+.SvgAndtext svg{
+  height: 17px;
+}
+.namePoints{
+  justify-content: flex-start;
+}
+.svgAndday svg{
+  height: 17px;
+}
+.walletMoney{
+  gap: 1vh;
+}
+.walletMoney svg{
+  height: 17px;
+}
+.city svg{
+  height: 17px;
+}
+.points{
+  height: 46vh;
+}
 }
 

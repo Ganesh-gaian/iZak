@@ -218,7 +218,7 @@ a {
 }
 .option {
   width: 100%;
-  /* height: 9vh !important; */
+  height: 9vh !important;
   display: flex;
   padding: 0 16px;
   align-items: center;
@@ -465,7 +465,6 @@ a {
   .arrow {
     height: 10vh;
   }
-
   .Button.selected .circleSvg {
     width: 16px;
     height: 16px;
