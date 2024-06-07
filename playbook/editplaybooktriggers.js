@@ -44,28 +44,33 @@ function redirect(buttonId, destination) {
   });
 }
 
-// function selectButton(button) {
-//   var buttons = document.querySelectorAll(".Button");
-//   buttons.forEach(function (btn) {
-//     btn.classList.remove("selected");
-//   });
+function selectButton(button) {
+  var buttons = document.querySelectorAll(".Button");
+  buttons.forEach(function (btn) {
+    btn.classList.remove("selected");
+  });
 
-//   button.classList.add("selected");
+  button.classList.add("selected");
+}
+
+// function selectButton(button) {
+//   if (!button.classList.contains('selected')) {
+//       button.classList.add('selected');
+//   }
+
+//  var buttonText = button.querySelector('p').textContent;
+
+//   var selectedText = document.getElementById('selectedText');
+ 
+//   var newSelectedText = document.createElement('p');
+//   newSelectedText.textContent = buttonText;
+
+//   selectedText.appendChild(newSelectedText);
+
 // }
 
-function selectButton(button) {
-  if (!button.classList.contains('selected')) {
-      button.classList.add('selected');
-  }
 
- var buttonText = button.querySelector('p').textContent;
 
-  var selectedText = document.getElementById('selectedText');
-  var newSelectedText = document.createElement('p');
-  newSelectedText.textContent = buttonText;
-
-  selectedText.appendChild(newSelectedText);
-}
 
 
 
