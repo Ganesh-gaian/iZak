@@ -17,9 +17,16 @@ function selectButton(button) {
     if (option === "selectNotification") {
       window.location.href = "selectNotification.html";
     }
+    if (option === "select3D") {
+      window.location.href = "select3D.html";
+    }
+    if (option === "selectUnattendedMode") {
+      window.location.href = "selectUnattendedMode.html";
+    }
   }, 100); 
 }
 
+//from index.js
 function selectOption(option) {
   var options = document.querySelectorAll(".option");
   options.forEach(function (opt) {
@@ -29,6 +36,33 @@ function selectOption(option) {
   var selectedOption = document.querySelector("." + option);
   if (selectedOption) {
     selectedOption.classList.add("selected");
+  }
+
+  if (option === "option1") {
+    window.location.href = "index.html";
+  }
+  if (option === "option2") {
+    window.location.href = "index.html";
+  }
+
+  if (option === "option3") {
+    window.location.href = "rewards.html";
+  }
+
+  if (option === "option4") {
+    window.location.href = "Wallet.html";
+  }
+
+  if (option === "option5") {
+    window.location.href = "settings.html";
+  }
+
+  if (option === "option6") {
+    window.location.href = "helpAndSupport.html";
+  }
+
+  if (option === "option7") {
+    window.location.href = "logout.html";
   }
 
   var detailsDiv = document.getElementById("details-" + option);
@@ -47,6 +81,13 @@ function redirect(buttonId, destination) {
     window.location.href = destination;
   });
 }
+
+//for index.html navigation. // Add click event listeners to each button
+redirect("option", "index.html");
+redirect("option", "rewards.html");
+redirect("option", "wallet.html");
+redirect("option", "settings.html");
+redirect("option", "helpAndSupport.html");
 
 
 // for settings navigation

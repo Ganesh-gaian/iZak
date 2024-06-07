@@ -1,11 +1,9 @@
 function selectOption(option) {
-  // Remove 'selected' class from all options
   var options = document.querySelectorAll(".option");
   options.forEach(function (opt) {
     opt.classList.remove("selected");
   });
 
-  // Add 'selected' class to the clicked option
   var selectedOption = document.querySelector("." + option);
   if (selectedOption) {
     selectedOption.classList.add("selected");
@@ -14,9 +12,9 @@ function selectOption(option) {
   if (option === "option1") {
     window.location.href = "index.html";
   }
-  // if (option === "option2") {
-  //   window.location.href = "index.html";
-  // }
+  if (option === "option2") {
+    window.location.href = "history.html";
+  }
 
   if (option === "option3") {
     window.location.href = "rewards.html";
@@ -54,13 +52,10 @@ function redirect(buttonId, destination) {
     window.location.href = destination;
   });
 }
-//for index.html navigation. // Add click event listeners to each button
+
+// routing for different screens from index.html
 redirect("option", "index.html");
-redirect("option2", "index.html");
 redirect("option", "rewards.html");
 redirect("option", "wallet.html");
 redirect("option", "settings.html");
 redirect("option", "helpAndSupport.html");
-
-
-
