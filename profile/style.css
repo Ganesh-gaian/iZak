@@ -284,6 +284,7 @@
 }
 .city {
   display: flex;
+  align-items: center;
   margin-top: 2.22vh;
   color: var(--Grey-200, #d3d3d3);
   text-align: center;
@@ -558,12 +559,11 @@
   line-height: normal;
 }
 
-
 @media screen and (max-width: 800px) {
  .icon svg{
   width: 100%;
   height: 6vh;
  }
-
 }
+
 
