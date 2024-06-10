@@ -42,7 +42,7 @@ function selectOption(option) {
     window.location.href = "index.html";
   }
   if (option === "option2") {
-    window.location.href = "index.html";
+    window.location.href = "history.html";
   }
 
   if (option === "option3") {

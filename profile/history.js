@@ -55,6 +55,7 @@ function redirect(buttonId, destination) {
 
 // routing for different screens from index.html
 redirect("option", "index.html");
+redirect("option", "history.html");
 redirect("option", "rewards.html");
 redirect("option", "wallet.html");
 redirect("option", "settings.html");

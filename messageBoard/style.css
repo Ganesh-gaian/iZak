@@ -477,7 +477,7 @@ line-height: 24px;
   .text {
     width: 95%;
     height: 20vh;
-    font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem);
+    /* font-size: clamp(0.07811875rem, 0rem + 1.25vw, 7.8125rem); */
   }
   #cctvButton {
     padding: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem) clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
@@ -488,5 +488,39 @@ line-height: 24px;
   #cctvButton {
     padding: 4px clamp(0.0259375rem, 0rem + 0.4167vw, 2.59375rem);
     margin-top: clamp(0.23438125rem, 0rem + 3.75vw, 23.437625rem);
+  }
+}
+@media screen and (max-width: 800px) {
+  .option.selected{
+    height: 4vh;
+  }
+  .ikeaLogo{
+    height: 8vh;
+  }
+  .ikeaLogo img{
+    width: 17%;
+    height: 7vh;
+  }
+  .Mathew{
+    height: 8vh;
+  }
+  .cardHead img{
+    width: 17%;
+    height: 7vh;
+  }
+  .cardHead p{
+    height: 8vh;
+    margin-top: 0px;
+  }
+  .noticeCard1{
+    width: 100%;
+    height: 50vh;
+  }
+  #cctvButton{
+    margin-top: 21vh;
+    padding: 2px;
+  }
+  .text{
+    height: 8vh;
   }
 }

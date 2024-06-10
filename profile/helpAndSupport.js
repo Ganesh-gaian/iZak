@@ -29,7 +29,7 @@ function selectOption(option) {
     window.location.href = "index.html";
   }
   if (option === "option2") {
-    window.location.href = "index.html";
+    window.location.href = "history.html";
   }
 
   if (option === "option3") {
@@ -125,7 +125,7 @@ redirect("selectFaqs", "selectFaqs.html");
 
 // routing for different screens
 redirect("option", "index.html");
-redirect("option2", "index.html");
+redirect("option2", "history.html");
 redirect("option", "rewards.html");
 redirect("option", "wallet.html");
 redirect("option", "settings.html");
