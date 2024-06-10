@@ -8,10 +8,12 @@ function selectOption(option) {
   if (selectedOption) {
     selectedOption.classList.add("selected");
   }
-
-  // if (option === "option2") {
-  //   window.location.href = "history.html";
-  // }
+  if (option === "option1") {
+    window.location.href = "index.html";
+  }
+  if (option === "option2") {
+    window.location.href = "history.html";
+  }
 
   if (option === "option3") {
     window.location.href = "rewards.html";
@@ -57,8 +59,8 @@ redirect("viewSubscription", "viewSubscription.html");
 redirect("changePassword", "changePassword.html");
 
 // routing for different screens from index.html
-// redirect("option", "index.html");
-// redirect("option", "history.html");
+redirect("option", "index.html");
+redirect("option","history.html");
 redirect("option", "rewards.html");
 redirect("option", "wallet.html");
 redirect("option", "settings.html");

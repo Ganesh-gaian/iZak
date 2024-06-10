@@ -14,9 +14,9 @@ function selectOption(option) {
   if (option === "option1") {
     window.location.href = "index.html";
   }
-  // if (option === "option2") {
-  //   window.location.href = "index.html";
-  // }
+  if (option === "option2") {
+    window.location.href = "history.html";
+  }
 
   if (option === "option3") {
     window.location.href = "rewards.html";
