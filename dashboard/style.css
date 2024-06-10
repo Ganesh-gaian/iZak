@@ -191,16 +191,17 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
-.iconStyle:hover img {
-  background-color: #777;
-}
-
 .icon-text {
   margin-left: 20px;
   color: gray;
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.3s ease, color 0.3s ease;
+  font-family: Lato;
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .sideNavContent:hover .icon-text {
