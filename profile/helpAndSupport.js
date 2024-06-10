@@ -63,52 +63,39 @@ function selectOption(option) {
   }
 }
 
-
 // Modal for privacy policy and contact
 const privacyButton = document.getElementById("selectPrivacyPolicy");
 const privacyPopup = document.getElementById("privacyPopup");
 const contactButton = document.getElementById("selectContactUs");
 const contactPopup = document.getElementById("contactPopup");
 const popupBackdrop = document.getElementById("popupBackdrop");
-const popupHeading = document.getElementById("popupHeading");
 
-function showPopup(popup, headingText) {
+function showPopup(popup) {
     popup.style.display = "block";
-    document.body.classList.add("blurred");
     popupBackdrop.style.display = "block";
-    popupHeading.textContent = headingText;
-    popupHeading.style.display = "block";
+    document.body.classList.add("blurred");
 }
 
 function hidePopup(popup) {
     popup.style.display = "none";
-    document.body.classList.remove("blurred");
     popupBackdrop.style.display = "none";
-    popupHeading.style.display = "none";
+    document.body.classList.remove("blurred");
 }
 
 privacyButton.addEventListener("click", function () {
-    showPopup(privacyPopup, "PRIVACY POLICY");
+    showPopup(privacyPopup);
 });
 
 contactButton.addEventListener("click", function () {
-    showPopup(contactPopup, "CONTACT US");
+    showPopup(contactPopup);
 });
 
 document.addEventListener("click", function (event) {
-    if (
-        !privacyPopup.contains(event.target) &&
-        event.target !== privacyButton &&
-        !privacyButton.contains(event.target)
-    ) {
+    if (!privacyPopup.contains(event.target) && event.target !== privacyButton) {
         hidePopup(privacyPopup);
     }
 
-    if (
-        !contactPopup.contains(event.target) &&
-        event.target !== contactButton &&
-        !contactButton.contains(event.target)
-    ) {
+    if (!contactPopup.contains(event.target) && event.target !== contactButton) {
         hidePopup(contactPopup);
     }
 
@@ -117,7 +104,6 @@ document.addEventListener("click", function (event) {
         hidePopup(contactPopup);
     }
 });
-
 
 
 // for help and support navigation

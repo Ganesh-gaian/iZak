@@ -1,4 +1,3 @@
-// Play and Pause functionality
 const playIcon = document.getElementsByClassName("play")[0];
 const pauseIcon = document.getElementsByClassName("pause")[0];
 playIcon.addEventListener("click", function () {
@@ -14,18 +13,30 @@ pauseIcon.addEventListener("click", function () {
 const popup = document.getElementById("popup");
 const playPopup = document.getElementById("playPopup");
 const overlay = document.querySelector(".overlay");
+let playPopupOpen = false;
 
 function showModals() {
-  overlay.style.display = "block";
-  popup.style.display = "flex";
+  if (!playPopupOpen) {
+    overlay.style.display = "block";
+    popup.style.display = "flex";
 
-  setTimeout(() => {
-    popup.style.display = "none";
-    playPopup.style.display = "flex";
-  }, 3000);
+    setTimeout(() => {
+      popup.style.display = "none";
+      playPopup.style.display = "flex";
+      playPopupOpen = true;
+    }, 5000);
+  }
 }
 
-document.body.addEventListener("click", showModals);
+document.body.addEventListener("click", (event) => {
+  if (!playPopupOpen) {
+    showModals();
+  } else if (event.target === overlay || event.target === playPopup) {
+    playPopup.style.display = "none";
+    overlay.style.display = "none";
+    playPopupOpen = false;
+  }
+});
 
 const closeButton = document.querySelector("#popup .close-btn");
 const playCloseBtn = playPopup.querySelector(".close-btn");
@@ -42,11 +53,14 @@ if (playCloseBtn) {
     e.stopPropagation();
     playPopup.style.display = "none";
     overlay.style.display = "none";
+    playPopupOpen = false;
   });
 }
 
 window.addEventListener("click", (event) => {
-  if (event.target === playPopup) {
+  if (event.target === overlay || event.target === playPopup) {
     playPopup.style.display = "none";
+    overlay.style.display = "none";
+    playPopupOpen = false;
   }
 });
