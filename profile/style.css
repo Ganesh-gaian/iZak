@@ -72,10 +72,15 @@
   gap: 1.25vw;
 }
 
+
 .nexusLogoMain {
   width: 40px;
   height: 40px;
 }
+.nexusLogoMain img{
+  width: 100%;
+}
+
 .heading p {
   color: var(--Color, #fff);
   font-family: Lato;
@@ -115,8 +120,10 @@
   font-style: normal;
   font-weight: 500;
 }
-.option svg {
-  margin-top: 4px;
+.option img{
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
 }
 
 .option:hover {
@@ -373,6 +380,8 @@
   position: absolute;
   margin-left: 93%;
   top: 3vh;
+  width:24px;
+  height:24px;
 }
 .Data {
   width: 100%;
@@ -560,6 +569,19 @@
 }
 
 @media screen and (max-width: 800px) {
+  .arrowMark{
+    width: 16px;
+    height: 16px;
+  }
+  .nexusLogoMain{
+    width: 30px;
+    height: 30px;
+  }
+  .option img{
+    width: 17px;
+    height: 17px;
+    margin-top: 0;
+  }
 .heading svg{
   width: 10%;
   height: 5vh;
