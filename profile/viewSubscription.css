@@ -102,7 +102,7 @@
 }
 .goldRate {
   display: flex;
-  gap: 90vh;
+  gap: 80vh;
 }
 
 .rate {
@@ -163,7 +163,7 @@ input[type="radio"]:checked {
 }
 .silverRate {
   display: flex;
-  gap: 90vh;
+  gap: 80vh;
 }
 .subscription {
   display: flex;

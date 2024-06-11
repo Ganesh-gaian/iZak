@@ -75,6 +75,10 @@
   width: 40px;
   height: 40px;
 }
+.nexusLogoMain img{
+  width: 100%;
+}
+
 .heading p {
   color: var(--Color, #fff);
   font-family: Lato;
@@ -114,10 +118,11 @@
   font-style: normal;
   font-weight: 500;
 }
-.option svg {
-  margin-top: 4px;
+.option img{
+  width: 24px;
+  height: 24px;
+  margin-top: 0;
 }
-
 .option:hover {
   cursor: pointer;
   border-radius: 8px;
@@ -168,70 +173,6 @@
 #details-option6 {
   display: none;
 }
-/* 
-.profileName {
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  gap: 5vh;
-  margin-bottom: 25px;
-}
-.profilepic {
-  width: 60%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-.profilePic {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-} */
-/* .Buttons {
-  width: 100%;
-  height: inherit;
-  overflow-y: scroll;
-}
-.Buttons::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-} */
-
-/* .Button p {
-  width: 100%;
-  height: 10vh;
-  color: var(--Color, #fff);
-  font-family: Lato;
-  font-size: 24px;
-  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.095px;
-  border: none;
-  border-radius: 8px;
-  background: #1e2023;
-  backdrop-filter: blur(10px);
-  display: flex;
-  padding: 16px 24px;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.Button {
-  width: 100%;
-  height: 12vh;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  cursor: pointer;
-} */
-/* .arrowMark {
-  position: absolute;
-  margin-left: 93%;
-  top: 3vh;
-} */
 .History {
   width: 100%;
   height: inherit;
@@ -447,6 +388,15 @@
   .icon svg {
     width: 100%;
     height: 6vh;
+  }
+  .nexusLogoMain{
+    width: 30px;
+    height: 30px;
+  }
+  .option img{
+    width: 17px;
+    height: 17px;
+    margin-top: 0;
   }
   .data1 p {
    margin-bottom: 0px;

@@ -115,8 +115,10 @@
   font-style: normal;
   font-weight: 500;
 }
-.option svg {
-  margin-top: 4px;
+.option img {
+  margin-top: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .option:hover{
@@ -265,7 +267,10 @@
     width: 16px;
     height: 16px;
   }
-
+  .option img{
+    width: 17px;
+    height: 17px;
+  }
   .textAndArrow {
     gap: 0vw;
   }
