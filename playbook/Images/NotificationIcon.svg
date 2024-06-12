@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ringing Bell Notification" opacity="0.8" clip-path="url(#clip0_4119_177695)">
+<g id="ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise" opacity="0.8">
+<path id="Vector" d="M6.85938 15.1406H9.14509" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M12.5739 6.56752C12.5739 5.3551 12.0923 4.19234 11.235 3.33503C10.3777 2.47773 9.21493 1.99609 8.00251 1.99609C6.79009 1.99609 5.62733 2.47773 4.77002 3.33503C3.91271 4.19234 3.43108 5.3551 3.43108 6.56752V10.5675C3.43108 11.0222 3.25047 11.4582 2.92898 11.7797C2.60749 12.1012 2.17145 12.2818 1.7168 12.2818H14.2882C13.8336 12.2818 13.3975 12.1012 13.076 11.7797C12.7546 11.4582 12.5739 11.0222 12.5739 10.5675V6.56752Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M0.574219 6.42118C0.574835 5.33335 0.834258 4.26126 1.33106 3.2935C1.82786 2.32573 2.54778 1.49004 3.43136 0.855469" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M15.4314 6.42118C15.4307 5.33335 15.1713 4.26126 14.6745 3.2935C14.1777 2.32573 13.4578 1.49004 12.5742 0.855469" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4119_177695">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
