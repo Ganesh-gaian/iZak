@@ -302,7 +302,6 @@ p {
 }
 @media screen and (max-width: 720px) {
   .data h1{
-    /* font-size: 26px; */
     font-size: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   }
   .landing-top img{
@@ -319,7 +318,6 @@ p {
     width:17%;
     height: 30%;
     margin-left: 58px;
-    /* margin-left: clamp(0.2777875rem, 0rem + 4.4444vw, 27.7779375rem); */
   }
 }
 @media screen and (max-width: 1920px) and (min-width: 1200px){
@@ -327,3 +325,4 @@ p {
     margin-left: 58px;
   }
 }
+

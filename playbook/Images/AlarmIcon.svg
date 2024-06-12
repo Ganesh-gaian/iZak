@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Alarm Clock" opacity="0.8" clip-path="url(#clip0_4119_177661)">
+<g id="alarm-clock--time-tock-stopwatch-measure-clock-tick" opacity="0.8">
+<path id="Vector" d="M8.00251 15.4269C9.66959 15.4269 11.2684 14.7647 12.4472 13.5859C13.626 12.4071 14.2882 10.8083 14.2882 9.14118C14.2882 7.47411 13.626 5.87531 12.4472 4.69651C11.2684 3.51771 9.66959 2.85547 8.00251 2.85547C6.33544 2.85547 4.73664 3.51771 3.55784 4.69651C2.37904 5.87531 1.7168 7.47411 1.7168 9.14118C1.7168 10.8083 2.37904 12.4071 3.55784 13.5859C4.73664 14.7647 6.33544 15.4269 8.00251 15.4269Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M0.574219 2.85603C1.37682 1.92375 2.34564 1.14869 3.43136 0.570312" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M15.4314 2.85603C14.6288 1.92375 13.6599 1.14869 12.5742 0.570312" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M8.00195 5.71484V9.14342H10.8591" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_4119_177661">
+<rect width="16" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
