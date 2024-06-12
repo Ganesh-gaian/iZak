@@ -297,6 +297,7 @@
   line-height: normal;
 }
 
+
 .empty {
   width: 15%;
 }
@@ -444,4 +445,16 @@
     width: 93%;
     height: 4vh;
   }
+  .scannerPopup {
+    width: 23vw;
+    height: 27.44vh;
+  }
+  .scannerPopupInnerImg img {
+    width: 14vw;
+    height: 17vh;
+  }
+  .scannerPopupInner {
+  height: 20.44vh;
+  }
+
 }
