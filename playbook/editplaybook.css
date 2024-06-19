@@ -159,7 +159,6 @@
   gap: 6vh;
 }
 
-
 @media screen and (max-width: 800px) {
   .sideNavContent {
     width: 6%;
@@ -227,6 +226,150 @@
   font-family: Lato;
   font-weight: 400;
 }
+.popup {
+  display: none;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.popup-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 5px;
+  width: 80vw;
+  height: 30vh;
+  border-radius: 16px;
+  background: #004284;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.PopUpBottomContent {
+  display: flex;
+  justify-content: space-between;
+  width: 75vw;
+  height: 25vh;
+  margin-top: 5vh;
+}
+
+.PopUpLeftContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  gap: 20px;
+  width: 80vw;
+}
+.PopUpTopContent {
+  width: 100vw;
+  height: 3vh;
+}
+.PopUpTopContent p {
+  color: var(--TV-Compose-sys-dark-on-surface, #e3e3e3);
+  font-family: Lato;
+  /* font-size: 20px; */
+  font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.popUpHead p {
+  color: var(--TV-Compose-sys-dark-on-surface, #e3e3e3);
+  font-family: Lato;
+  /* font-size: 28px; */
+  font-size: clamp(0.121525rem, 0rem + 1.9444vw, 12.1528125rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 128.571% */
+  margin-top: 2vh;
+}
+
+.popUptext p {
+  color: var(--TV-Compose-sys-dark-on-surface, #e3e3e3);
+  font-family: Lato;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.25px;
+  opacity: 0.8;
+}
+.PopUpRightContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 20vw;
+  /* margin-top:5vh; */
+}
+
+.PopUpRightContent button {
+  display: flex;
+  width: 244px;
+  padding: 10px 75px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 16px;
+  background: #004284;
+  color: white;
+
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+
+  color: #fff;
+  font-family: Lato;
+  /* font-size: 16px; */
+  font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: 24px; */
+  letter-spacing: 0.25px;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.PopUpRightContent button:hover {
+  color: #1969e0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  transform: scaleX(1.05);
+}
+
+.btnSave:hover {
+  background-color: white;
+  columns: #1969e0;
+}
+
+.circleImage svg {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+  background-color: #1969e0;
+  border-radius: 50%;
+  padding: 5px;
+}
+.deleteBtn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2vh;
+}
 .deleteButton {
   width: 55%;
   background-color: transparent;
@@ -239,7 +382,7 @@
   font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
   margin-top: clamp(0.1041625rem, 0rem + 1.6667vw, 10.4166875rem);
 }
-.deleteData{
+.deleteData {
   margin-left: clamp(0.0607625rem, 0rem + 0.9722vw, 6.076375rem);
 }
 .empty {
@@ -289,7 +432,7 @@
   line-height: normal;
   margin-top: -1vh;
 }
-.triggerss p{
+.triggerss p {
   margin-right: clamp(0.11284375rem, 0rem + 1.8056vw, 11.28475rem);
   color: var(--Color, #fff);
   font-family: Lato;
@@ -361,26 +504,62 @@
 }
 
 @media screen and (max-width: 720px) {
-  .heading p{
+  .heading p {
     margin-top: 0.7vh;
   }
-  .add-triggers p{
+  .add-triggers p {
     /* font-size: 20px; */
     font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
     margin-top: 0.2vh;
   }
-  .icon1{
+  .icon1 {
     height: 10vh;
   }
-  .icon2{
+  .icon2 {
     height: 10vh;
   }
-  .icon3{
+  .icon3 {
     height: 10vh;
   }
-  .triggerss p{
+  .triggerss p {
     /* font-size: 20px; */
     font-size: clamp(0.0868rem, 0rem + 1.3889vw, 8.6805625rem);
     margin-top: 0.2vh;
+  }
+  .popup-content {
+    width: 80%;
+    height: 20vh;
+  }
+  .PopUpTopContent p {
+    /* font-size: 10px; */
+    font-size: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
+  }
+  .PopUpBottomContent {
+    margin-top: 0;
+  }
+  .popUpHead p {
+    /* font-size: 16px; */
+    font-size: clamp(0.0694375rem, 0rem + 1.1111vw, 6.9444375rem);
+    margin-top: 1vh;
+  }
+  .popUptext p {
+    /* font-size: 10px; */
+    font-size: clamp(0.034625rem, 0rem + 0.5556vw, 3.4625rem);
+  }
+  .PopUpLeftContent {
+    gap: 3px;
+  }
+  .PopUpRightContent button {
+    height: 24px;
+    width: 28vw;
+  }
+  .PopUpRightContent {
+    width: 25vw;
+    margin-top: 2vh;
+    gap: 12px;
+  }
+  .circleImage svg {
+    width: 18px;
+    height: 17px;
   }
 }
